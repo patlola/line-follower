@@ -1,0 +1,114 @@
+
+#footer-wrapper {
+			background-color: #c7baa9;
+			background-image: url(../images/footer_small.jpg);
+			background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 480px) {
+	#footer-wrapper {
+			background-image: url(../images/footer_medium.jpg);
+	}
+}
+
+
+@media only screen and (min-width: 768px) {
+	#footer-wrapper {
+			background-image: url(../images/footer.jpg);
+	}
+}
+    
+    footer[role="contentinfo"] {
+        position: relative;
+    }
+    
+	footer[role="contentinfo"] form {
+		position: relative;
+		float: left;
+		width:50%;
+		margin-bottom: 80px;
+	}
+
+	footer[role="contentinfo"] fieldset {
+		margin: 0 30px;
+	}
+
+	div#contact-wrapper {
+		float: right;
+		width: 50%;
+	}
+
+	footer[role="contentinfo"] div#contact-info {
+		width: 100%;
+		margin-top: 140px;
+		float: right;
+	}
+
+	/*circle icons*/
+	footer[role="contentinfo"] div#contact-icons {
+		position: absolute;
+		display: block;
+		float: right;
+		width:50%;
+		max-width : 960px;
+		margin-top: 80px;
+		padding: 0;
+	}
+
+	footer[role="contentinfo"] div#contact-icons ul {
+		float: right;
+		width:100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	footer[role="contentinfo"] div#contact-icons ul li {
+		float: left;
+		width: 71px;
+		height: 40px;
+		background-repeat: no-repeat;
+		background-position: top right;
+		list-style-type: none;
+	}
+
+	footer[role="contentinfo"] div#contact-icons ul li a {
+		display: block;
+		width: 41px;
+		height: 40px;
+		margin-left: 30px;
+		text-indent: -999em;
+		outline: none;
+	}
+
+	footer[role="contentinfo"] ul li#phone {
+		display: none;
+	}
+	
+	footer[role="contentinfo"] a.bcorp-logo {
+/*		float: right;*/
+		
+		right: 0px;
+        bottom: 0px;
+/*		top: 100%;*/
+		position: absolute;
+/*		position: relative;*/
+		width: 47px;
+		height: 71px;
+		background-image: url("../images/bcorp.png");
+		margin: 0 10px 35px 0;
+	}
+	
+	ul.color-bar li {
+	float: left;
+	width: 20%;
+	height: 20px;
+	text-indent: -999em;
+	outline: none;
+	}
+	
+	.footer-bottom {
+	width:100%;
+	height:20px;
+	margin-top: -20px;
+	background-color: #968b7c;
+}

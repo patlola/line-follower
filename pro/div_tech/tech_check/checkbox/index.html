@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<HTML lang="en">
+
+<HEAD>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <LINK rel="stylesheet" type="text/css" href="./style.css">
+</HEAD>
+
+<BODY>
+    <FORM action="#" method="get" accept-charset="utf-8" class="has-js">
+        <DIV class="checkboxes">
+            <LABEL class="label_check" for="checkbox-01"><INPUT name="sample-checkbox-01" id="checkbox-01" value="1" type="checkbox" checked="">Cultural</LABEL>
+            <LABEL class="label_check" for="checkbox-02"><INPUT name="sample-checkbox-02" id="checkbox-02" value="2" type="checkbox">Technical</LABEL>
+            <LABEL class="label_check" for="checkbox-03"><INPUT name="sample-checkbox-03" id="checkbox-03" value="3" type="checkbox">Management</LABEL>
+        </DIV>
+    </FORM>
+
+<SCRIPT src="jquery.min.js"></SCRIPT>
+<SCRIPT type="text/javascript">
+    function setupLabel() {
+        if ($('.label_check input').length) {
+            $('.label_check').each(function(){ 
+                $(this).removeClass('c_on');
+            });
+            $('.label_check input:checked').each(function(){ 
+                $(this).parent('label').addClass('c_on');
+            });                
+        };
+    };
+    $(document).ready(function(){
+        $('.label_check, .label_radio').click(function(){
+            setupLabel();
+        });
+        setupLabel(); 
+    });
+</SCRIPT>
+
+</BODY>
+
+</HTML>
+
+
+
+	   

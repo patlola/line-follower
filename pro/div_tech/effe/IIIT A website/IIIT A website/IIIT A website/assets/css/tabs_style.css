@@ -1,0 +1,67 @@
+
+#ticker
+{
+
+height:330px;
+width:300px;
+margin-left: 40px;
+}
+
+#ticker ul
+{
+margin:0px;
+padding:0px;
+}
+
+#ticker li
+{
+padding-top:7px;
+}
+.tab
+{
+
+width:100px;
+height:30px;
+background-color:#001452;
+color:white;
+display:inline;
+float:left;
+margin:auto;
+text-align:center;
+vertical-align:middle;
+
+border-radius:10px 10px 0 0;
+}
+#tab1{
+background-color:#2E3C69;
+border-bottom:4px solid green;
+}
+#tab2,#tab3
+{
+border-bottom:4px solid #4EA44E;
+}
+
+li
+{
+list-style-type:none;
+
+}
+
+#tab2view{
+margin-top:-354px;
+visibility:hidden;
+}
+#tab3view{
+margin-top:-354px;
+visibility:hidden;
+}
+
+.view
+{
+height:250px;
+width:296px;
+border:2px solid gray;
+border-top: 0px;
+
+clear:both;
+}

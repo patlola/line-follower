@@ -1,0 +1,282 @@
+body
+{
+  //background-image:url(http://p343.phpnet.org/shopold/modules/tm4b/background-patterns-for-websites-i9.jpg);
+	//background-image:url(http://fc00.deviantart.net/fs70/f/2010/239/3/a/blue_circle_texture_background_by_horsechick799-d2xex8c.jpg);
+//background-image:url( http://fc04.deviantart.net/fs14/f/2007/068/a/f/Rainbow_Wallpaper_3_White_by_rogueXunited.jpg);
+background:url(http://4.bp.blogspot.com/-OBdI9AtUKkg/TZXstOMnKgI/AAAAAAAAClg/NF8tl53uLvw/s1600/white+abstract+wallpapers+by+cool+wallpapers+%252814%2529.jpg
+);
+   background-repeat: no-repeat;
+   
+//   background-image:url('../img1.jpeg');
+   background-size:120%;
+   margin-left:0;
+    margin-top:0;
+}
+/*
+#header
+{
+  	background:url("../images/header2.jpg") center top ;
+	background-repeat:no-repeat;
+	background-size: 100% 100%;
+  	margin-bottom:10px;
+  	position:relative;
+  	
+  height:200px;
+  width:100%;
+*/
+ 
+}
+h2{
+	font-size:20px;
+}
+.EventBox{
+	margin:5px 5px 5px 5px;
+	position: relative;
+	width: 184px;
+	overflow: hidden;
+	border:solid rgba(150,139,124,0.5) 2px;
+	padding: 15px 15px 15px;
+	font-size: 11px;
+	box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+	-moz-box-shadow: 0 1px 2px rgba(34,25,25,0.4);
+	-webkit-box-shadow: 0 8px 7px rgba(34, 25, 25, 0.4);
+	background-color:white;
+	
+}
+
+.EventBox a:hover
+{
+  text-decoration:underline;
+}
+
+#container{
+	position: relative;
+//	top: 100px;
+	//float:center;
+	//display:inline;
+	//height:1000px;
+	//margin-top: 400px;
+	//margin-right:-5%;
+}
+
+#main1{
+  width:80%;
+  margin:10px auto;
+  //top:300px;
+  position:relative;
+  //margin-right:-0.2%;
+
+}
+
+.type,.date {
+  color:rgb(112,112,112);
+  font-family:verdana;
+  font-size:10px;
+}
+
+
+.eventname {
+  font-family:"helvetica neue",arial,sans-serif;
+  color:rgb(112,112,112);
+  text-decoration:none;
+	//background-image:url(http://www.ci.redding.ca.us/graphics/6_b.jpg);
+
+}
+
+.EventBox img{
+	opacity: 1;
+	-webkit-transition: opacity;
+	-webkit-transition-timing-function: ease-out;
+	-webkit-transition-duration: 500ms;
+
+	-moz-transition: opacity;
+	-moz-transition-timing-function: ease-out;
+	-moz-transition-duration: 500ms;
+}
+
+.EventBox img:hover{
+	opacity: 0.5;
+	-webkit-transition: opacity;
+	-webkit-transition-timing-function: ease-out;
+	-webkit-transition-duration: 500ms;
+
+	-moz-transition: opacity;
+	-moz-transition-timing-function: ease-out;
+	-moz-transition-duration: 500ms;
+}
+
+ /* Lightbox background */
+#overlay {
+ display:none;
+ background:#FFFFFF;
+ 	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	filter: alpha(opacity=80);
+	-moz-opacity:0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;
+ position:absolute;
+ top:0px;
+ left:0px;
+ min-width:100%;
+ min-height:100%;
+ z-index:1000;
+}
+/* Lightbox panel with some content */
+#clightbox {
+
+ display:none;
+ position:fixed;
+ top:100px;
+ margin:20px;
+ width:67%;
+ left:13%;
+ background:#FFFFFF;
+ padding:10px 15px 10px 15px;
+ border:2px solid #CCCCCC;
+ z-index:1001;
+ 
+ -moz-box-shadow: 10px 10px 5px #888;
+-webkit-box-shadow: 10px 10px 5px #888;
+box-shadow: 10px 10px 5px #888;
+
+border-radius:15px;
+}
+
+#clightbox_header {
+	text-align:center;
+}
+
+#clightbox_desc {
+	margin-left:15%;
+	width:70%;
+	
+	/*    background-color:white;*/
+/*    opacity:0.5;*/
+    border-radius:15px;
+
+    /* Fallback for web browsers that don't support RGBa */
+    background-color: #E8E8E8;
+    /* RGBa with 0.6 opacity */
+    background-color: rgba(232, 232, 232, 0.6);
+    /* For IE 5.5 - 7*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+	
+	padding: 14px;
+	padding-left: 20px;
+	padding-right: 20px;
+    
+}
+
+#clightbox_button{  
+  width: 67px;
+  height: 40px;
+  background-color: #33FF00;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+#clightbox_cross img:hover
+{
+opacity:0.6;
+filter:alpha(opacity=60); /* For IE8 and earlier */
+}
+
+#clightbox_title {
+
+color:#707070;border:1px solid gray; border-radius:30px;padding-left:20px; padding-right:20px; padding-top:5px; padding-bottom:5px;width:350px;margin:auto;
+
+}
+
+/*Lightbox JQuery Navigation*/
+
+#menu-jquery li a {
+	
+	/* Border Radius */
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	
+	/* Border Shadow */
+	-webkit-box-shadow: 1px 2px 2px rgba(0,0,0,0.6);
+	-moz-box-shadow: 1px 2px 2px rgba(0,0,0,0.6);
+	box-shadow: 1px 2px 2px rgba(0,0,0,0.6);
+	
+	color: #ffffff;
+	background: rgba(0,0,0,0.2);
+	display: inline-block;
+	padding: 5px 15px;
+	outline: none;
+	text-decoration: none;
+}
+
+#menu-jquery li a:active {
+		-webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+		-moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.4); 
+		box-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+		
+}
+
+a, a:visited {
+	color: #161616;
+	text-decoration: none; 
+}
+
+.title {
+	font-size: 30px;
+	font-family: Georgia;
+	font-style: italic;
+	font-weight: bold;
+	color: #161616;
+	margin: 2em 0 1em 0;
+	text-shadow: 0px 1px 0px #fff;
+	display: block;
+}
+
+#menu-jquery li {
+	display: inline;
+	list-style: none; 
+}
+
+/* Light Box Styling Ends Here.. */
+
+#divHome{
+	display:none;
+}
+#container
+{
+	display:block;
+}
+#divContact
+{
+	display:none;
+	width:65%;
+	align:center;
+	//margin:20%;
+	margin-top:8%;
+	margin-left:18%;
+	//margin-bottom:3%;
+}
+table{
+width:100%;
+padding:15px;
+}
+td{
+	padding:15px 0px;
+}
+#info{
+margin:auto;
+}
+ #main1{
+ width:70%;
+ margin:10px auto;
+ position:relative;
+}
+td{
+text-align:center;
+}
+               

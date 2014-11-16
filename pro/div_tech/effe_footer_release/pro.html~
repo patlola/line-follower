@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<script type="text/javascript" src="static/js/jquery.min.js"></script>
+<!-- Modernizr --><script type="text/javascript" src="static/js/modernizr.custom.86080.js"></script>
+<!-- JavaScript --><script type="text/javascript" src="site.js"></script>
+<link rel="stylesheet" type="text/css" href="static/css/stylebg.css" />
+
+<!-- JPlayer -->
+<script type="text/javascript" src="static/jplayer/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="static/jplayer/jquery.transform.js"></script>
+<script type="text/javascript" src="static/jplayer/jquery.grab.js"></script>
+<script type="text/javascript" src="static/jplayer/mod.csstransforms.min.js"></script>
+<script type="text/javascript" src="static/jplayer/circle.player.js"></script>
+<link rel="stylesheet" href="static/jplayer/circle.skin/circle.player.css">
+<!-- End JPlayer -->
+<style>
+        	body{
+			margin:0px;
+			top:0px;
+			left:0px;
+			
+		}
+		
+		
+		#event{
+			position:absolute;
+			display:block;
+			top:0px;
+			left:0px;
+			
+			color:white;
+			z-index:1;
+        	text-align:center;
+			width:100%;
+			background-color: rgba(255,255,255,0.5);
+			height:760px;
+			
+			
+		}
+		
+
+		#bgimg{
+			
+		}
+
+		#bgimg ul{
+			list-style:none;
+		}
+
+		#bgimg img{
+			width:auto;
+			height:auto;
+		}
+		
+		#bgimg{
+			display:block;
+		}
+		.images{
+			
+
+			display:inline-block;
+			float:left;
+			padding:20px;
+			text-align:center;
+			
+	        background-color: rgba(255,255,255,0.5);		
+	        border-radius:30px;
+			
+			
+		}
+		#images1{
+		margin-left:100px;
+		}
+		#images2{
+		margin-left:-275px;
+		}
+		#images3{
+		margin-left:-275px;
+		}
+		#imagewrapper{
+		margin-top:30px;
+		
+		}
+		#imagewrapper img{
+		    height:400px;
+		}
+		.title{
+			text-decoration:underline;
+			font-family:Arial;
+			font-size:2;
+			background-color: rgba(0,0,0,0.8);
+			padding-top:5px;
+			padding-bottom:5px;
+		}
+		
+		#head{
+		    margin-top:-170px;
+		    position:absolute;
+		    z-index:10;
+		    overflow:scroll-y;
+		    width:100%;
+		}
+		.navigation {
+		    position:absolute;
+		    margin-top:45px;
+		    right:16px;
+		    padding:20px;
+		    width:30px;
+		    height:30px;
+		    z-index:20;
+		}
+		.navimg {
+		    position:absolute;
+		    margin-top:20px;
+		    right:-35px;
+		    padding:20px;
+            z-index:20;
+            width:140px;
+		}
+		
+		
+</style>
+<script>
+$(document).ready(function(){
+    
+    $("#images2").animate({
+        marginLeft:'11%'   
+    }, 1300,
+    function(){
+    $("#images3").animate({
+        marginLeft:'12%'   
+    }, 1000);
+    });
+    
+    $(".navigation,.navimg").click(function(){
+        if( $("#head").css("margin-top") == "-185px") {
+            $("#head").animate({
+                marginTop: '0px'
+            }, 1000);
+            $("#imagewrapper").animate({
+                paddingTop: '200px'
+            }, 1000);
+            $(".navigation").attr("src","images/up.png");
+            $(".navimg").attr("src","images/hide.png");
+        }
+        else if ( $("#head").css("margin-top") == "0px") {
+            $("#head").animate({
+                marginTop: '-185px'
+            }, 1000);
+            $("#imagewrapper").animate({
+                paddingTop: '30px'
+            }, 1000);
+            $(".navigation").attr("src","images/down.png");
+            $(".navimg").attr("src","images/show.png");
+        }
+    });
+    
+        
+});
+        
+</script>
+<link href="css/headerstyle.css" rel="stylesheet">
+<link href="css/footerstyle.css" rel="stylesheet">
+</head>
+<body style="overflow:scroll-y;" >
+    <a href="#"><img src="images/down.png" class="navigation" /></a>
+    <a href="#"><img src="images/show.png" class="navimg" /></a>
+    <div id ="head" >
+	    <div class="header-top"></div>
+			
+	    <header role="banner" class="clearfix body">
+				
+		    <h1 id="or-logo"><a href="http://oliverrussell.com/">Oliver Russell</a></h1>
+			
+		    <!-- darker colors above the nav -->
+		    <ul class="color-bar">
+			    <li class="dark-red"></li>
+			    <li class="dark-yellow"></li>
+			    <li class="dark-blue"></li>
+			    <li class="dark-orange"></li>
+			    <li class="dark-purple"></li>
+		    </ul>
+		
+		    <nav>
+			    <ul>
+				    <li id="think" class="red"><a href="#">Think</a></li>
+				    <li id="about" class="yellow"><a href="#">About</a></li>
+				    <li id="work" class="blue"><a href="#">Work</a></li>
+				    <li id="hello" class="orange"><a href="#header-hello">Hello</a></li>
+				    <li id="GG" class="purple"><a href="#header-hello">Hello</a></li>
+			    </ul>
+		    </nav>
+	    </header>
+	</div>
+	
+	        <div id="bgimg">
+		        <ul class="cb-slideshow">
+			        <li><span>Img</span><div><h3>Rock the World</h3></div></li>
+			        <li><span>Img</span><div><h3>Emancipate</h3></div></li>
+		        </ul>
+	        </div>
+	
+		<div id="event" >
+            <div id="imagewrapper">
+			<div id="images1" class="images"> <img src="img_rock/R1.png" /><p class="title">Rock Night</p></div>
+			<div id="images2" class="images"> <img src="img_rock/R1.png" /><p class="title">Celeb Night</p></div>
+			<div id="images3" class="images"> <img src="img_rock/R1.png" /><p class="title">DJ Night</p></div>
+			</div>
+
+		</div>
+	
+	
+	<div id="bgvid">
+	        <video id="vid1" style="display:none;width:100%;" preload="auto" src="static/video/title.webm" muted="muted"></video>
+	</div>
+	
+	<div class="clearfix"></div>
+	<div id="footer-wrapper">
+	<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />
+	<footer role="contentinfo" class="clearfix body">
+  	
+    <div class="clearfix"></div>
+    <ul class="color-bar">
+      <li class="dark-red"></li>
+      <li class="dark-yellow"></li>
+      <li class="dark-blue"></li>
+      <li class="dark-orange"></li>
+	  <li class="dark-purple"></li>
+    </ul>
+  </footer>
+  <div class="footer-bottom"></div>
+</body>
+</html>

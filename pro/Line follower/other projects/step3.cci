@@ -1,0 +1,11 @@
+VERSION:3 SOURCE_TIMESTAMP:3F3D367A
+NODE:I LEVEL:0 LINE:24 "c:\cvavreval\inc\mega16.h"
+NODE:I LEVEL:0 LINE:25 "c:\cvavreval\inc\delay.h"
+NODE:V LEVEL:0 LINE:28 "i -> R4,R5"
+NODE:V LEVEL:0 LINE:29 "pre -> R7"
+NODE:V LEVEL:0 LINE:29 "cur -> R6"
+NODE:F LEVEL:0 LINE:35 "main(void)"
+NODE:F LEVEL:0 LINE:133 "turnright(void)"
+NODE:F LEVEL:0 LINE:147 "turnleft(void)"
+NODE:F LEVEL:0 LINE:161 "straight(void)"
+NODE:F LEVEL:0 LINE:176 "back(void)"

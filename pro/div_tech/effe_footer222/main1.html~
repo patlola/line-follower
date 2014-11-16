@@ -1,0 +1,416 @@
+<!doctype html>
+<html>
+<head>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.isotope.min.js"></script>
+<script src="js/jquery.ba-hashchange.js"></script>
+<script src="js/jquery.proximity.js"></script>
+<title>Home-Effervescence</title>
+<link href="css/footer.css" rel="stylesheet">
+
+<link href="css/style.css" rel="stylesheet">
+<link href="css/headerstyle.css" rel="stylesheet">
+<link href="css/footerstyle.css" rel="stylesheet">
+<link href="css/isotope.css" rel="stylesheet" />
+
+<link rel="stylesheet" type="text/css" href="css/substyle.css" />
+
+<link href="css/proxycss/demo.css" rel="stylesheet" />
+<link href="css/proxycss/style1.css" rel="stylesheet" />
+
+
+ <script>
+/*                  Ready Function                                                                      */
+
+    $(window).load(function () {
+      
+      var $container = $('#container');
+      var currentSelect="Universe";
+      $('.down').toggleClass("down",false);
+      $("#selectEventBox").toggleClass("down");
+
+      $container.isotope({
+        itemSelector: '.EventBox',
+        getSortData : {
+          eventname : function( $elem ) {
+            return $elem.find('.eventname').text();
+          },
+          date : function( $elem ) {
+            return parseInt( $elem.find('.date').text(), 10 );
+          },
+          eventtype : function( $elem ) {
+            return $elem.attr('event-type');          }
+         
+        }
+
+   });
+
+      function subMenuChange(selector) {
+      	var idSelect="#select";
+      	
+      	var selectName;
+        if(selector==="")
+        	selector="#EventBox";
+        selector=selector.substring(1,selector.length);
+        idSelect=idSelect+selector;
+        $('.down').toggleClass("down",false);
+        $(idSelect).toggleClass("down");
+      	selectName=selector;
+      	selector="."+selector+",.BoxPerm";
+      	$container.isotope({ filter:selector  });
+      //	alert(selector);
+      	$('#filterEvent input[type="checkbox"]').each(function() {
+       		    var temp=$(this).attr("name");
+       		    if(temp===selectName)
+       		    {
+       		    	$(this).attr("checked",true);
+
+       		    }
+       		    else
+       		    {
+       		    	$(this).attr("checked",false);
+
+       		    }
+       		    if(selectName==="EventBox")
+       		    $(this).attr("disabled",false);
+       			else
+       		    $(this).attr("disabled",true);
+       	});
+
+       $('#filterDay input[type="checkbox"]').each(function() {
+         $(this).attr("checked",false);
+       });
+
+     };
+
+
+       //Events Submenu Effect
+
+      $('a.iconContainer').click(function(){
+        
+      	var selector = $(this).attr('href');
+      	subMenuChange(selector);
+     
+     });
+
+         //Customized Filter 
+       $('.checkFilter').change(function(){
+      		
+      		var valsEvent = [];
+      		var valsDay = [];
+     		$('#filterEvent :checked').each(function() {
+       		valsEvent.push($(this).val());
+     	});
+     		$('#filterDay :checked').each(function() {
+       		valsDay.push($(this).val());
+     	});
+     		if(valsEvent.length===0)
+     		{
+     			$('#filterEvent input[type="checkbox"]').each(function() {
+       		    valsEvent.push($(this).val());
+       		});
+
+     		}
+
+
+     			if(valsDay.length===0)
+     		{
+     			$('#filterDay input[type="checkbox"]').each(function() {
+       		    valsDay.push($(this).val());
+       		});
+     			
+     			
+     		}
+
+
+
+     		var selector=".BoxPerm";
+     		for(var i in valsEvent)
+     		{
+     			for(var j in valsDay)
+     			{
+     				selector=selector+","+"."+valsEvent[i]+"."+valsDay[j];
+     			}
+     		}
+     		$container.isotope({ filter:selector });
+     		
+      });
+
+       /*  Enabling all Selections in Customized Search...Using Click on Change Settings*/
+
+       $("#changeSelection").click(function(){
+       	$('#filterEvent input[type="checkbox"]').each(function() {
+       		    $(this).attr("disabled",false);
+       	});
+        $('.down').toggleClass("down",false);
+        $("#selectEventBox").toggleClass("down");
+
+       });
+
+      
+
+     //Hash Change
+  	$(window).hashchange( function(){
+    var hash = location.hash;
+    subMenuChange(hash);
+  	})
+
+  	$(window).hashchange();
+      
+    });
+	
+  </script>
+
+</head>
+
+<body >
+<div id="fb-root"></div>
+ <?php
+ $cache_expire = 60*60*24*365;
+ header("Pragma: public");
+ header("Cache-Control: max-age=".$cache_expire);
+ header('Expires: ' . gmdate('D, d M Y H:i:s', time()+$cache_expire) . ' GMT');
+ ?>
+ <script src="/connect.facebook.net/en_US/all.js"></script>
+
+<div class="header-top"></div>
+			
+	    <header role="banner" class="clearfix body">
+				
+		    <h1 id="or-logo"><a href="http://oliverrussell.com/">Oliver Russell</a></h1>
+			
+		    <!-- darker colors above the nav -->
+		    <ul class="color-bar">
+			    <li class="dark-red"></li>
+			    <li class="dark-yellow"></li>
+			    <li class="dark-blue"></li>
+			    <li class="dark-orange"></li>
+			    <li class="dark-purple"></li>
+		    </ul>
+		
+		    <nav>
+			    <ul>
+				    <li id="think" class="red"><a href="#">Think</a></li>
+				    <li id="about" class="yellow"><a href="index.html">About</a></li>
+				    <li id="work" class="blue"><a href="gallery1.html">Work</a></li>
+				    <li id="hello" class="orange"><a href="webm/pro.html">Hello</a></li>
+				    <li id="GG" class="purple"><a href="About_us.html">Hello</a></li>
+			    </ul>
+		    </nav>
+	    </header>			
+			
+			
+<div id = "main1" style="width:95%;margin:0px auto;text-align:center;">
+
+	
+	<div id="proxy" style="margin-left:10%;">
+		<section class="pe-container">
+				<ul id="pe-thumbs" class="pe-thumbs">
+					<li><a href=""> <img src="images/proxy/color/1a.jpg" /> </a> </li>
+					<li><a href=""><img src="images/proxy/color/2a.jpg" /> </a></li>
+					<li><a href=""><img src="images/proxy/color/3a.jpg" /> </a></li>
+					<li><a href=""><img src="images/proxy/color/4a.jpg" style="rotate:90;"/></a> </li>
+			 		<li><a href=""><img src="images/proxy/color/5a.jpg" /> </a></li>
+					<li><a href=""><img src="images/proxy/color/6a.jpg" /> </a></li>
+					<li><a href=""><img src="images/proxy/color/7a.jpg" /> </a></li>
+					<li><a href=""><img src="images/proxy/color/8a.jpg" /> </a></li>
+					<li><a href=""><img src="images/proxy/color/9a.jpg" /> </a></li>
+					<li><a href=""><img src="images/proxy/color/10a.jpg" /> </a></li>
+					<li><a href=""><img src="images/proxy/color/11a.jpg" /> </a></li>
+					<li><a href=""><img src="images/proxy/color/12a.jpg" /> </a></li>
+					<li><a href=""><img src="images/proxy/color/13a.jpg" /> </a></li>
+					<li><a href=""><img src="images/proxy/color/14a.jpg" /> </a></li>
+					<li><a href=""><img src="images/proxy/color/15a.jpg" /> </a></li>
+					<li><a href=""><img src="images/proxy/color/16a.jpg" /> </a></li>
+					<li><a href=""><img src="images/proxy/color/17a.jpg" /> </a></li>
+					<li><a href=""><img src="images/proxy/color/18a.jpg" /> </a></li>
+					<li><a href=""><img src="images/proxy/color/19a.jpg" /> </a></li>
+					<li><a href=""><img src="images/proxy/color/20a.jpg" /> </a></li>
+					<li><a href=""><img src="images/proxy/color/21a.jpg" /> </a></li>
+					<li><a href=""><img src="images/proxy/color/22a.jpg" /> </a></li>
+					<li><a href=""><img src="images/proxy/color/23a.jpg" /> </a></li>
+					<li><a href=""><img src="images/proxy/color/24a.jpg" /> </a></li>
+					<li><a href=""><img src="images/proxy/color/25a.jpg" /> </a></li>
+					<li><a href=""><img src="images/proxy/color/26a.jpg" /> </a></li>
+					<li><a href=""><img src="images/proxy/color/27a.jpg" /> </a></li>
+					<li><a href=""><img src="images/proxy/color/28a.jpg" /> </a></li>
+					<li><a href=""><img src="images/proxy/color/29a.jpg" /> </a></li>
+					<li><a href=""><img src="images/proxy/color/30a.jpg" /> </a></li>
+					<li><a href=""><img src="images/proxy/color/31a.jpg" /> </a></li>
+					<li><a href=""><img src="images/proxy/color/32a.jpg" /> </a></li>
+					<li><a href=""><img src="images/proxy/color/33a.jpg" /> </a></li>
+					<li><a href=""><img src="images/proxy/color/34a.jpg" /> </a></li>
+					<li><a href=""><img src="images/proxy/color/35a.jpg" /> </a></li>
+					<li><a href=""><img src="images/proxy/color/36a.jpg" /> </a></li>
+				</ul>
+			</section>
+				
+			<script type="text/javascript">
+			$(function() {
+				
+				var Photo	= (function() {
+						
+						// list of thumbs
+					var $list		= $('#pe-thumbs'),
+						// the images
+						$elems		= $list.find('img'),
+						// maxScale : maximum scale value the image will have
+						// minOpacity / maxOpacity : minimum (set in the CSS) and maximum values for the image's opacity
+						settings	= {
+							maxScale	: 1.4,
+							maxOpacity	: 0.9,
+							minOpacity	: Number( $elems.css('opacity') )
+						},
+						init		= function() {
+							
+							// minScale will be set in the CSS
+							settings.minScale = _getScaleVal() || 1;
+							_initEvents();
+						
+						},
+						// Get Value of CSS Scale through JavaScript:
+						// http://css-tricks.com/get-value-of-css-rotation-through-javascript/
+						_getScaleVal= function() {
+						
+							var st = window.getComputedStyle($elems.get(0), null),
+								tr = st.getPropertyValue("-webkit-transform") ||
+									 st.getPropertyValue("-moz-transform") ||
+									 st.getPropertyValue("-ms-transform") ||
+									 st.getPropertyValue("-o-transform") ||
+									 st.getPropertyValue("transform") ||
+									 "fail...";
+
+							if( tr !== 'none' ) {	 
+
+								var values = tr.split('(')[1].split(')')[0].split(','),
+									a = values[0],
+									b = values[1],
+									c = values[2],
+									d = values[3];
+
+								return Math.sqrt( a * a + b * b );
+							
+							}
+							
+						},
+						_initEvents	= function() {
+							
+							// the proximity event
+							$elems.on('proximity.Photo', { max: 80, throttle: 10, fireOutOfBounds : true }, function( event, proximity, distance ) {
+								
+								var $el			= $(this),
+									$li			= $el.closest('li'),
+									scaleVal	= proximity * ( settings.maxScale - settings.minScale ) + settings.minScale,
+									scaleExp	= 'scale(' + scaleVal + ')';
+								
+								// change the z-index of the element once it reaches the maximum scale value
+								( scaleVal === settings.maxScale ) ? $li.css( 'z-index', 1000 ) : $li.css( 'z-index', 1 );
+								
+								$el.css({
+									'-webkit-transform'	: scaleExp,
+									'-moz-transform'	: scaleExp,
+									'-o-transform'		: scaleExp,
+									'-ms-transform'		: scaleExp,
+									'transform'			: scaleExp,
+									'opacity'			: ( proximity * ( settings.maxOpacity - settings.minOpacity ) + settings.minOpacity )
+								});
+
+							});
+						
+						}
+					
+					return {
+						init	: init
+					};
+				
+				})();
+				
+				Photo.init();
+				
+			});
+		</script>
+			
+	</div>
+	<!--
+	<div class="fb-like-box" data-href="http://www.facebook.com/platform" data-width="292" data-height="430" data-show-faces="true" data-border-color="430" data-stream="true" data-header="true"></div>-->
+	
+<!--	<div id="likebox" >-->
+<!--		<br />-->
+<!--		<iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Feffervescence.iiita&amp;width=292&amp;height=430&amp;colorscheme=light&amp;show_faces=false&amp;border_color=968B7C&amp;stream=true&amp;header=false&amp;appId=205028792867428" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:292px; height:430px;" allowTransparency="true"></iframe>-->
+<!--	</div>-->
+</div>
+
+<div class="clearfix"></div>
+<a name="section-footer" id="section-footer"></a>
+<div id="footer-wrapper">
+	<br />
+	
+	<footer role="contentinfo" class="clearfix body" >
+	<div id="footer-con-wrapper" >
+            
+        <div id = "footer-events" class="footer-contents" >
+			<ul>
+					<li><h3>Events</h3></li>
+			
+					<li><a href="#" >Cultural Events</a></li>
+					<li><a href="#" >Technical Events</a></li>
+					<li><a href="#" >Informal Events</a></li>
+					<li><a href="#" >Literary Events</a></li>
+			</ul>
+                </div>
+                
+                <div id = "footer-workshop" class="footer-contents">
+                        <ul>
+                        <li><h3>Downloads</h3></li>
+                        
+                                <li><a href="#" >Event Brochure</a></li>
+                                <li><a href="#" >Event Schedule</a></li>
+                                <li><a href="#" >Sponsership Brochure</a></li>
+                                <li><a href="#" >Effervescence Teaser</a></li>
+                        </ul>
+                </div>
+                
+                <div id = "footer-downloads" class="footer-contents">
+                        <ul>
+                        <li><h3>Workshops</h3></li>
+                        
+                                <li><a href="#" >Robotics</a></li>
+                                <li><a href="#" >Android Development</a></li>
+                                <li><a href="#" >Hacking</a></li>
+                                <li><a href="#" >Literary Events</a></li>
+                        </ul>
+                </div>
+                
+                <div id = "footer-social" class="footer-contents">
+                        <ul>
+                        <li><h3>Follow Us</h3></li>
+                        
+                                <li><a href="#" id="fbicon" ><img src="images/fb.png" /></a>
+                                    <a href="#" id="twittericon"><img src="images/twitter.png" /><br></a>
+                                </li>
+                                
+                                <li><a href="#" >Contact Us</a></li>
+                                <li><a href="#" >About Us</a></li>
+                        </ul>
+                </div>
+                
+            
+            
+            <div class="clearfix"></div>
+            </div>
+            <br><br>
+    <div class="clearfix"></div>
+    <ul class="color-bar">
+      <li class="dark-red"></li>
+      <li class="dark-yellow"></li>
+      <li class="dark-blue"></li>
+      <li class="dark-orange"></li>
+	  <li class="dark-purple"></li>
+    </ul>
+  </footer>
+  <div class="footer-bottom"></div>
+</div>
+	</body>
+	</html>
+	

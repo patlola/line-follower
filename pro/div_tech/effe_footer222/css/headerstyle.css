@@ -1,0 +1,166 @@
+body { 
+	margin : 0 auto;
+	padding : 0px;
+	width : 100%;
+	font : 100%/1.4 Helvetica, Arial, sans-serif;
+	color : #968b7c; 
+	background-color : transparent;
+}
+
+
+
+#header-wrapper {
+	width:100%;
+}
+
+.header-top {
+	width:100%;
+	height:20px;
+	background-color: #968b7c;
+}
+
+header[role="banner"] h1#or-logo {
+	float: left;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	width:30%;
+	height:140px;
+	background: url(../images/or-logo-small.png) no-repeat;
+	background-position: bottom center;
+}
+
+header[role="banner"] h1#or-logo:hover {
+	opacity: 0.8;
+	-moz-opacity: 0.8;
+	filter:alpha(opacity=80);
+}
+
+header[role="banner"] h1#or-logo a {
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
+	width: 97px;
+	height: 139px;
+	margin-top: 41px;
+	text-indent: -999em;
+	outline: none;
+}
+
+/** HEADER NAVIGATION */
+header[role="banner"] nav {
+	display: block;
+	float: right;
+	width: 60%;
+/*	margin-left: -1px;*/
+	height: 150px;
+}
+
+header[role="banner"] nav ul {
+	display: block;
+	background-color: #ff9000;
+	margin: 0px; 
+	padding: 0px;
+	height: 160px;
+}
+
+header[role="banner"] ul li {
+	float: left;
+	width: 20%;
+	height: 160px;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	list-style-type: none;
+}
+
+header[role="banner"] ul li a {
+	display: block;
+	height: 160px;
+	text-indent: -999em;
+	outline: none;
+	background-color: #ffffff;
+	
+	/* set opacity of the anchor tage to 0 so we can fade it up on hover*/
+	opacity: 0;
+	-moz-opacity: 0;
+	filter:alpha(opacity=0);
+	
+}
+
+header[role="banner"] ul li a:hover {
+	opacity: .2;
+	-moz-opacity: .2;
+	filter:alpha(opacity=1.2);
+}
+
+
+header[role="banner"] ul li#work  { background-image: url(../images/nav-3-small.jpg);}
+header[role="banner"] ul li#think { background-image: url(../images/nav-1-small.jpg);}
+header[role="banner"] ul li#about { background-image: url(../images/nav-2-small.jpg);}
+header[role="banner"] ul li#hello { background-image: url(../images/nav-4-small.jpg);}
+header[role="banner"] ul li#GG      { background-image: url(../images/nav-5-small.jpg);}
+	
+
+@media only screen and (min-width: 768px) {
+	header[role="banner"] ul li#work   { background-image: url(../images/nav-3.jpg);}
+	header[role="banner"] ul li#think { background-image: url(../images/nav-1.jpg);}
+	header[role="banner"] ul li#about { background-image: url(../images/nav-2.jpg);}
+	header[role="banner"] ul li#hello { background-image: url(../images/nav-4.jpg);}
+	header[role="banner"] ul li#GG      { background-image: url(../images/nav-5.jpg);}
+}	
+	
+.clearfix { 
+	zoom : 1;
+}
+
+.clearfix:before, 
+.clearfix:after { 
+	content : "\0020"; 
+	display : block; 
+	height : 0; 
+	overflow : hidden;
+}
+
+.clearfix:after { 
+	clear : both;
+}
+
+.body {
+	clear: both;
+	margin: 0 auto;
+	max-width: 960px;
+}
+
+.dark-red    { background-color: #c65204; }
+.dark-yellow { background-color: #e69900; }
+.dark-blue   { background-color: #63afa1; }
+.dark-orange { background-color: #e68000; }
+.dark-purple { background-color: #604c90; }
+
+
+.red, .category-likes     { background-color: #E35E01; }
+.yellow, .category-fresh  { background-color: #FFAC00 }
+.blue, .category-ideas    { background-color: #64C4B8; }
+.orange, .category-news   { background-color: #ff9000; }
+.purple, .category-news   { background-color: #8165c5; }
+
+ul.color-bar {
+	float: right;
+	width: 60%;
+	display: block;
+	background-color: #e68000;
+	margin: 0px; 
+	padding: 0px;
+	height: 20px;
+	margin-top: -20px;
+	list-style-type: none;
+}
+
+ul.color-bar li {
+	float: left;
+	width: 25%;
+	height: 20px;
+	text-indent: -999em;
+	outline: none;
+}

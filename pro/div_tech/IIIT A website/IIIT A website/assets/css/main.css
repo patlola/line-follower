@@ -1,0 +1,177 @@
+html, body{
+  margin:0;
+  padding:0;
+}
+/* Header */
+
+#header {
+  width: auto;
+  height: 100px;
+  background:#2966B8;
+  padding:5px;
+  
+}
+
+#hContent {
+  width:900px;
+  margin:auto;
+ 
+}
+
+#topNav {
+  width:200px;
+  float:right;
+  text-align:right;
+  color:white;
+  background: rgba(255,255,255,0.25);
+  padding: 0 7px 0 7px ;
+}
+
+#logo {
+  color:white;
+  float:left;
+  width:700px;
+  text-align:center;
+}
+/* Header Ends  */
+
+/* Search Related */
+#search {
+  float:left;
+  margin-top:10px;
+  width:190px;
+}
+
+.searchBox {
+  width:120px;
+  padding: 0px 3px;
+  height:15px;
+}
+
+#search input[type=text], input[type=text]:hover;{
+	color:#0f0f0f;
+	font-style: italic;
+	border:0;
+	
+}
+
+#search input[type=submit], input[type=submit]:hover {
+  position:relative;
+  left:-5px;
+  background:#ffffff;
+  color:#000000;
+  padding:0 1px;
+  border: 0;
+}
+
+#search input[type=submit]:hover {
+  background:#000000;
+   color:#ffffff;
+  }
+/* Search Related Ends*/
+
+/* Drop Down menu */
+
+#dropdown {
+  
+  width:940px;
+ 
+}
+
+ul {
+			margin:0;
+			padding:0;
+			list-style-type:none;
+			min-width:200px;
+		}
+ 
+ul#navigation {
+			float:left;
+			margin-left: 21px;
+		}
+ 
+ul#navigation li{
+			float:left;
+			border:0px black solid;
+			min-width:150px;
+			background :rgba(41,102,184, 0.25);
+		
+		}
+	ul#navigation li:hover{
+	  	background :rgba(41,102,184, 0.5);
+	    
+	}
+ 
+ul.sub_navigation {
+			position:absolute;
+			display:none;
+		}
+
+ul.sub_navigation li {
+			clear:both;
+		}
+
+a,a:active,a:visited , a:link{
+			display:block;
+			padding:10px;
+			text-decoration:none;
+			color:white;
+		}
+		
+/*Drop down ends*/
+/*Main content area*/
+
+#container {
+  width: 940px;
+  margin: auto;
+ 
+}
+
+#secA
+{
+ 
+  background:#8EB4E6;
+  text-align: center;
+  
+  
+}
+#slideShow
+{
+  width:700px;
+  height:300px;
+  background:gray;
+  
+}
+.updates {
+  float:right;
+  width:500px;
+  margin-right:40px;
+  margin-top:30px;
+}
+
+/* End main content area */
+
+/* Footer */
+
+#footer {
+  width: auto;
+  height: 100px;
+  background:#2966B8;
+  padding:5px;
+  
+}
+
+/* End Footer */
+.rounded {
+  border-radius:10px ;
+  -webkit-border-radius: 10px ;
+  -moz-border-radius: 10px ;
+}
+
+.jobs-stories a {
+	color: blue;
+}
+
+.jobs-stories a:hover{
+	color: gray;
+}

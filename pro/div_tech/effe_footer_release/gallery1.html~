@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>Gallery</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="CSS3 Lightbox - A CSS-only lightbox" />
+        <meta name="keywords" content="css3, lightbox, overlay, effect, images, thumbnails, navigate" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/light/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/light/style3.css" />
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.isotope.min.js"></script>
+        <script src="js/jquery.ba-hashchange.js"></script>
+        <script src="js/jquery.proximity.js"></script>
+
+        <link href="css/footer.css" rel="stylesheet">
+
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/headerstyle.css" rel="stylesheet">
+        <link href="css/footerstyle.css" rel="stylesheet">
+        <link href="css/isotope.css" rel="stylesheet" />
+
+        <link rel="stylesheet" type="text/css" href="css/substyle.css" />
+
+        <link href="css/proxycss/demo.css" rel="stylesheet" />
+        <style> 
+                .container {
+                        margin-top:50px;
+                }
+                #footer-wrapper{
+                        margin-top:50px;
+                }
+        </style>
+    </head>
+    <body id="page">
+<div class="header-top"></div>
+			
+	    <header role="banner" class="clearfix body">
+				
+		    <h1 id="or-logo"><a href="http://oliverrussell.com/">Oliver Russell</a></h1>
+			
+		    <!-- darker colors above the nav -->
+		    <ul class="color-bar">
+			    <li class="dark-red"></li>
+			    <li class="dark-yellow"></li>
+			    <li class="dark-blue"></li>
+			    <li class="dark-orange"></li>
+			    <li class="dark-purple"></li>
+		    </ul>
+		
+		    <nav>
+			    <ul>
+				    <li id="think" class="red"><a href="main1.html">Think</a></li>
+				    <li id="about" class="yellow"><a href="index.html">About</a></li>
+				    <li id="work" class="blue"><a href="#">Work</a></li>
+				    <li id="hello" class="orange"><a href="webm/pro.html">Hello</a></li>
+				    <li id="GG" class="purple"><a href="About_us.html">Hello</a></li>
+			    </ul>
+		    </nav>
+	    </header>			
+
+        <div class="container">
+        <h2 style="position:relative;left:-50px;font-weight:bold; font-size:24px; margin:auto; display:inline-block;">Gallery</h2><br /><br />
+	
+    		<section>
+    		          
+			<ul class="lb-album">
+				<li>
+					<a href="#image-1">
+						<img src="images/thumbs/1.jpg" alt="image01">
+						<span>Footloose</span>
+					</a>
+					<div class="lb-overlay" id="image-1">
+						<img src="images/full/1.jpg" alt="image01" />
+						<div>
+							<h3>Footloose <span>/point/</h3>
+							<p>Dance performed in a group</p>
+							<a href="#image-10" class="lb-prev">Prev</a>
+							<a href="#image-2" class="lb-next">Next</a>
+						</div>
+						<a href="#page" class="lb-close">x Close</a>
+					</div>
+				</li>
+				<li>
+					<a href="#image-2">
+						<img src="images/thumbs/2.jpg" alt="image02">
+						<span>Penalty Shoot</span>
+					</a>
+					<div class="lb-overlay" id="image-2">
+						<img src="images/full/2.jpg" alt="image02" />
+						<div>							
+							<h3>Penalty Shootout<span>/ˌpôr də ˈbrä/</h3>
+							<p>Why cant robots have fun</p>
+							<a href="#image-1" class="lb-prev">Prev</a>
+							<a href="#image-3" class="lb-next">Next</a>
+						</div>
+						<a href="#page" class="lb-close">x Close</a>
+					</div>
+				</li>
+				<li>
+					<a href="#image-3">
+						<img src="images/thumbs/3.jpg" alt="image03">
+						<span>Robo Race</span>
+					</a>
+					<div class="lb-overlay" id="image-3">
+						<img src="images/full/3.jpg" alt="image03" />
+						<div>							
+							<h3>Robo Race <span>/plēˈā/</h3>
+							<p>Robots competing in the ultimate showdown</p>
+							<a href="#image-2" class="lb-prev">Prev</a>
+							<a href="#image-4" class="lb-next">Next</a>
+						</div>
+						<a href="#page" class="lb-close">x Close</a>
+					</div>
+				</li>
+				<li>
+					<a href="#image-4">
+						<img src="images/thumbs/4.jpg" alt="image04">
+						<span>Incendiary</span>
+					</a>
+					<div class="lb-overlay" id="image-4">
+						<img src="images/full/4.jpg" alt="image04" />
+						<div>							
+							<h3>Incendiary<span>/əˈdäjō/</h3>
+							<p>A movement or composition marked to be played adagio</p>
+							<a href="#image-3" class="lb-prev">Prev</a>
+							<a href="#image-5" class="lb-next">Next</a>
+						</div>
+						<a href="#page" class="lb-close">x Close</a>
+					</div>
+				</li>
+				<li>
+					<a href="#image-5">
+						<img src="images/thumbs/5.jpg" alt="image05">
+						<span>Star Night</span>
+					</a>
+					<div class="lb-overlay" id="image-5">
+						<img src="images/full/5.jpg" alt="image05" />
+						<div>							
+							<h3>Star Night<span>/fraˈpā/</h3>
+							<p>Meet the star of your dreams!</p>
+							<a href="#image-4" class="lb-prev">Prev</a>
+							<a href="#image-6" class="lb-next">Next</a>
+						</div>
+						<a href="#page" class="lb-close">x Close</a>
+					</div>
+				</li>
+				<li>
+					<a href="#image-6">
+						<img src="images/thumbs/6.jpg" alt="image06">
+						<span>Collage</span>
+					</a>
+					<div class="lb-overlay" id="image-6">
+						<img src="images/full/6.jpg" alt="image06" />
+						<div>							
+							<h3>Collage <span>/gliˈsäd/</h3>
+							<p>Collage making Competition</p>
+							<a href="#image-5" class="lb-prev">Prev</a>
+							<a href="#image-7" class="lb-next">Next</a>
+						</div>
+						<a href="#page" class="lb-close">x Close</a>
+					</div>
+				</li>
+				<li>
+					<a href="#image-7">
+						<img src="images/thumbs/7.jpg" alt="image07">
+						<span>Rock Night</span>
+					</a>
+					<div class="lb-overlay" id="image-7">
+						<img src="images/full/7.jpg" alt="image07" />
+						<div>							
+							<h3>Rock Night<span>/zhə-ˈtā/</h3>
+							<p>Rock Out</p>
+							<a href="#image-6" class="lb-prev">Prev</a>
+							<a href="#image-8" class="lb-next">Next</a>
+						</div>
+						<a href="#page" class="lb-close">x Close</a>
+					</div>
+				</li>
+				<li>
+					<a href="#image-8">
+						<img src="images/thumbs/8.jpg" alt="image08">
+						<span>Melodieux</span>
+					</a>
+					<div class="lb-overlay" id="image-8">
+						<img src="images/full/8.jpg" alt="image08" />
+						<div>							
+							<h3>Melodieux<span>/pēˈkā/</h3>
+							<p>Melodies flowing</p>
+							<a href="#image-7" class="lb-prev">Prev</a>
+							<a href="#image-9" class="lb-next">Next</a>
+						</div>
+						<a href="#page" class="lb-close">x Close</a>
+					</div>
+				</li>
+				<li>
+					<a href="#image-9">
+						<img src="images/thumbs/9.jpg" alt="image09">
+						<span>Arabesque</span>
+					</a>
+					<div class="lb-overlay" id="image-9">
+						<img src="images/full/9.jpg" alt="image09" />
+						<div>							
+							<h3>ar·a·besque <span>/ˌarəˈbesk/</h3>
+							<p>Position of the body supported on one leg, with the other leg extended behind the body with the knee straight</p>
+							<a href="#image-8" class="lb-prev">Prev</a>
+							<a href="#image-10" class="lb-next">Next</a>
+						</div>
+						<a href="#page" class="lb-close">x Close</a>
+					</div>
+				</li>
+				<li>
+					<a href="#image-10">
+						<img src="images/thumbs/10.jpg" alt="image10">
+						<span>Ballerina</span>
+					</a>
+					<div class="lb-overlay" id="image-10">
+						<img src="images/full/10.jpg" alt="image10" />
+						<div>							
+							<h3>bal·le·ri·na <span>/ˌbaləˈrēnə/</h3>
+							<p>A female ballet dancer</p>
+							<a href="#image-9" class="lb-prev">Prev</a>
+							<a href="#image-1" class="lb-next">Next</a>
+						</div>
+						<a href="#page" class="lb-close">x Close</a>
+					</div>
+				</li>
+			</ul>
+		</section>
+	
+        </div><br><br>
+      
+        <div class="clearfix"></div>
+        <a name="section-footer" id="section-footer"></a>
+<div id="footer-wrapper">
+	<br />
+	
+	<footer role="contentinfo" class="clearfix body" >
+	<div id="footer-con-wrapper" >
+            
+        <div id = "footer-events" class="footer-contents" >
+			<ul>
+					<li><h3>Events</h3></li>
+			
+					<li><a href="#" >Cultural Events</a></li>
+					<li><a href="#" >Technical Events</a></li>
+					<li><a href="#" >Informal Events</a></li>
+					<li><a href="#" >Literary Events</a></li>
+			</ul>
+                </div>
+                
+                <div id = "footer-workshop" class="footer-contents">
+                        <ul>
+                        <li><h3>Downloads</h3></li>
+                        
+                                <li><a href="#" >Event Brochure</a></li>
+                                <li><a href="#" >Event Schedule</a></li>
+                                <li><a href="#" >Sponsership Brochure</a></li>
+                                <li><a href="#" >Effervescence Teaser</a></li>
+                        </ul>
+                </div>
+                
+                <div id = "footer-downloads" class="footer-contents">
+                        <ul>
+                        <li><h3>Workshops</h3></li>
+                        
+                                <li><a href="#" >Robotics</a></li>
+                                <li><a href="#" >Android Development</a></li>
+                                <li><a href="#" >Hacking</a></li>
+                                <li><a href="#" >Literary Events</a></li>
+                        </ul>
+                </div>
+                
+                <div id = "footer-social" class="footer-contents">
+                        <ul>
+                        <li><h3>Follow Us</h3></li>
+                        
+                                <li><a href="#" id="fbicon" ><img src="images/fb.png" /></a>
+                                    <a href="#" id="twittericon"><img src="images/twitter.png" /><br></a>
+                                </li>
+                                
+                                <li><a href="#" >Contact Us</a></li>
+                                <li><a href="#" >About Us</a></li>
+                        </ul>
+                </div>
+                
+            
+            
+            <div class="clearfix"></div>
+            </div>
+            <br><br>
+    <div class="clearfix"></div>
+    <ul class="color-bar">
+      <li class="dark-red"></li>
+      <li class="dark-yellow"></li>
+      <li class="dark-blue"></li>
+      <li class="dark-orange"></li>
+	  <li class="dark-purple"></li>
+    </ul>
+  </footer>
+  <div class="footer-bottom"></div>
+</div>
+    </body>
+</html>

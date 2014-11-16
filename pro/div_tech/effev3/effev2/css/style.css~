@@ -1,0 +1,60 @@
+body
+{
+  background-image:url("../images/01.jpg");
+   background-repeat: no-repeat;
+   background-size:100%;
+}
+h2{
+	font-size:20px;
+}
+.EventBox{
+	margin:5px 5px 5px 5px;
+	position: relative;
+	width: 192px;
+	overflow: hidden;
+	padding: 15px 15px 15px;
+	font-size: 11px;
+	background-color: white;
+	box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+	-moz-box-shadow: 0 1px 2px rgba(34,25,25,0.4);
+	-webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+}
+
+.EventBox a:hover
+{
+  text-decoration:underline;
+}
+
+#container{
+	position: relative;
+	top: 100px;
+	//float:center;
+	//display:inline;
+	height:100%;
+	//margin-top: 400px;
+}
+
+#main1{
+  width:80%;
+  margin:10px auto;
+
+  
+}
+
+.type,.date {
+  color:rgb(112,112,112);
+  font-family:verdana;
+  font-size:10px;
+  
+}
+
+body{
+  
+}
+
+.eventname {
+  font-family:"helvetica neue",arial,sans-serif;
+  color:rgb(112,112,112);
+  text-decoration:none;
+}
+

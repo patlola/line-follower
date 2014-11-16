@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+            <link rel="stylesheet" href="css/style.css" type="text/css" />
+            <link rel="stylesheet" href="css/self.css" type="text/css" />            
+            <script type="text/javascript">
+  
+    
+    
+  var stories_by_type = [
+    
+    
+    {
+      'id': 'college',
+      'name': 'IIIT - Allahabad',
+      'description': 'The Institute has been conceived with the ambitious objectives of developing professional expertise and skilled manpower. Ranked as one of the best institutes in the country, IIIT-A has proved to be a centre of excellence in Information Technology (IT).',
+      'stories': [
+        
+        {
+          'id': 'institute',
+          'name': 'The Institute',
+          'short_desc': '<a href="#">About Us</a><br><a href="#">Infrastructure</a><br><a href="#">Reaching iiita</a><br><a href="#">RTI</a>',
+          'order': '1',
+          'image': 1,
+          'content_type': 'Video',
+        },
+        
+        {
+          'id': 'academics',
+          'name': 'Academics',
+          'short_desc': '<a href="#">Board of Management</a><br><a href="#">Academic Council</a><br><a href="#">Finance Committee</a><br><a href="#">Building & Works Committee</a>',
+          'order': '2',
+          'image': 1,
+          'content_type': 'External Article',
+        },
+        
+        {
+          'id': 'student_life',
+          'name': 'Student Life',
+          'short_desc': '<a href="#">Fresher\'s Guide</a><br><a href="#">Photo Gallery</a><br><a href="#">Hostel Life</a><br><a href="#">Clubs</a>',
+          'order': '3',
+          'image': 1,
+          'content_type': 'External Article',
+        },
+        
+        {
+          'id': 'facilities',
+          'name': 'Facilities',
+          'short_desc': '<a href="#">Laboratories</a><br><a href="#">Sports Facilities</a><br><a href="#">Medical Facilities</a>',
+          'order': '4',
+          'image': 1,
+          'content_type': 'Video',
+        },
+        
+                
+        
+        
+        {
+          'id': 'placements',
+          'name': 'Placements',
+          'short_desc': '<a href="#">BTech</a><br><a href="#">MTech</a><br><a href="#">MBA</a><br><a href="#">MS</a>',
+          'order': '5',
+          'image': 1,
+          'content_type': 'External Article',
+        },
+        
+        {
+          'id': 'research',
+          'name': 'Research Labs',
+          'short_desc': '<a href="#">Student Projects</a><br><a href="#">Robotics</a><br><a href="#">Research Net</a><br><a href="#">SLIP Research Group</a>',
+          'order': '6',
+          'image': 1,
+          'content_type': 'Video',
+        },
+        {
+          'id': 'conclave',
+          'name': 'Science Conclave',
+          'short_desc': 'An interaction program of Nobel Laureates and other eminent Scientists with students and researchers during to inspire and motivate them towards careers in Basic Sciences....&nbsp;&nbsp;&nbsp;<a href="#">See More</a>',
+          'order': '7',
+          'image': 1,
+          'content_type': 'External Article',
+        }
+                
+        
+
+        
+      ]
+    
+    }
+    
+    
+  ];
+
+  var carousel_max = 3;
+  var current_top_story = 0;
+  var current_type_story = [];
+  
+  
+
+  function setTopStory(story) {
+    for (i=0; i<top_stories.length; i++) {
+      if (i == story - 1) {
+        document.getElementById('topstory' + i).className = 'jobs-topstory jobs-story-show';
+        document.getElementById('topstorypage' + i).className = 'maia-pagination-dot maia-pagination-active';
+      } else {
+        document.getElementById('topstory' + i).className = 'jobs-topstory jobs-story-hide';
+        document.getElementById('topstorypage' + i).className = 'maia-pagination-dot';
+      }
+    }
+    current_top_story = story;
+  }
+
+  function updateTopStory(delta) {
+    current_top_story += delta;
+    if (current_top_story > top_stories.length) {
+      current_top_story = 1;
+    }
+    if (current_top_story < 1) {
+      current_top_story = top_stories.length;
+    }
+    setTopStory(current_top_story);
+  }
+
+  function setStoryTypesCarousels(all) {
+    var story_types_carousels = document.getElementById('story-types');
+    var html = '';
+    for (i=0; i<stories_by_type.length; i++) {
+      var type = stories_by_type[i];
+      if (type['stories']) {
+        show = 0;
+        html += '<div class="jobs-stories">';
+        html += '  <div class="jobs-stories-desc">';
+        html += '    <h2><br><br>' + type['name'] + '</h2>';
+        html += '    ' + type['description'];
+        html += '  </div>';
+        html += '  <div class="jobs-stories-container" id="type' + i + '">';
+        current_type_story[i] = show;
+        if (all) {
+          max = type['stories'].length;
+        } else {
+          max = 3;
+        }
+        for (j=0; j<max; j++) {
+          var story = type['stories'][j];
+          count = j + 1;
+          if (count > carousel_max) {
+            html += '    <div class="jobs-story-hide" id="type' + i + 'story' + j + '">';
+          } else {
+            html += '    <div class="jobs-story-show" id="type' + i + 'story' + j + '">';
+          }
+          if (story['image']) {
+            html += '      <a href="' + story['id'] + '.html" data-g-event="Life at Google - Story Click" data-g-label="' + type['name'] + ' - ' + story['order'] + '" data-g-action="' + story['name'] + '"';
+            if (story['content_type'] == "Internal Article" ) html += ' class="jobs-story-ia"';
+            if (story['content_type'] == "External Article" ) html += ' class="jobs-story-ea"';      
+            if (story['content_type'] == "Video" ) html += ' class="jobs-story-vid"';
+            html += '><img src="imgs/img_' + story['id'] + '.jpg" alt=""/></a>';
+          }
+          html += '      <h3>' + story['name'] + '</h3>';
+          html += '      <p class="desc">' + story['short_desc'] + '</p>';
+         
+          html += '    </div>';
+        }
+        html += '  </div>';
+        if (type['stories'].length >= max) {
+          html += '    <div class="maia-pagination-nav jobs-pagination-stories">';
+          html += '      <ul>';
+          for (j=0; j<(type['stories'].length/carousel_max); j++) {
+            if (current_type_story[i] == j) {
+              html += '        <li><span class="maia-pagination-dot maia-pagination-active" onclick="setTypePage(' + i + ', ' + j + ');" id="type' + i + 'page' + j + '" style="-webkit-user-select: none;">Page 1</span></li>';
+            } else {
+              html += '        <li><span class="maia-pagination-dot" onclick="setTypePage(' + i + ', ' + j + ');" id="type' + i + 'page' + j + '" style="-webkit-user-select: none;">Page 1</span></li>';
+            }
+          }
+          html += '        <li><span class="maia-pagination-prev" onclick="updateTypePage(' + i + ', -1);" style="-webkit-user-select: none; ">Previous</span></li>';
+          html += '        <li><span class="maia-pagination-next" onclick="updateTypePage(' + i + ', 1);" style="-webkit-user-select: none; ">Next</span></li>';
+          html += '      </ul>';
+          html += '    </div>';
+        }
+        html += '  </div>';
+      }
+      html += '</div>';
+    }
+    story_types_carousels.innerHTML = html;
+  }
+
+  function setTypePage(type, page) {
+    for (i=0; i<stories_by_type[type]['stories'].length; i++) {
+      if (i >= (page * carousel_max) && i < ((page + 1) * carousel_max)) {
+        if (i == (page * carousel_max)) {
+          document.getElementById('type' + type + 'story' + i).className = 'jobs-story-show jobs-story-first';
+        } else {
+          document.getElementById('type' + type + 'story' + i).className = 'jobs-story-show';
+        }
+      } else {
+        document.getElementById('type' + type + 'story' + i).className = 'jobs-story-hide';
+      }
+    }
+    for (i=0; i<(stories_by_type[type]['stories'].length/carousel_max); i++) {
+      if (i == page) {
+        document.getElementById('type' + type + 'page' + i).className = 'maia-pagination-dot maia-pagination-active';
+      } else {
+        document.getElementById('type' + type + 'page' + i).className = 'maia-pagination-dot';
+      }
+    }
+    current_type_story[type] = page;
+  }
+
+  function updateTypePage(type, delta) {
+    current_type_story[type] += delta;
+    if (current_type_story[type] >= (stories_by_type[type]['stories'].length / carousel_max)) {
+      current_type_story[type] = 0;
+    }
+    if (current_type_story[type] < 0) {
+      current_type_story[type] = Math.ceil(stories_by_type[type]['stories'].length / carousel_max) - 1;
+    }
+    setTypePage(type, current_type_story[type]);
+  }
+</script>
+
+    </head>
+    <body onload="setStoryTypesCarousels(all=true);">
+    
+    <!--Author Divanshu garg -->
+    <!--Author Shubham Sharma -->
+    <div id="maia-main">
+        <div id="story-types">
+            <div class="jobs-stories">
+              <h2>Culture and Diversity</h2>
+              We’ve always wanted Google to be a place that brought together smart, talented people from a diversity of backgrounds, and where you could bring your whole self to work. Lots has been written about our great perks, but read on to find out what our culture is really all about.
+              
+              <p>
+                <a href="working-at-google.html" data-g-event="Life at Google - Story Click" data-g-label="Culture and Diversity - 1" data-g-action="Working at Google">Working at Google</a><br>
+                Our Googlers (past and present) tell all about why they love working here and what they love about the people they work with. You’ll also ...
+              </p>
+              
+              <p>
+                <a href="women-in-leadership.html" data-g-event="Life at Google - Story Click" data-g-label="Culture and Diversity - 2" data-g-action="Women in leadership at Google">Women in leadership at Google</a><br>
+                As Eileen Naughton put it, she didn’t want to miss this party. Women at Google lead major portions of the business, growing their careers and ...
+              </p>
+              
+              <p>
+                <a href="groups-at-google.html" data-g-event="Life at Google - Story Click" data-g-label="Culture and Diversity - 3" data-g-action="Groups are key to Google’s culture">Groups are key to Google’s culture</a><br>
+                You might have heard the term 'Googler,' but what about 'Gleegler' or 'Snowgler'? These are names of just a few of the many employee groups ...
+              </p>
+              
+              <p>
+                <a href="scale-changes-everything.html" data-g-event="Life at Google - Story Click" data-g-label="Culture and Diversity - 4" data-g-action="Google: Scale changes everything">Google: Scale changes everything</a><br>
+                Forbes digs into what it means to organize the world’s information to make it universally accessible and useful - and the enormous engineering challenges that ...
+              </p>
+              
+               <p>
+                <a href="missions-that-matter.html" data-g-event="Life at Google - Story Click" data-g-label="Culture and Diversity - 5" data-g-action="Missions that matter">Missions that matter</a><br>
+                What happens when you mix together entrepreneurial drive, resources, freedom and the urge to do the right thing? A perfect storm. In the Innovation issue ...
+              </p>
+              
+              <p>
+                <a href="tech-workshops.html" data-g-event="Life at Google - Story Click" data-g-label="Culture and Diversity - 6" data-g-action="Google replants its garage roots in tech workshops">Google replants its garage roots in tech workshops</a><br>
+                Our metal, wood, welding and electronics workshops are a one-of-a-kind benefit for our Googlers who like to tinker around. We gave the Associated Press a ...
+              </p>
+              
+              <p>
+                <a href="empoyee-networks.html" data-g-event="Life at Google - Story Click" data-g-label="Culture and Diversity - 7" data-g-action="Employee networks at Google">Employee networks at Google</a><br>
+                Diversity is a core part of our business and who we are. Watch this clip to learn about our Employee Resource Groups, how they bring ...
+              </p>
+              
+              <p>
+                <a href="best-place-2012.html" data-g-event="Life at Google - Story Click" data-g-label="Culture and Diversity - 8" data-g-action="Google named best place to work in America">Google named best place to work in America</a><br>
+                Fresh off the heels of our Great Place to Work win in 2012, this Mercury News article features some of the more unusual perks at ...
+              </p>
+              
+             </div>
+        </div>
+        </div>
+          <script type="text/javascript">setStoryTypesCarousels(all=false);</script>
+    </body>
+</html>

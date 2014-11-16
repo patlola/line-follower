@@ -1,0 +1,542 @@
+
+	<a href="#eAIPod" class="clickLb" >
+	<div class="EventBox Tech Day2 " popularity="1">
+<h2 class="eventname" >AI POD</h2>
+		<p class="type">Technical</p>
+		<p class="eventbox_desc">Smart Robotics Competition</p>
+		 
+		<img width="164px" src="images/11.jpg" />
+	</div>
+	</a>
+	
+<a href="#eECMarathon" class="clickLb" >
+	
+	<div class="EventBox Tech Day2 " popularity="1">
+<h2 class="eventname" >EC Marathon</h2>
+		<p class="type">Technical</p>
+		<p class="eventbox_desc">Circuit Designing Competition</p>
+		 
+		<img width="164px" src="images/12.jpg" />
+	</div>
+	</a>
+<a href="#eElectroManiac" class="clickLb" >
+	
+	<div class="EventBox Tech Day3 " popularity="1">
+<h2 class="eventname" >Electro-Maniac</h2>
+		<p class="type">Technical</p>
+		<p class="eventbox_desc">Instant Circuit Designing Competition</p>
+		 
+		<img width="164px" src="images/13.jpg" />
+	</div>
+	</a>
+<a href="#eMagnumOpus" class="clickLb" >
+	
+	<div class="EventBox Tech Day4 " popularity="1">
+<h2 class="eventname" >Magnum Opus</h2>
+
+		<p class="type">Technical</p>
+		<p class="eventbox_desc">Software Exibition Competition</p>
+		 
+		<img width="164px" src="images/14.jpg" />
+	</div>
+	</a>
+<a href="#ePenaltyShootout" class="clickLb" >
+	
+	<div class="EventBox Tech Day5 " popularity="1">
+<h2 class="eventname" >Penalty Shootout</h2>
+		<p class="type">Technical</p>
+		<p class="eventbox_desc">Robo Soccer</p>
+		 
+		<img width="164px" src="images/15.jpg" />
+	</div>
+	</a>	
+	<a href="#eRoborace" class="clickLb" >
+	
+	<div class="EventBox Tech Day1 " popularity="1">
+<h2 class="eventname" >Roborace</h2>
+		<p class="type">Technical</p>
+		<p class="eventbox_desc">Robotics Challange</p>
+		 
+		<img width="164px" src="images/16.jpg" />
+	</div>
+	</a>
+	
+	<a href="#eTechnofault" class="clickLb" >
+	
+	<div class="EventBox Tech Day2 " popularity="1">
+<h2 class="eventname" >Technofault</h2>
+		<p class="type">Technical</p>
+		<p class="eventbox_desc">Circuit Troubleshooting Challange</p>
+		 
+		<img width="164px" src="images/17.jpg" />
+	</div>
+	</a>
+	<a href="#eInnovation" class="clickLb" >
+	
+	<div class="EventBox Cult Day3 " popularity="1">
+<h2 class="eventname" >Innovation</h2>
+		<p class="type">Cultural</p>
+		<p class="eventbox_desc">On-Stage Dramatics Event</p>
+		 
+		<img width="164px" src="images/31.jpg" />
+	</div>
+	</a>
+	
+	<a href="#eMelodieux" class="clickLb" >
+	
+	<div class="EventBox Cult Day4 " popularity="1">
+<h2 class="eventname" >Melodieux</h2>
+		<p class="type">cultural</p>
+		<p class="eventbox_desc">On-Stage Vocals Event</p>
+		 
+		<img width="164px" src="images/32.jpg" />
+	</div>
+	</a>
+	
+	<a href="#eUnplugged" class="clickLb" >
+	
+	<div class="EventBox Cult Day5 " popularity="1">
+<h2 class="eventname" >Unplugged</h2>
+		<p class="type">cultural</p>
+		<p class="eventbox_desc">Western Acoustic Music Event</p>
+		 
+		<img width="164px" src="images/33.jpg" />
+	</div>
+	</a>
+	
+	<a href="#ePsychadelia" class="clickLb" >
+	
+	<div class="EventBox Cult Day1 " popularity="1">
+<h2 class="eventname" >Psychadelia</h2>
+		<p class="type">cultural</p>
+		<p class="eventbox_desc">Band Performance Event</p>
+		 
+		<img width="164px" src="images/34.jpg" />
+	</div>
+	</a>
+	
+	<a href="#eDirector'sCut" class="clickLb" >
+	
+	<div class="EventBox Cult Day2 " popularity="1">
+<h2 class="eventname" >Director's Cut</h2>
+		<p class="type">cultural</p>
+		<p class="eventbox_desc">Documentry Creating Event</p>
+		 
+		<img width="164px" src="images/35.jpg" />
+	</div>
+	</a>
+			<a href="#ePurplexus" class="clickLb" >
+	
+	<div class="EventBox Online Day3 " popularity="1">
+<h2 class="eventname" >Perplexus</h2>
+		<p class="type">Online</p>
+		<p class="eventbox_desc">Online puzzle</p>
+		 
+		<img width="164px" src="images/21.jpg" />
+	</div>
+	</a>
+	
+		<a href="#eConfondere" class="clickLb" >
+	
+	<div class="EventBox Online Day4 " popularity="1">
+<h2 class="eventname" >Confondere</h2>
+		<p class="type">Online</p>
+		<p class="eventbox_desc">Obfuscated coding event</p>
+		 
+		<img width="164px" src="images/22.jpg" />
+	</div>
+	</a>
+		<a href="#eSegmentationFault" class="clickLb" >
+	
+	<div class="EventBox Online Day5 " popularity="1">
+<h2 class="eventname" >Segmentation Fault</h2>
+		<p class="type">Online</p>
+		<p class="eventbox_desc">Debugging event</p>
+		 
+		<img width="164px" src="images/23.jpg" />
+	</div>
+	</a>
+		<a href="#eColdfire" class="clickLb" >
+	
+	<div class="EventBox Online Day1 " popularity="1">
+<h2 class="eventname" >Coldfire</h2>
+		<p class="type">Online</p>
+		<p class="eventbox_desc">Hacking event</p>
+		 
+		<img width="164px" src="images/24.jpg" />
+	</div>
+	</a>
+		<a href="#eKonqueror" class="clickLb" >
+	
+	<div class="EventBox Online Day2 " popularity="1">
+<h2 class="eventname" >Konqueror</h2>
+		<p class="type">Online</p>
+		<p class="eventbox_desc">Treasure Hunt</p>
+		 
+		<img width="164px" src="images/25.jpg" />
+	</div>
+	</a>
+		<a href="#eElectrofault" class="clickLb" >
+	
+	<div class="EventBox Online Day3 " popularity="1">
+<h2 class="eventname" >Electrofault</h2>
+		<p class="type">Online</p>
+		<p class="eventbox_desc">Electronics quiz</p>
+		 
+		<img width="164px" src="images/26.jpg" />
+	</div>
+	</a>
+		<a href="#eLimiteDePlazo" class="clickLb" >
+	
+	<div class="EventBox Online Day4 " popularity="1">
+<h2 class="eventname" >Limite de plazo</h2>
+		<p class="type">Online</p>
+		<p class="eventbox_desc">Coding event</p>
+		 
+		<img width="164px" src="images/27.jpg" />
+	</div>
+	</a>
+		<a href="#eITGuru" class="clickLb" >
+	
+	<div class="EventBox Online Day5 " popularity="1">
+<h2 class="eventname" >IT Guru</h2>
+		<p class="type">Online</p>
+		<p class="eventbox_desc">IT Quiz</p>
+		 
+		<img width="164px" src="images/28.jpg" />
+	</div>
+	</a>
+	
+		<a href="#eGladiator" class="clickLb" >
+	
+	<div class="EventBox Online Day1 " popularity="1">
+<h2 class="eventname" >Gladiator</h2>
+		<p class="type">Online</p>
+		<p class="eventbox_desc">Robot Programming</p>
+		 
+		<img width="164px" src="images/29.jpg" />
+	</div>
+	</a>
+	
+		<a href="#ePlatzen" class="clickLb" >
+	
+	<div class="EventBox Online Day2 " popularity="1">
+<h2 class="eventname" >Platzen</h2>
+		<p class="type">Online</p>
+		<p class="eventbox_desc">Crytography event</p>
+		 
+		<img width="164px" src="images/210.jpg" />
+	</div>
+	</a>
+		<a href="#eStegolica" class="clickLb" >
+	
+	<div class="EventBox Online Day3 " popularity="1">
+<h2 class="eventname" >Stegolica</h2>
+		<p class="type">Online</p>
+		<p class="eventbox_desc">Steganography event</p>
+		 
+		<img width="164px" src="images/211.jpg" />
+	</div>
+	</a>
+	
+		<a href="#eStockhunt" class="clickLb" >
+	
+	<div class="EventBox Online Day4 " popularity="1">
+<h2 class="eventname" >Stockhunt</h2>
+		<p class="type">Online</p>
+		<p class="eventbox_desc">Stock market simulation</p>
+		 
+		<img width="164px" src="images/212.jpg" />
+	</div>
+	</a>
+	
+		<a href="#eWebkriti" class="clickLb" >
+	
+	<div class="EventBox Online Day5 " popularity="1">
+<h2 class="eventname" >Webkriti</h2>
+		<p class="type">Online</p>
+		<p class="eventbox_desc">Web-designing event</p>
+		 
+		<img width="164px" src="images/213.jpg" />
+	</div>
+	</a>
+	
+		<a href="#eAlKhwarizm" class="clickLb" >
+	
+	<div class="EventBox Online Day1 " popularity="1">
+<h2 class="eventname" >Al Khwarizm</h2>
+		<p class="type">Online</p>
+		<p class="eventbox_desc">Coding event</p>
+		 
+		<img width="164px" src="images/214.jpg" />
+	</div>
+	</a>
+		<a href="#eCognoscentia" class="clickLb" >
+	
+	<div class="EventBox Lit Day2 " popularity="1">
+<h2 class="eventname" >Cognoscentia</h2>
+		<p class="type">Literary</p>
+		<p class="eventbox_desc">Quizzing</p>
+		 
+		<img width="164px" src="images/71.jpg" />
+	</div>
+	</a>
+	<a href="#eFeathers" class="clickLb" >
+	
+	<div class="EventBox Lit Day3 " popularity="1">
+<h2 class="eventname" >Feathers</h2>
+		<p class="type">Literary</p>
+		<p class="eventbox_desc">Creative Writing Event</p>
+		 
+		<img width="164px" src="images/72.jpg" />
+	</div>
+	</a>
+	<a href="#eCrossfire" class="clickLb" >
+	
+	<div class="EventBox Lit Day4 " popularity="1">
+<h2 class="eventname" >Crossfire</h2>
+		<p class="type">Literary</p>
+		<p class="eventbox_desc">Debate Competition</p>
+		 
+		<img width="164px" src="images/73.jpg" />
+	</div>
+	</a>
+	<a href="#eDumbCharades" class="clickLb" >
+	
+	<div class="EventBox Lit Day5 " popularity="1">
+<h2 class="eventname" >Dumb Charades</h2>
+		<p class="type">Literary</p>
+		<p class="eventbox_desc">The Art of Expression</p>
+		 
+		<img width="164px" src="images/74.jpg" />
+	</div>
+	</a>
+	<a href="#eAdMania" class="clickLb" >
+	
+	<div class="EventBox Management Day1 " popularity="1">
+<h2 class="eventname" >Ad Mania</h2>
+		<p class="type">Management</p>
+		<p class="eventbox_desc">Advertizing Challange</p>
+		 
+		<img width="164px" src="images/41.jpg" />
+	</div>
+	</a>
+
+		<a href="#eRanneeti" class="clickLb" >
+	
+	<div class="EventBox Management Day2 " popularity="1">
+<h2 class="eventname" >Ranneeti</h2>
+		<p class="type">Management</p>
+		<p class="eventbox_desc">Strategic Planning</p>
+		 
+		<img width="164px" src="images/42.jpg" />
+	</div>
+	</a>
+		<a href="#ePlannum" class="clickLb" >
+	
+	<div class="EventBox Management Day3 " popularity="1">
+<h2 class="eventname" >Plannum</h2>
+		<p class="type">Management</p>
+		<p class="eventbox_desc">Business Plan Contest</p>
+		 
+		<img width="164px" src="images/43.jpg" />
+	</div>
+	</a>
+	
+		<a href="#eBindassBol" class="clickLb" >
+	
+	<div class="EventBox Informal Day4 " popularity="1">
+<h2 class="eventname" >Bindass Bol</h2>
+		<p class="type">Informal</p>
+		<p class="eventbox_desc">A street play with fultu nautanki</p>
+		 
+		<img width="164px" src="images/51.jpg" />
+	</div>
+	</a>
+	
+		<a href="#eBlindDate" class="clickLb" >
+	
+	<div class="EventBox Informal Day5 " popularity="1">
+<h2 class="eventname" >Blind Date</h2>
+		<p class="type">Informal</p>
+		<p class="eventbox_desc">Dare to Date</p>
+		 
+		<img width="164px" src="images/52.jpg" />
+	</div>
+	</a>
+	
+		<a href="#eBollywoodTambola" class="clickLb" >
+	
+	<div class="EventBox Informal Day1 " popularity="1">
+<h2 class="eventname" >Bollywood Tambola</h2>
+		<p class="type">Informal</p>
+		<p class="eventbox_desc">Bollywood Trivia</p>
+		 
+		<img width="164px" src="images/53.jpg" />
+	</div>
+	</a>
+	
+	
+		<a href="#eCollage" class="clickLb" >
+	
+	<div class="EventBox Informal Day2 " popularity="1">
+<h2 class="eventname" >Collage</h2>
+		<p class="type">Informal</p>
+		<p class="eventbox_desc">Show your imagination</p>
+		 
+		<img width="164px" src="images/54.jpg" />
+	</div>
+	</a>
+	
+	
+		<a href="#eGullyCricket" class="clickLb" >
+	
+	<div class="EventBox Informal Day3 " popularity="1">
+<h2 class="eventname" >Gully Cricket</h2>
+		<p class="type">Informal</p>
+		<p class="eventbox_desc">Cricket..!!</p>
+		 
+		<img width="164px" src="images/55.jpg" />
+	</div>
+	</a>
+	
+	
+		<a href="#eHarryPotterTrivia" class="clickLb" >
+	
+	<div class="EventBox Informal Day3 " popularity="1">
+<h2 class="eventname" >Harry Potter Trivia</h2>
+		<p class="type">Informal</p>
+		<p class="eventbox_desc">Feast for Harry Potter fans.</p>
+		 
+		<img width="164px" src="images/56.jpg" />
+	</div>
+	</a>
+	
+		<a href="#eRoadies5.0" class="clickLb" >
+	
+	<div class="EventBox Informal Day4 " popularity="1">
+<h2 class="eventname" >Roadies 5.0</h2>
+		<p class="type">Informal</p>
+		<p class="eventbox_desc">Hell Down Under..!!</p>
+		 
+		<img width="164px" src="images/57.jpg" />
+	</div>
+	</a>
+	
+		<a href="#eStreeSoccer" class="clickLb" >
+	
+	<div class="EventBox Informal Day5 " popularity="1">
+<h2 class="eventname" >Street Soccer</h2>
+		<p class="type">Informal</p>
+		<p class="eventbox_desc">Freestyle football</p>
+		 
+		<img width="164px" src="images/58.jpg" />
+	</div>
+	</a>
+	
+		<a href="#eTattooPainting" class="clickLb" >
+	
+	<div class="EventBox Informal Day1 " popularity="1">
+<h2 class="eventname" >Tattoo Painting</h2>
+		<p class="type">Informal</p>
+		<p class="eventbox_desc">Tattoo Making</p>
+		 
+		<img width="164px" src="images/59.jpg" />
+	</div>
+	</a>
+	
+		<a href="#eToungesOnFire" class="clickLb" >
+	
+	<div class="EventBox Informal Day2 " popularity="1">
+<h2 class="eventname" >ToungesOnFire</h2>
+		<p class="type">Informal</p>
+		<p class="eventbox_desc">Feel the heat of hot arguments</p>
+		 
+		<img width="164px" src="images/510.jpg" />
+	</div>
+	</a>
+	
+		<a href="#eBindassBol" class="clickLb" >
+	
+	<div class="EventBox Informal Day3 " popularity="1">
+<h2 class="eventname" >Treasure Hunt</h2>
+		<p class="type">Informal</p>
+		<p class="eventbox_desc">Find the treasure and win the prize.</p>
+		 
+		<img width="164px" src="images/511.jpg" />
+	</div>
+	</a>
+	
+		<a href="#eTugOWar" class="clickLb" >
+	
+	<div class="EventBox Informal Day4 " popularity="1">
+<h2 class="eventname" >Tug-O-War</h2>
+		<p class="type">Informal</p>
+		<p class="eventbox_desc">Show your team strength.</p>
+		 
+		<img width="164px" src="images/512.jpg" />
+	</div>
+	</a>
+	
+	
+		<a href="#eDoubleTrouble" class="clickLb" >
+	
+	<div class="EventBox Informal Day5 " popularity="1">
+<h2 class="eventname" >Double Trouble</h2>
+		<p class="type">Informal</p>
+		<p class="eventbox_desc">The Duet Talent Hunt</p>
+		 
+		<img width="164px" src="images/513.jpg" />
+	</div>
+	</a>
+	
+		<a href="#eFIFA11" class="clickLb" >
+	
+	<div class="EventBox Game Day1 " popularity="1">
+<h2 class="eventname" >FIFA 11</h2>
+		<p class="type">Game</p>
+		<p class="eventbox_desc">FIFA Gaming</p>
+		 
+		<img width="164px" src="images/61.jpg" />
+	</div>
+	</a>
+			<a href="#eCounterStrike" class="clickLb" >
+	
+	<div class="EventBox Game Day2 " popularity="1">
+<h2 class="eventname" >Counter Strike</h2>
+		<p class="type">Game</p>
+		<p class="eventbox_desc">LAN CS Source Tournament.</p>
+		 
+		<img width="164px" src="images/62.jpg" />
+	</div>
+	</a>
+			<a href="#eAgeOfEmpires" class="clickLb" >
+	
+	<div class="EventBox Game Day3 " popularity="1">
+<h2 class="eventname" >Age Of Empires</h2>
+		<p class="type">Game</p>
+		<p class="eventbox_desc">Conquer at AOE.</p>
+		 
+		<img width="164px" src="images/63.jpg" />
+	</div>
+	</a>
+			<a href="#eNeedForSpeedMostWanted" class="clickLb" >
+	
+	<div class="EventBox Game Day4 " popularity="1">
+<h2 class="eventname" >Need For Speed : Most Wanted</h2>
+		<p class="type">Game</p>
+		<p class="eventbox_desc">Beat your counter-parts at the NFS-MW.</p>
+		 
+		<img width="164px" src="images/64.jpg" />
+	</div>
+	</a>
+			<a href="#eOnlineChess" class="clickLb" >
+	
+	<div class="EventBox Game Day5 " popularity="1">
+<h2 class="eventname" >Online Chess</h2>
+		<p class="type">Game</p>
+		<p class="eventbox_desc">Online Chess</p>
+		 
+		<img width="164px" src="images/65.jpg" />
+	</div>
+	</a>

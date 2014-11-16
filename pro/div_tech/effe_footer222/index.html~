@@ -1,0 +1,893 @@
+<!doctype html>
+<html>
+<head>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.isotope.min.js"></script>
+<script src="js/jquery.ba-hashchange.js"></script>
+
+<link href="css/footer.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/headerstyle.css" rel="stylesheet">
+<link href="css/footerstyle.css" rel="stylesheet">
+<link href="css/isotope.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="css/substyle.css" />
+<link href="css/adipoli.css" rel="stylesheet" type="text/css" /> <!--ImageHover-->
+
+ <script>
+/*                  Ready Function                                                                      */
+
+    $(window).load(function () {
+      
+      var $container = $('#container');
+      var currentSelect="Universe";
+      $('.down').toggleClass("down",false);
+      $("#selectEventBox").toggleClass("down");
+
+      $container.isotope({
+        itemSelector: '.EventBox',
+        getSortData : {
+          eventname : function( $elem ) {
+            return $elem.find('.eventname').text();
+          },
+          date : function( $elem ) {
+            return parseInt( $elem.find('.date').text(), 10 );
+          },
+          eventtype : function( $elem ) {
+            return $elem.attr('event-type');          }
+         
+        }
+
+   });
+
+      function subMenuChange(selector) {
+      	var idSelect="#select";
+      	
+      	var selectName;
+        if(selector==="")
+        	selector="#EventBox";
+        selector=selector.substring(1,selector.length);
+        idSelect=idSelect+selector;
+        $('.down').toggleClass("down",false);
+        $(idSelect).toggleClass("down");
+      	selectName=selector;
+      	selector="."+selector+",.BoxPerm";
+      	$container.isotope({ filter:selector  });
+      //	alert(selector);
+      	$('#filterEvent input[type="checkbox"]').each(function() {
+       		    var temp=$(this).attr("name");
+       		    if(temp===selectName)
+       		    {
+       		    	$(this).attr("checked",true);
+
+       		    }
+       		    else
+       		    {
+       		    	$(this).attr("checked",false);
+
+       		    }
+       		    if(selectName==="EventBox")
+       		    $(this).attr("disabled",false);
+       			else
+       		    $(this).attr("disabled",true);
+       	});
+
+       $('#filterDay input[type="checkbox"]').each(function() {
+         $(this).attr("checked",false);
+       });
+
+     };
+
+
+       //Events Submenu Effect
+
+      $('a.iconContainer').click(function(){
+        
+      	var selector = $(this).attr('href');
+      	subMenuChange(selector);
+     
+     });
+
+         //Customized Filter 
+       $('.checkFilter').change(function(){
+      		
+      		var valsEvent = [];
+      		var valsDay = [];
+     		$('#filterEvent :checked').each(function() {
+       		valsEvent.push($(this).val());
+     	});
+     		$('#filterDay :checked').each(function() {
+       		valsDay.push($(this).val());
+     	});
+     		if(valsEvent.length===0)
+     		{
+     			$('#filterEvent input[type="checkbox"]').each(function() {
+       		    valsEvent.push($(this).val());
+       		});
+
+     		}
+
+
+     			if(valsDay.length===0)
+     		{
+     			$('#filterDay input[type="checkbox"]').each(function() {
+       		    valsDay.push($(this).val());
+       		});
+     			
+     			
+     		}
+
+
+
+     		var selector=".BoxPerm";
+     		for(var i in valsEvent)
+     		{
+     			for(var j in valsDay)
+     			{
+     				selector=selector+","+"."+valsEvent[i]+"."+valsDay[j];
+     			}
+     		}
+     		$container.isotope({ filter:selector });
+     		
+      });
+
+       /*  Enabling all Selections in Customized Search...Using Click on Change Settings*/
+
+       $("#changeSelection").click(function(){
+       	$('#filterEvent input[type="checkbox"]').each(function() {
+       		    $(this).attr("disabled",false);
+       	});
+        $('.down').toggleClass("down",false);
+        $("#selectEventBox").toggleClass("down");
+
+       });
+
+      
+
+     //Hash Change
+  	$(window).hashchange( function(){
+    var hash = location.hash;
+    subMenuChange(hash);
+  	})
+
+  	$(window).hashchange();
+      
+    });
+	
+  </script>
+
+  <SCRIPT type="text/javascript">
+	// For CheckBoxes !
+
+    function setupLabel() {
+        if ($('.label_check input').length) {
+            $('.label_check').each(function(){ 
+                $(this).removeClass('c_on');
+            });
+            $('.label_check input:checked').each(function(){ 
+                $(this).parent('label').addClass('c_on');
+            });                
+        };
+    };
+    $(document).ready(function(){
+        $('.label_check, .label_radio').click(function(){
+            setupLabel();
+        });
+        setupLabel(); 
+    });
+</SCRIPT>
+
+</head>
+
+<body >
+<!-- Events     Submenu -->
+<div class="header-top"></div>
+			
+			<header role="banner" class="clearfix body">
+				
+				<h1 id="or-logo"><a href="http://oliverrussell.com/">Oliver Russell</a></h1>
+				
+				<!-- darker colors above the nav -->
+				<ul class="color-bar">
+					<li class="dark-red"></li>
+					<li class="dark-yellow"></li>
+					<li class="dark-blue"></li>
+					<li class="dark-orange"></li>
+					<li class="dark-purple"></li>
+				</ul>
+				
+				<nav>
+					   <ul>
+					      <li id="think" class="red"><a href="http://oliverrussell.com/think/">Think</a></li>
+						  <li id="about" class="yellow"><a href="http://oliverrussell.com/#header-about">About</a></li>
+						  <li id="work" class="blue"><a href="http://oliverrussell.com/#header-work">Work</a></li>
+					      <li id="hello" class="orange"><a href="#header-hello">Hello</a></li>
+						  <li id="GG" class="purple"><a href="#header-hello">Hello</a></li>
+					    </ul>
+				</nav>
+			</header>
+			
+<br /><br />			
+<div id = "main1">
+<!--	<div id="submenu">
+
+<div class="categories" >
+		<a href="#EventBox" class="iconContainer" id="selectEventBox">
+			<div class="icon">
+				<div class="suitcase"></div>
+			</div>
+		</a>
+			<div class="iconText">popo</div>
+</div>
+
+<div class="categories" >
+		<a href="#Celeb" class="iconContainer" id="selectCeleb">
+			<div class="icon">
+				<div class="suitcase"></div>
+			</div>
+		</a>
+			<div class="iconText">popo</div>
+	</div>
+	
+	<div class="categories" >
+		<a href="#Cult" class="iconContainer" id="selectCult">
+			<div class="icon">
+				<div class="suitcase"></div>
+			</div>
+		</a>
+			<div class="iconText">popo</div>
+	</div>
+	
+	<div class="categories" >
+		<a href="#Game" class="iconContainer" id="selectGame">
+			<div class="icon">
+				<div class="suitcase"></div>
+			</div>
+		</a>
+		<div class="iconText">popo</div>
+		
+	</div>
+	<div class="categories" >
+		<a href="#Informal" class="iconContainer" id="selectInformal">
+			<div class="icon">
+				<div class="suitcase"></div>
+			</div>
+		</a>
+		<div class="iconText">popo</div>
+	</div>
+	
+	<div class="categories" >
+		<a href="#Management" class="iconContainer" id="selectManagement">
+			<div class="icon">
+				<div class="suitcase"></div>
+			</div>
+		</a>
+		<div class="iconText">popo</div>
+	</div>
+	
+	<div class="categories" >
+		<a href="#Online" class="iconContainer" id="selectOnline">
+			<div class="icon">
+				<div class="suitcase"></div>
+			</div>
+		</a>
+		<div class="iconText">popo</div>
+	</div>
+	
+	<div class="categories" >
+		<a href="#Tech" class="iconContainer" id="selectTech">
+			<div class="icon">
+				<div class="suitcase"></div>
+			</div>
+		</a>
+		<div class="iconText">popo</div>
+	</div>
+	
+	<div class="categories" >
+		<a href="#Lit" class="iconContainer" id="selectLit">
+			<div class="icon">
+				<div class="suitcase"></div>
+			</div>
+		</a>
+		<div class="iconText">popo</div>
+	</div>
+</div> 
+-->
+
+<!--      Event        Boxes                          -->
+	<div id="container" style="height:auto">
+
+         <div id="customFilter" class="EventBox BoxPerm">
+<div class="pindiv">
+<img style="padding-right:0xp;margin-right:0px;" src="images/pin.png" id="pin_image">
+</div>
+			<h2 style="margin-top:-50px;float:right;">Customize Search</h2>
+
+		     <form style="clear:both;" class="has-js">
+		     <div id="filterEvent">
+			<div class="checkboxes">
+		     	<h3>Choose Events</h3>
+				<LABEL class="label_check" for="checkbox-01"><INPUT name="Cult" id="checkbox-01" value="Cult" type="checkbox" class="checkFilter">Cultural</LABEL>
+				<LABEL class="label_check" for="checkbox-02"><INPUT name="Tech" id="checkbox-02" value="Tech" type="checkbox" class="checkFilter">Technical</LABEL>
+				<LABEL class="label_check" for="checkbox-03"><INPUT name="Management" id="checkbox-03" value="Online" type="checkbox" class="checkFilter">Online</LABEL>
+				<LABEL class="label_check" for="checkbox-04"><INPUT name="Informal" id="checkbox-04" value="Management" type="checkbox" class="checkFilter">Management</LABEL>
+				<LABEL class="label_check" for="checkbox-05"><INPUT name="Game" id="checkbox-05" value="Game" type="checkbox" class="checkFilter">Informal</LABEL>
+				<LABEL class="label_check" for="checkbox-06"><INPUT name="Lit" id="checkbox-06" value="Lit" type="checkbox" class="checkFilter">Lit</LABEL>
+
+			 </div>
+			 <div id="filterDay">
+			 	<h3>Choose Day</h3>
+				<LABEL class="label_check" for="checkbox-07"><INPUT name="Day1" id="checkbox-07" value="Day1" type="checkbox" class="checkFilter">Day 1</LABEL>
+				<LABEL class="label_check" for="checkbox-08"><INPUT name="Day2" id="checkbox-08" value="Day2" type="checkbox" class="checkFilter">Day 2</LABEL>
+				<LABEL class="label_check" for="checkbox-09"><INPUT name="Day3" id="checkbox-09" value="Day3" type="checkbox" class="checkFilter">Day 3</LABEL>
+			 </div>
+			 <a href="#" id="changeSelection">Change Selection</a>
+			</div>
+            </form> 
+		</div>
+	
+	<!--<a href="#">-->	<a href="#eAIPod" class="clickLb" >
+	
+	<div class="EventBox Tech Day1 " popularity="1">
+<h2 class="eventname" >AI Pod</h2>
+		<p class="type">Technical</p>
+		<p class="date">1 October</p>
+		<img src="images/11.jpg" />
+	</div>
+	</a>
+<a href="#eECMarathon" class="clickLb" >
+	
+	<div class="EventBox Tech Day2 " popularity="1">
+<h2 class="eventname" >EC Marathon</h2>
+		<p class="type">Technical</p>
+		<p class="date">1 October</p>
+		<img src="images/12.jpg" />
+	</div>
+	</a>
+<a href="#eElectroManiac" class="clickLb" >
+	
+	<div class="EventBox Tech Day3 " popularity="1">
+<h2 class="eventname" >Electro-Maniac</h2>
+		<p class="type">Technical</p>
+		<p class="date">1 October</p>
+		<img src="images/13.jpg" />
+	</div>
+	</a>
+<a href="#eMagnumOpus" class="clickLb" >
+	
+	<div class="EventBox Tech Day4 " popularity="1">
+<h2 class="eventname" >Magnum Opus</h2>
+		<p class="type">Technical</p>
+		<p class="date">1 October</p>
+		<img src="images/14.jpg" />
+	</div>
+	</a>
+<a href="#ePenaltyShootout" class="clickLb" >
+	
+	<div class="EventBox Tech Day5 " popularity="1">
+<h2 class="eventname" >Penalty Shootout</h2>
+		<p class="type">Technical</p>
+		<p class="date">1 October</p>
+		<img src="images/15.jpg" />
+	</div>
+	</a>	
+	<a href="#eRoborace" class="clickLb" >
+	
+	<div class="EventBox Tech Day1 " popularity="1">
+<h2 class="eventname" >Roborace</h2>
+		<p class="type">Technical</p>
+		<p class="date">1 October</p>
+		<img src="images/16.jpg" />
+	</div>
+	</a>
+	
+	<a href="#eTechnofault" class="clickLb" >
+	
+	<div class="EventBox Tech Day2 " popularity="1">
+<h2 class="eventname" >Technofault</h2>
+		<p class="type">Technical</p>
+		<p class="date">1 October</p>
+		<img src="images/17.jpg" />
+	</div>
+	</a>
+	<a href="#eInnovation" class="clickLb" >
+	
+	<div class="EventBox Cult Day3 " popularity="1">
+<h2 class="eventname" >Innovation</h2>
+		<p class="type">Cultural</p>
+		<p class="date">1 October</p>
+		<img src="images/31.jpg" />
+	</div>
+	</a>
+	
+	<a href="#eMelodieux" class="clickLb" >
+	
+	<div class="EventBox Cult Day4 " popularity="1">
+<h2 class="eventname" >Melodieux</h2>
+		<p class="type">cultural</p>
+		<p class="date">1 October</p>
+		<img src="images/32.jpg" />
+	</div>
+	</a>
+	
+	<a href="#eUnplugged" class="clickLb" >
+	
+	<div class="EventBox Cult Day5 " popularity="1">
+<h2 class="eventname" >Unplugged</h2>
+		<p class="type">cultural</p>
+		<p class="date">1 October</p>
+		<img src="images/33.jpg" />
+	</div>
+	</a>
+	
+	<a href="#ePsychadelia" class="clickLb" >
+	
+	<div class="EventBox Cult Day1 " popularity="1">
+<h2 class="eventname" >Psychadelia</h2>
+		<p class="type">cultural</p>
+		<p class="date">1 October</p>
+		<img src="images/34.jpg" />
+	</div>
+	</a>
+	
+	<a href="#eDirector'sCut" class="clickLb" >
+	
+	<div class="EventBox Cult Day2 " popularity="1">
+<h2 class="eventname" >Director's Cut</h2>
+		<p class="type">cultural</p>
+		<p class="date">1 October</p>
+		<img src="images/35.jpg" />
+	</div>
+	</a>
+			<a href="#ePurplexus" class="clickLb" >
+	
+	<div class="EventBox Online Day3 " popularity="1">
+<h2 class="eventname" >Perplexus</h2>
+		<p class="type">Online</p>
+		<p class="date">1 October</p>
+		<img src="images/21.jpg" />
+	</div>
+	</a>
+	
+		<a href="#eConfondere" class="clickLb" >
+	
+	<div class="EventBox Online Day4 " popularity="1">
+<h2 class="eventname" >Confondere</h2>
+		<p class="type">Online</p>
+		<p class="date">1 October</p>
+		<img src="images/22.jpg" />
+	</div>
+	</a>
+		<a href="#eSegmentationFault" class="clickLb" >
+	
+	<div class="EventBox Online Day5 " popularity="1">
+<h2 class="eventname" >Segmentation Fault</h2>
+		<p class="type">Online</p>
+		<p class="date">1 October</p>
+		<img src="images/23.jpg" />
+	</div>
+	</a>
+		<a href="#eColdfire" class="clickLb" >
+	
+	<div class="EventBox Online Day1 " popularity="1">
+<h2 class="eventname" >Coldfire</h2>
+		<p class="type">Online</p>
+		<p class="date">1 October</p>
+		<img src="images/24.jpg" />
+	</div>
+	</a>
+		<a href="#eKonqueror" class="clickLb" >
+	
+	<div class="EventBox Online Day2 " popularity="1">
+<h2 class="eventname" >Konqueror</h2>
+		<p class="type">Online</p>
+		<p class="date">1 October</p>
+		<img src="images/25.jpg" />
+	</div>
+	</a>
+		<a href="#eElectrofault" class="clickLb" >
+	
+	<div class="EventBox Online Day3 " popularity="1">
+<h2 class="eventname" >Electrofault</h2>
+		<p class="type">Online</p>
+		<p class="date">1 October</p>
+		<img src="images/26.jpg" />
+	</div>
+	</a>
+		<a href="#eLimiteDePlazo" class="clickLb" >
+	
+	<div class="EventBox Online Day4 " popularity="1">
+<h2 class="eventname" >Limite de plazo</h2>
+		<p class="type">Online</p>
+		<p class="date">1 October</p>
+		<img src="images/27.jpg" />
+	</div>
+	</a>
+		<a href="#eITGuru" class="clickLb" >
+	
+	<div class="EventBox Online Day5 " popularity="1">
+<h2 class="eventname" >IT Guru</h2>
+		<p class="type">Online</p>
+		<p class="date">1 October</p>
+		<img src="images/28.jpg" />
+	</div>
+	</a>
+	
+		<a href="#eGladiator" class="clickLb" >
+	
+	<div class="EventBox Online Day1 " popularity="1">
+<h2 class="eventname" >Gladiator</h2>
+		<p class="type">Online</p>
+		<p class="date">1 October</p>
+		<img src="images/29.jpg" />
+	</div>
+	</a>
+	
+		<a href="#ePlatzen" class="clickLb" >
+	
+	<div class="EventBox Online Day2 " popularity="1">
+<h2 class="eventname" >Platzen</h2>
+		<p class="type">Online</p>
+		<p class="date">1 October</p>
+		<img src="images/210.jpg" />
+	</div>
+	</a>
+		<a href="#eStegolica" class="clickLb" >
+	
+	<div class="EventBox Online Day3 " popularity="1">
+<h2 class="eventname" >Stegolica</h2>
+		<p class="type">Online</p>
+		<p class="date">1 October</p>
+		<img src="images/211.jpg" />
+	</div>
+	</a>
+	
+		<a href="#eStockhunt" class="clickLb" >
+	
+	<div class="EventBox Online Day4 " popularity="1">
+<h2 class="eventname" >Stockhunt</h2>
+		<p class="type">Online</p>
+		<p class="date">1 October</p>
+		<img src="images/212.jpg" />
+	</div>
+	</a>
+	
+		<a href="#eWebkriti" class="clickLb" >
+	
+	<div class="EventBox Online Day5 " popularity="1">
+<h2 class="eventname" >Webkriti</h2>
+		<p class="type">Online</p>
+		<p class="date">1 October</p>
+		<img src="images/213.jpg" />
+	</div>
+	</a>
+	
+		<a href="#eAlKhwarizm" class="clickLb" >
+	
+	<div class="EventBox Online Day1 " popularity="1">
+<h2 class="eventname" >Al Khwarizm</h2>
+		<p class="type">Online</p>
+		<p class="date">1 October</p>
+		<img src="images/214.jpg" />
+	</div>
+	</a>
+		<a href="#eCognoscentia" class="clickLb" >
+	
+	<div class="EventBox Lit Day2 " popularity="1">
+<h2 class="eventname" >Cognoscentia</h2>
+		<p class="type">Literary</p>
+		<p class="date">1 October</p>
+		<img src="images/71.jpg" />
+	</div>
+	</a>
+	<a href="#eFeathers" class="clickLb" >
+	
+	<div class="EventBox Lit Day3 " popularity="1">
+<h2 class="eventname" >Feathers</h2>
+		<p class="type">Literary</p>
+		<p class="date">1 October</p>
+		<img src="images/72.jpg" />
+	</div>
+	</a>
+	<a href="#eCrossfire" class="clickLb" >
+	
+	<div class="EventBox Lit Day4 " popularity="1">
+<h2 class="eventname" >Crossfire</h2>
+		<p class="type">Literary</p>
+		<p class="date">1 October</p>
+		<img src="images/73.jpg" />
+	</div>
+	</a>
+	<a href="#eDumbCharades" class="clickLb" >
+	
+	<div class="EventBox Lit Day5 " popularity="1">
+<h2 class="eventname" >Dumb Charades</h2>
+		<p class="type">Literary</p>
+		<p class="date">1 October</p>
+		<img src="images/74.jpg" />
+	</div>
+	</a>
+	<a href="#eAdMania" class="clickLb" >
+	
+	<div class="EventBox Management Day1 " popularity="1">
+<h2 class="eventname" >Ad Mania</h2>
+		<p class="type">Management</p>
+		<p class="date">1 October</p>
+		<img src="images/41.jpg" />
+	</div>
+	</a>
+
+		<a href="#eRanneeti" class="clickLb" >
+	
+	<div class="EventBox Management Day2 " popularity="1">
+<h2 class="eventname" >Ranneeti</h2>
+		<p class="type">Management</p>
+		<p class="date">1 October</p>
+		<img src="images/42.jpg" />
+	</div>
+	</a>
+		<a href="#ePlannum" class="clickLb" >
+	
+	<div class="EventBox Management Day3 " popularity="1">
+<h2 class="eventname" >Plannum</h2>
+		<p class="type">Management</p>
+		<p class="date">1 October</p>
+		<img src="images/43.jpg" />
+	</div>
+	</a>
+	
+		<a href="#eBindassBol" class="clickLb" >
+	
+	<div class="EventBox Informal Day4 " popularity="1">
+<h2 class="eventname" >Bindass Bol</h2>
+		<p class="type">Informal</p>
+		<p class="date">1 October</p>
+		<img src="images/51.jpg" />
+	</div>
+	</a>
+	
+		<a href="#eBlindDate" class="clickLb" >
+	
+	<div class="EventBox Informal Day5 " popularity="1">
+<h2 class="eventname" >Bindass Bol</h2>
+		<p class="type">Informal</p>
+		<p class="date">1 October</p>
+		<img src="images/52.jpg" />
+	</div>
+	</a>
+	
+		<a href="#eBollywoodTambola" class="clickLb" >
+	
+	<div class="EventBox Informal Day1 " popularity="1">
+<h2 class="eventname" >Bollywood Tambola</h2>
+		<p class="type">Informal</p>
+		<p class="date">1 October</p>
+		<img src="images/53.jpg" />
+	</div>
+	</a>
+	
+	
+		<a href="#eCollage" class="clickLb" >
+	
+	<div class="EventBox Informal Day2 " popularity="1">
+<h2 class="eventname" >Collage</h2>
+		<p class="type">Informal</p>
+		<p class="date">1 October</p>
+		<img src="images/54.jpg" />
+	</div>
+	</a>
+	
+	
+		<a href="#eGullyCricket" class="clickLb" >
+	
+	<div class="EventBox Informal Day3 " popularity="1">
+<h2 class="eventname" >Gully Cricket</h2>
+		<p class="type">Informal</p>
+		<p class="date">1 October</p>
+		<img src="images/55.jpg" />
+	</div>
+	</a>
+	
+	
+		<a href="#eHarryPotterTrivia" class="clickLb" >
+	
+	<div class="EventBox Informal Day3 " popularity="1">
+<h2 class="eventname" >Harry Potter Trivia</h2>
+		<p class="type">Informal</p>
+		<p class="date">1 October</p>
+		<img src="images/56.jpg" />
+	</div>
+	</a>
+	
+		<a href="#eRoadies5.0" class="clickLb" >
+	
+	<div class="EventBox Informal Day4 " popularity="1">
+<h2 class="eventname" >Roadies 5.0</h2>
+		<p class="type">Informal</p>
+		<p class="date">1 October</p>
+		<img src="images/57.jpg" />
+	</div>
+	</a>
+	
+		<a href="#eStreeSoccer" class="clickLb" >
+	
+	<div class="EventBox Informal Day5 " popularity="1">
+<h2 class="eventname" >Street Soccer</h2>
+		<p class="type">Informal</p>
+		<p class="date">1 October</p>
+		<img src="images/58.jpg" />
+	</div>
+	</a>
+	
+		<a href="#eTattooPainting" class="clickLb" >
+	
+	<div class="EventBox Informal Day1 " popularity="1">
+<h2 class="eventname" >Tattoo Painting</h2>
+		<p class="type">Informal</p>
+		<p class="date">1 October</p>
+		<img src="images/59.jpg" />
+	</div>
+	</a>
+	
+		<a href="#eToungesOnFire" class="clickLb" >
+	
+	<div class="EventBox Informal Day2 " popularity="1">
+<h2 class="eventname" >ToungesOnFire</h2>
+		<p class="type">Informal</p>
+		<p class="date">1 October</p>
+		<img src="images/510.jpg" />
+	</div>
+	</a>
+	
+		<a href="#eBindassBol" class="clickLb" >
+	
+	<div class="EventBox Informal Day3 " popularity="1">
+<h2 class="eventname" >Treasure Hunt</h2>
+		<p class="type">Informal</p>
+		<p class="date">1 October</p>
+		<img src="images/511.jpg" />
+	</div>
+	</a>
+	
+		<a href="#eTugOWar" class="clickLb" >
+	
+	<div class="EventBox Informal Day4 " popularity="1">
+<h2 class="eventname" >Tug-O-War</h2>
+		<p class="type">Informal</p>
+		<p class="date">1 October</p>
+		<img src="images/512.jpg" />
+	</div>
+	</a>
+	
+	
+		<a href="#eDoubleTrouble" class="clickLb" >
+	
+	<div class="EventBox Informal Day5 " popularity="1">
+<h2 class="eventname" >Double Trouble</h2>
+		<p class="type">Informal</p>
+		<p class="date">1 October</p>
+		<img src="images/513.jpg" />
+	</div>
+	</a>
+	
+		<a href="#eFIFA11" class="clickLb" >
+	
+	<div class="EventBox Game Day1 " popularity="1">
+<h2 class="eventname" >FIFA 11</h2>
+		<p class="type">Game</p>
+		<p class="date">1 October</p>
+		<img src="images/61.jpg" />
+	</div>
+	</a>
+			<a href="#eCounterStrike" class="clickLb" >
+	
+	<div class="EventBox Game Day2 " popularity="1">
+<h2 class="eventname" >Counter Strike</h2>
+		<p class="type">Game</p>
+		<p class="date">1 October</p>
+		<img src="images/62.jpg" />
+	</div>
+	</a>
+			<a href="#eAgeOfEmpires" class="clickLb" >
+	
+	<div class="EventBox Game Day3 " popularity="1">
+<h2 class="eventname" >Age Of Empires</h2>
+		<p class="type">Game</p>
+		<p class="date">1 October</p>
+		<img src="images/63.jpg" />
+	</div>
+	</a>
+			<a href="#eNeedForSpeedMostWanted" class="clickLb" >
+	
+	<div class="EventBox Game Day4 " popularity="1">
+<h2 class="eventname" >Need For Speed : Most Wanted</h2>
+		<p class="type">Game</p>
+		<p class="date">1 October</p>
+		<img src="images/64.jpg" />
+	</div>
+	</a>
+			<a href="#eOnlineChess" class="clickLb" >
+	
+	<div class="EventBox Game Day5 " popularity="1">
+<h2 class="eventname" >Online Chess</h2>
+		<p class="type">Game</p>
+		<p class="date">1 October</p>
+		<img src="images/65.jpg" />
+	</div>
+	</a>
+	</div>
+</div>
+
+<div class="clearfix"></div>
+<a name="section-footer" id="section-footer"></a>
+<div id="footer-wrapper">
+	<br />
+	
+	<footer role="contentinfo" class="clearfix body" >
+	<div id="footer-con-wrapper" >
+            
+        <div id = "footer-events" class="footer-contents" >
+			<ul>
+					<li><h3>Events</h3></li>
+			
+					<li><a href="#" >Cultural Events</a></li>
+					<li><a href="#" >Technical Events</a></li>
+					<li><a href="#" >Informal Events</a></li>
+					<li><a href="#" >Literary Events</a></li>
+			</ul>
+                </div>
+                
+                <div id = "footer-workshop" class="footer-contents">
+                        <ul>
+                        <li><h3>Downloads</h3></li>
+                        
+                                <li><a href="#" >Event Brochure</a></li>
+                                <li><a href="#" >Event Schedule</a></li>
+                                <li><a href="#" >Sponsership Brochure</a></li>
+                                <li><a href="#" >Effervescence Teaser</a></li>
+                        </ul>
+                </div>
+                
+                <div id = "footer-downloads" class="footer-contents">
+                        <ul>
+                        <li><h3>Workshops</h3></li>
+                        
+                                <li><a href="#" >Robotics</a></li>
+                                <li><a href="#" >Android Development</a></li>
+                                <li><a href="#" >Hacking</a></li>
+                                <li><a href="#" >Literary Events</a></li>
+                        </ul>
+                </div>
+                
+                <div id = "footer-social" class="footer-contents">
+                        <ul>
+                        <li><h3>Follow Us</h3></li>
+                        
+                                <li><a href="#" id="fbicon" ><img src="images/fb.png" /></a>
+                                    <a href="#" id="twittericon"><img src="images/twitter.png" /><br></a>
+                                </li>
+                                
+                                <li><a href="#" >Contact Us</a></li>
+                                <li><a href="#" >About Us</a></li>
+                        </ul>
+                </div>
+                
+            
+            
+            <div class="clearfix"></div>
+            </div>
+            <br><br>
+  	
+    
+    <ul class="color-bar">
+      <li class="dark-red"></li>
+      <li class="dark-yellow"></li>
+      <li class="dark-blue"></li>
+      <li class="dark-orange"></li>
+	  <li class="dark-purple"></li>
+    </ul>
+  </footer>
+  <div class="footer-bottom"></div>
+</div>
+	</body>
+	</html>

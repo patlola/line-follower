@@ -1,0 +1,54 @@
+
+.tbox {
+	position:absolute; 
+	display:none; 
+	padding:0;
+	z-index:900;
+}
+.tinner {
+	background:#fff;
+	background: url(images/loader.gif); 
+	background-repeat: no-repeat;
+	background-position: 49% 49%;
+}
+.tmask {
+	position:absolute; 
+	display:none; 
+	top:0px; 
+	left:0px; 
+	height:100%; 
+	width:100%; 
+	background:rgba(0,0,0,0.8); 
+	z-index:800;
+}
+.tclose {
+	position:absolute; 
+	bottom:40px; 
+	right:49%; 
+	width:28px; 
+	height:23px; 
+	cursor:pointer; 
+	background:url(images/close2.png) no-repeat;
+}
+.tclose:hover {
+	background-position:0 -23px;
+}
+
+#error {background:#ff6969; color:#fff; text-shadow:1px 1px #cf5454; border-right:1px solid #000; border-bottom:1px solid #000; padding:0}
+#error .tcontent {padding:10px 14px 11px; border:1px solid #ffb8b8; -moz-border-radius:5px; border-radius:5px}
+#success {background:#2ea125; color:#fff; text-shadow:1px 1px #1b6116; border-right:1px solid #000; border-bottom:1px solid #000; padding:10; -moz-border-radius:0; border-radius:0}
+
+
+#frameless{
+	 padding:0;
+	 background:#f0f0f0;
+	-webkit-box-shadow:0 20px 60px rgba(0,0,0,0.5);
+	-moz-box-shadow:0 20px 60px rgba(0,0,0,0.5);
+	-o-box-shadow:0 20px 60px rgba(0,0,0,0.5);
+	-khtml-box-shadow:0 20px 60px rgba(0,0,0,0.5);
+	-ms-box-shadow:0 20px 60px rgba(0,0,0,0.5);
+	 box-shadow:0 20px 60px rgba(0,0,0,0.5);
+}
+#frameless .tclose {
+	right:49%;
+}

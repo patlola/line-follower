@@ -1,0 +1,138 @@
+#include <iostream>
+
+using namespace std;
+
+int tree[300000];
+
+void build_tree(int n, int begin, int end) {
+
+	if ( begin > end )
+		return;
+
+	if ( begin == end ) {
+		tree[n] = 0;
+		return;
+	}
+
+	tree[n] = 0;
+
+	build_tree((2*n)+1,begin,(begin+end)/2);
+	build_tree((2*n)+2,((begin+end)/2)+1, end);
+
+}
+
+int query(int n, int begin, int end, int i, int j) {
+
+	if ( begin > end || n < 0 )
+		return 0;
+
+	if ( i == begin && j == end )
+		return tree[n];
+
+	if ( j <= ((begin+end)/2) )
+		return query(2*n+1, begin, (begin+end)/2, i,j);
+
+	if ( i > ((begin+end)/2) )
+		return query(2*n+2, ((begin+end)/2)+1, end, i,j);
+
+	return query(2*n+1, begin, (begin+end)/2, i,(begin+end)/2)+query(2*n+2, ((begin+end)/2)+1, end, ((begin+end)/2)+1,j);
+
+}
+
+void update_below(int n, int begin, int end) {
+
+	if ( begin > end )
+		return;
+
+	if ( begin == end ) {
+		//cout << "Earlier : " << tree[n];
+		tree[n] = end-begin-tree[n]+1;
+		//cout << "  Now : " << tree[n] << endl;
+		return;
+	}
+
+	tree[n] = (end-begin)-tree[n]+1;
+
+	update_below(2*n+1, begin, (begin+end)/2);
+	update_below(2*n+2, ((begin+end)/2)+1, end);
+
+}
+
+void update_top(int n) {
+
+	if ( n < 0 )
+		return;
+
+	if ( n == 0 ) {
+		tree[n] = tree[2*n+1]+tree[2*n+2];
+		return;
+	}
+
+	tree[n] = tree[2*n+1]+tree[2*n+2];
+	update_top((n-1)/2);
+
+}
+
+void update(int n, int begin, int end, int i, int j) {
+
+	//cout << n << " " << begin << " " << end << " " << i << " " << j << " reahced.\n";
+
+	if ( i == begin && j == end ) {
+		//cout << i << " " << j << " updated" << endl;
+		update_below(n,begin,end);
+		update_top((n-1)/2);
+
+		/*cout << "Tree : ";
+		for ( int b = 0; b < 7; ++b ) {
+			cout << tree[b] << " ";
+		}
+		cout << endl;
+		*/
+		return;
+	}
+
+	if ( j <= ((begin+end)/2) ) {
+		update(2*n+1, begin, (begin+end)/2, i,j);
+		return;
+	}
+
+	if ( i > ((begin+end)/2) ) {
+		update(2*n+2, ((begin+end)/2)+1, end, i,j);
+		return;
+	}
+
+	update(2*n+1, begin, (begin+end)/2, i,(begin+end)/2);
+	update(2*n+2, ((begin+end)/2)+1, end,((begin+end)/2)+1,j);
+
+}	
+
+int main()
+{
+
+	int n,m,i,j,x,a,b;
+
+	cin >> n >> m;
+
+	build_tree(0,0,n-1);
+	for ( a = 0; a < m; ++a ) {
+		scanf("%d %d %d", &x, &i, &j);
+
+		//cout << x << " " << i << " " << j << endl;
+
+		if ( x == 0 ) {
+			update(0,0,n-1,i-1,j-1);
+		} else {
+			cout << query(0,0,n-1,i-1,j-1) << endl;
+		}
+/*
+		cout << "Tree : ";
+		for ( b = 0; b < 7; ++b ) {
+			cout << tree[b] << " ";
+		}
+		cout << endl;
+*/
+	}
+
+	return 0;
+
+}

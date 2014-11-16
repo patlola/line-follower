@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Le styles -->
+	<link href="assets/css/app8052.css" rel="stylesheet">
+	<link href="assets/css/main.css" rel="stylesheet">
+	<link href="assets/css/carousel.css" rel="stylesheet">
+	<link href="assets/css/scroller_style.css" rel="stylesheet">
+	<link href="assets/css/tabs_style.css" rel="stylesheet">
+	
+	<script src="./assets/js/jquery.js"></script>
+	<script src="./assets/js/scroller_data.js" type="text/javascript"></script>
+	<script src="./assets/js/tabs_js.js" type="text/javascript"></script>
+	
+	
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+ <!-- Le javascript-->
+   
+    
+	<script src="./assets/js/bootstrap-carousel.js"></script>
+	
+	<script type="text/javascript">
+	$(function(){
+	   $('.carousel').carousel();
+	});
+	
+	$('body').ready(function() {
+
+		                // Add the 'hover' event listener to our drop down class
+				$('.dropdown').hover(function() {
+		                        // When the event is triggered, grab the current element 'this' and
+		                        // find it's children '.sub_navigation' and display/hide them
+					$(this).find('.sub_navigation').slideToggle(); 
+				});
+			});
+	</script>
+	
+	<link rel="stylesheet" href="assets/carousel/agile_carousel.css" type='text/css'>
+
+	<script src="assets/carousel/agile_carousel.alpha.js" type="text/javascript" charset="utf-8">
+	</script>
+
+	<script>
+	    $.getJSON("assets/carousel/agile_carousel_data.php", function(data) {
+	        $(document).ready(function(){
+	            $("#multiple_slides_visible").agile_carousel({
+	                carousel_data: data,
+	                carousel_outer_height: 230,
+	                carousel_height: 200,
+	                slide_height: 200,
+	                carousel_outer_width: 480,
+	                slide_width: 160,
+	                number_slides_visible: 3,
+	                transition_time: 330,
+	                control_set_1: "previous_button,next_button",
+	                control_set_2: "group_numbered_buttons",
+	                persistent_content: "<p class='persistent_content'>Agile Carousel Example: Multiple Slides Visible</p>"       
+	            });
+	        });
+	    }, function() {alert("success");});
+	</script>
+
+  </head>
+
+  <body onload="setStoryTypesCarousels(all=true);">
+	<div id="header">
+			<div id="hContent">
+				<div id="topNav" class="rounded">
+					Webmail | MyIIIT | Sitemap
+				</div>
+				<div id="logo">
+				<h2>	Indian Institute of Information Technology<br/> Allahabad<h2>
+				</div>
+				
+				<div id="search">
+					<form action = "search.php" method="POST" name="search">
+						<input type="text" class="rounded searchBox" placeholder="Search..." >
+						<input type="submit" class=" rounded searchButton" value="Go"/>
+					
+					</form>
+				</div>
+			</div>
+	</div>
+	<div  id="container">
+			<div id="secA">
+			Institute Of National Importance. Established by Ministry of HRD, Gov of India.
+			</div>
+			
+			<div id="dropdown">
+				<ul id="navigation" >
+					 
+					<li class="dropdown "><a href="#">Administration</a>
+						<ul class="sub_navigation">
+							<li><a href="#">About</a></li>
+							<li><a href="#">Director Message</a></li>
+							<li><a href="#">Location</a></li>
+						</ul>
+					</li>
+					
+					<li class="dropdown"><a href="#">Institute</a>
+						<ul class="sub_navigation">
+							<li><a href="#">About IIITA</a></li>
+							<li><a href="#">How To Reach</a></li>
+							<li><a href="#">RTI</a></li>
+						</ul>
+					</li>
+					
+					<li class="dropdown"><a href="#">Infrastructure</a>
+						<ul class="sub_navigation">
+							<li><a href="#">Library</a></li>
+							<li><a href="#">Labs</a></li>
+							<li><a href="#">Classes</a></li>
+						</ul>
+					</li>
+					
+					<li class="dropdown"><a href="#">Academics</a>
+						<ul class="sub_navigation">
+							<li><a href="#">Syllabus</a></li>
+							<li><a href="#">Awards & Recognitions</a></li>
+							<li><a href="#">Faculty</a></li>
+						</ul>
+					</li>
+					
+					<li class="dropdown"><a href="#">Student Life</a>
+						<ul class="sub_navigation">
+							<li><a href="#"Hostel</a></li>
+							<li><a href="#">Facilties</a></li>
+							<li><a href="#">Clubs</a></li>
+						</ul>
+					</li>
+					
+					<li class="dropdown"><a href="#">Placement</a>
+						<ul class="sub_navigation">
+							<li><a href="#">BTech</a></li>
+							<li><a href="#">Mtech</a></li>
+							<li><a href="#">MBA(IT)/MS</a></li>
+						</ul>
+					</li>
+					
+				</ul>
+			</div>
+			<br>
+			<br>
+			
+			<div class="slideShow" style="clear:both; margin-top:35px;">
+		
+				<!-- Scroller begins here -->
+				
+				<div id="maia-main">
+					<div id="story-types">
+						<div class="jobs-stories">
+						  
+						  <!-- scroller_data.js fills this -->
+						  
+						 </div>
+					</div>
+				</div>
+				
+				<script type="text/javascript">setStoryTypesCarousels(all=false);</script>
+				
+			</div>
+
+			<hr>
+			<br>
+
+			<!--div class="announcements" style="clear:both;"-->
+			
+					<div id ="ticker" style="float:left;">
+					
+						<ul>
+							<li id="tab1" class="tab">
+								Notices
+							</li>
+							<li id="tab2" class="tab">
+								News
+							</li>
+							<li id="tab3" class="tab">
+								Portals
+							</li>
+						</ul>					
+					
+					<div id = "tab1view" class="view">
+						Notice 1
+						<hr>
+						Notice 2
+						<hr>
+						Notice 3
+						<hr>
+						Notice 4			
+					</div>
+					<div id = "tab2view" class="view">
+						News 1
+						<hr>
+						News 2
+						<hr>
+						News 3
+						<hr>
+						News 4
+					</div>
+					<div id = "tab3view" class="view">
+						Portal 1
+						<hr>
+						Portal 2
+						<hr>
+						Portal 3
+						<hr>
+						Portal 4					
+					</div>
+					
+				 </div>
+			
+			<!--/div-->
+			
+			<div class="updates">
+					</br><br>
+				<table class="table table-striped table-bordered table-condensed">
+					<tr>
+						<td>f</td><td>f</td>
+					</tr>
+					<tr>
+						<td>f</td><td>f</td>
+					</tr>
+						<tr>
+							<td>f</td><td>f</td>
+						</tr>
+						<tr>
+							<td>f</td><td>f</td>
+						</tr>
+							<tr>
+								<td>f</td><td>f</td>
+							</tr>
+							<tr>
+								<td>f</td><td>f</td>
+							</tr>
+				</table>
+				
+				</div>
+	</div><!--container -->
+	<div id="footer" style="clear:both;">
+	</div>
+		
+			
+</body>
+</html>

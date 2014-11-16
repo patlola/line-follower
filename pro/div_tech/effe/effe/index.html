@@ -1,0 +1,402 @@
+<!doctype html>
+<html>
+<head>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.isotope.min.js"></script>
+<script src="js/jquery.ba-hashchange.js"></script>
+<script src="js/jquery.adipoli.min.js" type="text/javascript"></script> <!--ImageHover-->
+<link href="css/style.css" rel="stylesheet">
+<link href="css/isotope.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="css/substyle.css" />
+<link href="css/adipoli.css" rel="stylesheet" type="text/css" /> <!--ImageHover-->
+
+ <script>
+/*                  Ready Function                                                                      */
+
+    $(window).load(function () {
+      
+      var $container = $('#container');
+      var currentSelect="Universe";
+      $('.down').toggleClass("down",false);
+      $("#selectEventBox").toggleClass("down");
+
+      $container.isotope({
+        itemSelector: '.EventBox',
+        getSortData : {
+          eventname : function( $elem ) {
+            return $elem.find('.eventname').text();
+          },
+          date : function( $elem ) {
+            return parseInt( $elem.find('.date').text(), 10 );
+          },
+          eventtype : function( $elem ) {
+            return $elem.attr('event-type');          }
+         
+        }
+
+   });
+
+      function subMenuChange(selector) {
+      	var idSelect="#select";
+      	
+      	var selectName;
+        if(selector==="")
+        	selector="#EventBox";
+        selector=selector.substring(1,selector.length);
+        idSelect=idSelect+selector;
+        $('.down').toggleClass("down",false);
+        $(idSelect).toggleClass("down");
+      	selectName=selector;
+      	selector="."+selector+",.BoxPerm";
+      	$container.isotope({ filter:selector  });
+      //	alert(selector);
+      	$('#filterEvent input[type="checkbox"]').each(function() {
+       		    var temp=$(this).attr("name");
+       		    if(temp===selectName)
+       		    {
+       		    	$(this).attr("checked",true);
+
+       		    }
+       		    else
+       		    {
+       		    	$(this).attr("checked",false);
+
+       		    }
+       		    if(selectName==="EventBox")
+       		    $(this).attr("disabled",false);
+       			else
+       		    $(this).attr("disabled",true);
+       	});
+
+       $('#filterDay input[type="checkbox"]').each(function() {
+         $(this).attr("checked",false);
+       });
+
+     };
+
+
+       //Events Submenu Effect
+
+      $('a.iconContainer').click(function(){
+        
+      	var selector = $(this).attr('href');
+      	subMenuChange(selector);
+     
+     });
+
+         //Customized Filter 
+       $('.checkFilter').change(function(){
+      		
+      		var valsEvent = [];
+      		var valsDay = [];
+     		$('#filterEvent :checked').each(function() {
+       		valsEvent.push($(this).val());
+     	});
+     		$('#filterDay :checked').each(function() {
+       		valsDay.push($(this).val());
+     	});
+     		if(valsEvent.length===0)
+     		{
+     			$('#filterEvent input[type="checkbox"]').each(function() {
+       		    valsEvent.push($(this).val());
+       		});
+
+     		}
+
+
+     			if(valsDay.length===0)
+     		{
+     			$('#filterDay input[type="checkbox"]').each(function() {
+       		    valsDay.push($(this).val());
+       		});
+     			
+     			
+     		}
+
+
+
+     		var selector=".BoxPerm";
+     		for(var i in valsEvent)
+     		{
+     			for(var j in valsDay)
+     			{
+     				selector=selector+","+"."+valsEvent[i]+"."+valsDay[j];
+     			}
+     		}
+     		$container.isotope({ filter:selector });
+     		
+      });
+
+       /*  Enabling all Selections in Customized Search...Using Click on Change Settings*/
+
+       $("#changeSelection").click(function(){
+       	$('#filterEvent input[type="checkbox"]').each(function() {
+       		    $(this).attr("disabled",false);
+       	});
+        $('.down').toggleClass("down",false);
+        $("#selectEventBox").toggleClass("down");
+
+       });
+
+      
+
+     //Hash Change
+  	$(window).hashchange( function(){
+    var hash = location.hash;
+    subMenuChange(hash);
+  	})
+
+  	$(window).hashchange();
+      
+    });
+	
+  </script>
+
+<SCRIPT type="text/javascript">
+	// For CheckBoxes !
+
+    function setupLabel() {
+        if ($('.label_check input').length) {
+            $('.label_check').each(function(){ 
+                $(this).removeClass('c_on');
+            });
+            $('.label_check input:checked').each(function(){ 
+                $(this).parent('label').addClass('c_on');
+            });                
+        };
+    };
+    $(document).ready(function(){
+        $('.label_check, .label_radio').click(function(){
+            setupLabel();
+        });
+        setupLabel(); 
+    });
+</SCRIPT>
+
+</head>
+
+<body >
+<!-- Events     Submenu -->
+<div id="header">
+
+	
+</div>
+<div id = "main1">
+<!--	<div id="submenu">
+
+<div class="categories" >
+
+		<a href="#EventBox" class="iconContainer" id="selectEventBox">
+			<div class="icon">
+				<div class="suitcase"></div>
+			</div>
+		</a>
+			<div class="iconText">popo</div>
+</div>
+
+<div class="categories" >
+		<a href="#Celeb" class="iconContainer" id="selectCeleb">
+			<div class="icon">
+				<div class="suitcase"></div>
+			</div>
+		</a>
+			<div class="iconText">popo</div>
+	</div>
+	
+	<div class="categories" >
+		<a href="#Cult" class="iconContainer" id="selectCult">
+			<div class="icon">
+				<div class="suitcase"></div>
+			</div>
+		</a>
+			<div class="iconText">popo</div>
+	</div>
+	
+	<div class="categories" >
+		<a href="#Game" class="iconContainer" id="selectGame">
+			<div class="icon">
+				<div class="suitcase"></div>
+			</div>
+		</a>
+		<div class="iconText">popo</div>
+		
+	</div>
+	<div class="categories" >
+		<a href="#Informal" class="iconContainer" id="selectInformal">
+			<div class="icon">
+				<div class="suitcase"></div>
+			</div>
+		</a>
+		<div class="iconText">popo</div>
+	</div>
+	
+	<div class="categories" >
+		<a href="#Management" class="iconContainer" id="selectManagement">
+			<div class="icon">
+				<div class="suitcase"></div>
+			</div>
+		</a>
+		<div class="iconText">popo</div>
+	</div>
+	
+	<div class="categories" >
+		<a href="#Online" class="iconContainer" id="selectOnline">
+			<div class="icon">
+				<div class="suitcase"></div>
+			</div>
+		</a>
+		<div class="iconText">popo</div>
+	</div>
+	
+	<div class="categories" >
+		<a href="#Tech" class="iconContainer" id="selectTech">
+			<div class="icon">
+				<div class="suitcase"></div>
+			</div>
+		</a>
+		<div class="iconText">popo</div>
+	</div>
+	
+	<div class="categories" >
+		<a href="#Lit" class="iconContainer" id="selectLit">
+			<div class="icon">
+				<div class="suitcase"></div>
+			</div>
+		</a>
+		<div class="iconText">popo</div>
+	</div>
+</div> 
+-->
+
+<!--      Event        Boxes                          -->
+	<div id="container" style="height:auto">
+
+         <div id="customFilter" class="EventBox BoxPerm">
+<div class="pindiv">
+<img src="images/pin.png" id="pin_image">
+</div>
+			<h2 >Customize Search</h2>
+
+		     <form class="has-js">
+		     <div id="filterEvent">
+			<div class="checkboxes">
+		     	<h3>Choose Events</h3>
+				<LABEL class="label_check" for="checkbox-01"><INPUT name="Cult" id="checkbox-01" value="Cult" type="checkbox" class="checkFilter">Cultural</LABEL>
+				<LABEL class="label_check" for="checkbox-02"><INPUT name="Tech" id="checkbox-02" value="Tech" type="checkbox" class="checkFilter">Technical</LABEL>
+				<LABEL class="label_check" for="checkbox-03"><INPUT name="Management" id="checkbox-03" value="Online" type="checkbox" class="checkFilter">Online</LABEL>
+				<LABEL class="label_check" for="checkbox-04"><INPUT name="Informal" id="checkbox-04" value="Management" type="checkbox" class="checkFilter">Management</LABEL>
+				<LABEL class="label_check" for="checkbox-05"><INPUT name="Game" id="checkbox-05" value="Game" type="checkbox" class="checkFilter">Informal</LABEL>
+				<LABEL class="label_check" for="checkbox-06"><INPUT name="Lit" id="checkbox-06" value="Lit" type="checkbox" class="checkFilter">Lit</LABEL>
+
+			 </div>
+			 <div id="filterDay">
+			 	<h3>Choose Day</h3>
+				<LABEL class="label_check" for="checkbox-07"><INPUT name="Day1" id="checkbox-07" value="Day1" type="checkbox" class="checkFilter">Day 1</LABEL>
+				<LABEL class="label_check" for="checkbox-08"><INPUT name="Day2" id="checkbox-08" value="Day2" type="checkbox" class="checkFilter">Day 2</LABEL>
+				<LABEL class="label_check" for="checkbox-09"><INPUT name="Day3" id="checkbox-09" value="Day3" type="checkbox" class="checkFilter">Day 3</LABEL>
+			 </div>
+			 <a href="#" id="changeSelection">Change Selection</a>
+			</div>
+            </form> 
+		</div>
+	
+	<!--<a href="#">-->	<div class="EventBox Lit Day1 large">
+	<h2 class="eventname" >AlKhwarizm</h2>
+			<p class="type">Technical</p>
+			<p class="date">1 October</p>
+			<img src="images/event1.jpg" />
+		</div>
+		<!--</a>-->
+
+		<div class="EventBox Lit Day2 large" event-type="lit">
+			<h2 class="eventname" >Header2</h2>
+			<p class="date">2</p>
+			<p class="type">lit</p>
+			<img src="images/event2.jpg" />
+		</div>
+
+		<div class="EventBox Tech Day1 large" event-type="cult">
+			<h2 class="eventname" >Header3</h2>
+			<p class="date">1</p>
+			<p class="type">tech</p>
+			<img src="images/event3.jpg" />
+		</div>
+
+		<div class="EventBox Online Day2 large" event-type="tech">
+			<h2 class="eventname" >Header4</h2>
+			<p class="date">2</p>
+			<p class="type">online</p>
+			<img src="images/event4.jpg" />
+		</div>
+
+		<div class="EventBox Cult Day1 large" event-type="cult">
+			<h2 class="eventname" >Header5</h2>
+			<p class="date">1</p>
+			<p class="type">cult</p>
+			<img src="images/event5.jpg" />
+		</div>
+
+		<div class="EventBox Cult Day3 large" event-type="cult">
+			<h2 class="eventname" >Header6</h2>
+			<p class="date">3</p>
+			<p class="type">cult</p>
+			<img src="images/event6.jpg" />
+		</div>
+
+		<div class="EventBox Online Day3 large" event-type="tech">
+			<h2 class="eventname" >Header7</h2>
+			<p class="date">3</p>
+			<p class="type">Online</p>
+			<img src="images/event7.jpg" />
+		</div>
+
+		<div class="EventBox Tech Day2 large" event-type="tech">
+			<h2 class="eventname" >Header8</h2>
+			<p class="date">2</p>
+			<p class="type">Tech</p>
+			<img src="images/event7.jpg" />
+		</div>
+
+		<div class="EventBox Management Day3 large" event-type="tech">
+			<h2 class="eventname" >Header8</h2>
+			<p class="date">3</p>
+			<p class="type">Management</p>
+			<img src="images/event7.jpg" />
+		</div>
+
+		<div class="EventBox Management Day2 large" event-type="tech">
+			<h2 class="eventname" >Header9</h2>
+			<p class="date">2</p>
+			<p class="type">Management</p>
+			<img src="images/event7.jpg" />
+		</div>
+
+		<div class="EventBox Game Day1 large" event-type="tech">
+			<h2 class="eventname" >Header8</h2>
+			<p class="date">1</p>
+			<p class="type">Game</p>
+			<img src="images/event7.jpg" />
+		</div>
+
+		<div class="EventBox Informal Day3 large" event-type="tech">
+			<h2 class="eventname" >Header8</h2>
+			<p class="date">3</p>
+			<p class="type">Informal</p>
+			<img src="images/event7.jpg" />
+		</div>
+
+		<div class="EventBox Informal Day2 large" event-type="tech">
+			<h2 class="eventname" >Header8</h2>
+			<p class="date">2</p>
+			<p class="type">Informal</p>
+			<img src="images/event7.jpg" />
+		</div>
+
+			<div class="EventBox BoxPerm lit Day1">
+				Terminal
+				</div>
+	</div>
+</div>
+	</body>
+	</html>

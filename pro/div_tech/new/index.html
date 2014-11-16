@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+	<script type="text/javascript" src="js/jarallax-min-0.2.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<link href ="css/style.css" rel="stylesheet" >
+	<script type="text/javascript">
+	init=function(){
+		var jarallax = new Jarallax();
+		jarallax.addAnimation('.tab1', [{progress:'13%',bottom:'0%'},
+		                             {progress:'39%', bottom:'125%'}]);
+	
+	}
+	</script>
+
+</head>
+
+<body onload="init()">
+	<div id ="header">
+		
+	</div>
+	<img src="pics/1.jpg" />
+	<div class="tab1">
+		<h1> Entertainmaint</h1>
+	</div>
+	<img src="pics/2.jpg" />
+	<img src="pics/3.jpg" />
+	<img src="pics/4.jpg" />
+</body>
+</html>
+
+

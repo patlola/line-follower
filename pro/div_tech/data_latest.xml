@@ -1,0 +1,2785 @@
+<Events>
+	<Tech>
+		<AiPod>
+		<uid>
+			11
+		</uid>
+
+		<name>
+			AI Pod
+		</name>
+
+		<day>
+
+		</day>
+
+		<categ>
+			Technical
+		</categ>
+
+		<shortDescription>
+			Smart Robotics
+		</shortDescription>
+
+		<description>
+			It is time for the robo-geeks to pull up their socks and start designing their baby bots. 
+			AI POD is a place where your bots really get a chance to prove that their master is the best. 
+			Once the bots enter the labyrinth, the only steering wheel is the designing aptitude and skills of You, the Creator. 
+			The one who traverses the 16X16 maze in the shortest possible time is the one who deserves the crown of the robo world. 
+			It is a game that can be won not by might but by your acumen and genius. Do you have it in you?? Come and show it to us.
+		</description>
+
+		<rules>
+			<![CDATA[
+			<b>Specifications of the maze:</b>
+			1) Dimensions (to be specified).
+			2) Maze is made up of wood.
+			3) Side of walls is white, top of the walls is red, and floor is black ( assumptions about the uniformity of the color should not be made).
+
+			<b>Specifications of Micromouse:</b>
+			1) A Micro Mouse shall be self-contained (no remote controls). It shall not use an energy source employing a combustion process. It should be fully autonomous, in no way receiving any external control or data.
+			2) A MicroMouse shall not leave any part of its body behind while negotiating the maze.
+			3) A MicroMouse shall not climb, scratch, cut, burn, mark, damage, or destroy the walls of the maze.
+			4) A MicroMouse shall not be larger either in length or in width, than 16 centimeters. The dimensions of a MicroMouse that changes its geometry during a run shall not be greater than 16 cm x 16 cm. There are no restrictions on the height of a MicroMouse.
+
+			<b>Rules for the Contest:</b>
+			1) Only one robot is allowed per team.
+			2) Each contesting Micromouse is allocated a total of 15 minutes (tentatively)of access to the maze. Any no. of runs is allowed in these 15 minutes. The time used to adjust a mouse between runs is included in the 15 minutes. Each run (from the start cell to the center zone) in which a mouse successfully reaches the destination square is given a run time. The minimum run time shall be the mouse?s official time. The 15 minutes timer continues even between runs.
+			3) All mice that enter the center square within their 15 minutes allotment are ranked higher than those who do not enter the center square. Each run shall be made from the starting square.
+			a) In case the mouse gets stuck in between the maze, the operator can lift and place it just behind the current position without any change in the orientation. It is to be noted that a penalty of 30 seconds (tentatively) seconds will be added each time the mouse is touched.
+			4) After the maze is disclosed, the operator shall not feed information into the Micromouse.
+
+			However, contestants are allowed to:
+			#Change switch settings (e.g. to select algorithms)
+			# Replace batteries between runs (any power source other than batteries should be approved by the organisers).
+			# Adjust sensors
+			# Change speed settings
+			# Make repairs
+
+			However, a contestant may not alter a mouse in a manner that alters its weight (e.g. removal of a bulky sensor array or switching to lighter batteries to get better speed after mapping the maze is not allowed).
+			5) The run time will start when front edge of the mouse crosses the start line and stops when the front edge of the mouse crosses the finish line.
+			6) If a mouse re-enters the starting line (before entering the destination line) on a run, that run is aborted, and a new run will be deemed begun, with a new time that starts when the starting square is exited.
+			7) The mouse may, after reaching the finish line, continue to navigate the maze, for as long as their total maze time allows. If a mouse continues to navigate the maze after reaching the finish line, the time taken will not count towards any run. Of course, the 15 minutes timer continues to run. When the mouse next leaves the start line, a new run will start. Thus, a mouse may and should make several runs without being touched by the operator. It should make its own way back to the beginning to do so. If placed manually on the starting position after the completion of a run, a penalty of 30 seconds (tentatively) will be charged.
+			8) The judges reserve the right to ask the operator for an explanation of the micro mouse. The judges also reserve the right to stop a run, declare disqualification, or give instructions as appropriate (e.g., if the structure of the maze is jeopardized by continuing operation of the mouse).
+			9) In case of any discrepancy, the decision taken by the organizers and judges would be final and binding.
+			10) First prize will go to that mouse which travels from the start line to the final line in the least amount of time. Second and third prizes will be awarded to the second and third fastest respectively.
+			11) All mice that cross the finish line within their 15 minutes allotment are ranked higher than those who do not complete the run.
+			12) If requested, a break will be provided for a mouse after any run. The 15 minutes timer will stop. When the mouse is re-entered, the timer will continue. The judges shall arbitrate on the granting of such breaks.
+			13) Lego kits and other preassembled kits will not be provided. Please note that First prize will be reserved for the self-made hardware.
+
+			<i>NOTE: Though Lego kits(and other preassembled kits) are allowed, preference would be given to self-made hardware. Also, a penalty on the usage of Lego kits, will be charged as mentioned in the marking scheme.</i>
+
+			<b>Eligibility: </b>
+			1) A team should consist of maximum three participants.
+			2) Participants can be of same or different colleges.
+			3) All participants should be students with a valid Identity Card of their college.
+
+			<b>Marking Scheme: </b>
+			1) Marks will be awarded according to the time taken by the micro mouse to complete the run. If the mice completes the run, marks awarded= time taken to complete the runMINUS bonus of 10 seconds. If the mice does not complete any run, marks awarded=time taken by the mice till it got stuck, for each run it made. For example: if the mouse traverses for 40 seconds, the marks awarded=40.
+			2) For each time the mice is touched, a penalty of 30 seconds (tentatively) seconds will be added to the run-time (that will be equal to the marks).
+			3) When the micromouse reaches the maze center it may be manually lifted out and restarted or it may make its own way back to the start square. Manually lifting it out shall be considered touching the micromouse and will cause it the penalty as mentioned in the previous point.
+			4) The contest officials shall reserve the right to stop a run, or disqualify a micromouse, if they believe its continued operation is endangering the condition of the maze. The judgesalso have the discretion to request a micromouse to retire early for lack of progress.
+			5) On the use of Lego Kits and other preassembled kits: a penalty of 2min (tentatively.)
+			
+			]]>
+		</rules>
+		<contact>
+        
+		</contact>
+		</AiPod>
+		
+		<ECMarathon>
+		<uid>
+			12
+		</uid>
+
+		<name>
+			EC Marathon
+		</name>
+
+		<day>
+
+		</day>
+
+		<categ>
+			Technical
+		</categ>
+
+		<shortDescription>
+			Circuit Designing Competition
+		</shortDescription>
+
+		<description>
+			Are you that curious guy who loves to fiddle around with circuits?
+
+			Come on, join the race in our new event called EC Marathon. This demanding event will put you through the paces and test your electronics aptitude, understanding and practical skills.
+		</description>
+
+		<rules>
+			<![CDATA[
+			1. Team of two students.
+			2. There will be an elimination quiz.
+			3. Any clash will be resolved with a tie-breaker quiz in the end.
+			4. Total three rounds.
+			5. The winner will be decided based on the combined score of all three rounds (Weightage :: Round 1: 20%, Round 2: 30%, Round 3 : 50%).
+			6. Problem statement will be given at the spot.
+
+			<b>ELIMINATION ROUND: </b>
+			Their will be 15 objective type questions, 3 marks will be awarded for each correct answer and 1 mark will be deducted for an incorrect answer. The questions will be from basic electronics and will be independent to which year the participant belongs.
+
+			Seven teams will be selected for Round 1.
+
+			<b>First Hurdle:</b>
+
+			This will be an oral quiz. 5 questions will be asked to each team. Correct answer earns you ten marks. Total of three teams will be upgraded to the next level.
+			There will be a provision of Wildcard Entry to Second Hurdle that will be disclosed at the time of the event.
+
+			<b>Second hurdle:</b>
+
+			Each of you will be given a circuit on breadboard. Some error will be introduced into the circuit which you have to debug. The desired output and input will be mentioned and datasheet of used components will be available. First three teams that debug the circuit will be elevated to the final round.
+
+			<b>The Final Sprint:</b>
+
+			A problem statement will be given on the spot in which you will be given Input and Outputs of a black box. You have to design the circuit of the black-box on a breadboard. There may be numerous solutions to the problem. Using available components you have to implement such circuit!!
+
+			Note : All the things participant may require, will be made available during the event. eg Datasheets etc.
+
+			<b>Judging criteria:</b>
+			Speed - 40% weightage.
+			Accuracy- 35% weightage.
+			Compactness - 10% weightage
+			Ability to answer judge"s or organizers questions : 15% weightage.
+
+			Final winner is "EC Guru".
+
+			<i>Note : The Organizers hold the power to eliminate any team in case they are found to use any unfair means. </i>
+
+			For any other query or info about event contact any of the organizers.
+			
+			]]>
+		</rules>
+		<contact>
+
+		</contact>
+		</ECMarathon>
+		
+		<ElectroManiac>
+		<uid>
+			13
+		</uid>
+
+		<name>
+			Electro-Maniac
+		</name>
+
+		<day>
+
+		</day>
+
+		<categ>
+			Technical
+		</categ>
+
+		<shortDescription>
+			Instant Circuit Designing Competition
+		</shortDescription>
+
+		<description>
+			Electro-Maniac is a technical event which is basically for those electronic enthusiasts who are the maniac of electronic circuits. It is an event to exhibit their skills. This competition tests the thinking level of the competitors and provides the platform to show their instantaneous problem solving skills. There will be a problem for which the teams have to design their own logic and then have to implement the circuit on breadboard. So put on your thinking caps and get to work! Remember, a good design can make a difference. 
+		</description>
+
+		<rules>
+			<![CDATA[
+			<b>Sample Problem Statement:</b>
+			Need to make a digital clock which will clearly depict second,minute and hour over 7-segment displays and the time will be in 24 hours format.
+
+			1) Each team can have a maximum of 3 participants.
+			2) Only one submission is accepted per team.
+			3) The participants must be students (graduate or postgraduate) of any recognized college in India.
+			4) The teams have to use only those components which are available in lab.
+			5) Use of microcontroller and FPGA are prohibited.
+			6) A maximum of one and half hour will be provided for the completion of the task.
+			7) The coordinators reserve the right to alter any rule with regard to the event and the same shall be updated on the website regularly.
+			8) Judge’s decision shall be deemed final and undisputed with regard to the selection of the winners.
+			9) Violation of any above said rules, use of any illegal means will lead to immediate disqualification of team.
+
+			<i>NOTE: There can be an elimination quiz if participation is of more than 10 teams. </i>
+			
+			]]>
+		</rules>
+		<contact>
+
+		</contact>
+		</ElectroManiac>
+
+		<MagnumOpus>
+		<uid>
+			14
+		</uid>
+
+		<name>
+			Magnum Opus
+		</name>
+
+		<day>
+
+		</day>
+
+		<categ>
+			Technical
+		</categ>
+
+		<shortDescription>
+			Software Exibition Competition
+		</shortDescription>
+
+		<description>
+			Magnum Opus is a national level software exhibition where different entries from various colleges of India are taken and the best are selected to invite to the main event of Magnum Opus which is held under the platform of Effervescence MM11 at IIIT-Allahabad.
+		</description>
+
+		<rules>
+			<![CDATA[
+			To participate in the event we would like the leader of the each team to send a mail to magnumopusmm11@gmail.com consisting of-
+			1) Name, contact no. of all the members (maximum 3) of the team.
+			2) A short description or summary explaining your software which will be taken under consideration to pass stage 1.
+			3) The short listed candidates must showcase their software to panel of professors, who will select the best 3 and will be certified for that. An approximate judging criteria is shown to help you all to make your software to the fullest of the needs of judges.
+			4) Judges’ decision shall be treated as final.
+			5) The event organizers reserve the right to make minor modifications to the above rules. The changes will be duly notified. Please check the website frequently for updates.
+			6) In the event of ambiguity, the organizers" interpretation of any clauses of the rules shall prevail.
+
+			<b>Judging Criteria :</b>
+			<i>15% - Problem Definition : </i>
+			How relevant and precise is the real world problem which is being addressed? Will the solution to this problem be able to bring about any changes in the society? Is it capable of making the lives of people easier? How much innovative is your idea? For this criterion, we only focus on the problem challenged, not on the solution created to solve this problem.
+
+			<i>15% - Solution :</i>
+			Is the solution completely innovative or does it rely on an existing concept/technology? To which degree does the application actually solve the current problem? Does the application impact a large number of people very broadly, or impact a smaller number of people very deeply?
+
+			<i>15% - Technical Design :</i>
+			Is the system architecture broke down into logical chunks and modules? Is the project technically open to some modifications or changes?
+
+			<i>15% - User Experience :</i>
+			To which degree are the HMI (Human Machine Interfaces) intuitive, ergonomic and user friendly?
+
+			<i>10% - Robustness :</i>
+			To what degree various error conditions are handled?
+
+			<i>10% - Complexity :</i>
+			What algorithms are used? What are the time and space complexities?
+
+			<i>20% - Business Viability:</i>
+			Is the application technically and economically viable? Is this solution only theoretical or does it have a realistic application for commercial purposes?
+
+			<b>Min Team size :</b>
+			The team should contain a minimum of 2 members.
+			<b>Max team size :</b>
+			the team should contain a maximum of 3 members .
+			
+			]]>
+		</rules>
+		
+		<contact>
+
+		</contact>
+		</MagnumOpus>
+
+		<PenaltyShootout>
+		<uid>
+			15
+		</uid>
+
+		<name>
+			Penalty Shootout
+		</name>
+
+		<day>
+
+		</day>
+
+		<categ>
+			Technical
+		</categ>
+
+		<shortDescription>
+			Robo Soccer
+		</shortDescription>
+
+		<description>
+			ENNUIED OF PLAYING SOCCER OUTSIDE IN SCORCHING HEAT........ BUT STILL ADRENALINE RUSHES THROUGH YOUR ANATOMY ON SEEING THE PLAYERS LIKE "PELE" DEVASTATING THEIR OPPONENTS MORAL BY THE SPECTACULAR DISPLAY OF THEIR CONSUMMATE SKILL. WELL IN THE PRESENT ERA WHERE ROBOS ARE INTEGRAL PART OF A GEEKS DAY TO DAY LIFE , YOU DON"T HAVE TO WASTE YOUR BODY FLUIDS . JUST STRESS YOUR NEURONS TO GET YOURSELF EQUIPPED WITH A ROBOMATE WHO CAN PLAY THE GAME FOR YOU. SO GET READY FOR THE "PENALTY SHOOTOUT" WHERE ROBO FREAKS WILL COALESCE TO PROVE THAT NO ONE BUT ONLY THEY ARE THE FAVOURITES. 
+		</description>
+
+		<rules>
+			<![CDATA[
+			1) Each team will be given 10 penalty shots.
+			2) Wireless robots carry 100 bonus points.
+			3) Each goal scored carries 50 points.
+			4) Wired robots are also allowed but carry no bonus points.
+			5) If the ball stops before half line 20 points will be deducted from striking teams total score and no retake for that shot will be allowed.
+			6) If the ball stops in between half line and goal line then 10 marks will be deducted and no retake for that shot will be allowed.
+			7) Goals will be valid in case of rebound from the 2 side walls and fetch 80 points.
+			8) Outside shots carry no penalty but no retake will be allowed.
+			9) Rounds will be on knock out basis but may change depending on circumstances.
+			10) You are only allowed to touch the robot at the start of the game i.e when striking the ball for first time in a match and when defending the goal for first time in a match.
+			11) When defending the goal you are required to keep the robot at one position and you could move your robot in one direction only after the ball crosses the mid way.For instance if you have kept your robot in middle of the goal and the ball has been hit to your right and by mistake you moved the robot in the left direction then it cannot move to its right again in that round.
+			12) While defending the robot should be aligned along the breath i.e. its smaller dimension should be facing the goal.
+			13) Robot should not pick the ball from arena it has to kick the ball after that it may take the flight.
+
+			<b>SPECIFICATIONS : </b>
+			1) Arena: 180cmX120cmX15cm(lXbXh).Half line will be at 80cm from one end.
+			2) There will be sufficient area beyond arena for robot movement and arena has side walls of 15cm height.
+			3) Robot: 22cmX18cmX15cm ,Goal- 50cm from centre on either side.
+			4) Robots may be wired or wireless.Off board Power supplies are allowed.
+			5) If the machine is wired then the wire should remain slack under all circumstances during the competition. All the wires coming out of the machine should be stacked as a single unit. The wires should be properly insulated.
+			6) If the machine is controlled wirelessly, the machine must have a four frequency remote control circuit or two dual control circuits which may be interchanged before the start of the race to avoid frequency interference with other teams.
+			7) Remote control systems from toys might be used. Remote control systems available in the market may also be used.
+			8) There can be maximum of 3 members per team.
+			9) Ball :Standard plastic ball(medium weight) with diameter 6cm.
+
+			<b>General Rules:</b>
+			Organizers will be not responsible for any minor scratches left by the previous machines on the arena.
+			1) Any team that is not ready at the time specified will be disqualified from the competition automatically.
+			2) The machines would be checked for their safety before the run and would be discarded if found unsafe for other participants and spectators.
+			3) Participants should not dismantle their robots before the completion of the whole competition as the machines might need to be verified by the judges at a later stage to ensure that the participants have not violated any of the rules.
+			4) Judges" decision shall be treated as final and binding on all.
+			5) The organizers reserve the right to change any or all of the above rules as they deem fit. Change in rules, if any, will be highlighted on the website and notified to the registered participants.
+
+			<b>Disqualifications and Penalties:</b>
+			1) Any bot not conforming to the specifications provided will be instantly dis-qualified.
+			2) Any bot which damages the arena will be disqualified.
+
+			<b>TIE:</b>
+			1) In case of ties there would be a surprise round which would be made aware of only at the spot…and will involve only the bots u have used so far…
+
+			<b>Team Specification:</b>
+			1) A team may consist of a maximum of 3 members.
+			2) Students from different educational institutes can form a team.
+			3) Only Under-graduate and graduate students from different colleges of India are allowed to participate in the competition.
+			4) All the team members must be present there at the time of competition. 
+			
+			]]>
+		</rules>
+		<contact>
+
+		</contact>
+		</PenaltyShootout>
+
+		
+		<Roborace>
+		<uid>
+			16
+		</uid>
+
+		<name>
+			Roborace
+		</name>
+
+		<day>
+
+		</day>
+
+		<categ>
+			Technical
+		</categ>
+
+		<shortDescription>
+			Robotics Challange
+		</shortDescription>
+
+		<description>
+			So , you all think you can make a line follower. Well, now is the challenge , let?s make it fast, let?s make it run . A competition which is based on the perfection of the very basics of autonomous robots. Robo-Race is an event for you all juniors, seniors and pros ,so come along and show who is the fastest. Set in a very competitive environment with an electrifying audience all around, this is your shot to fame with the perfect machine.
+
+			Problem statement:
+			Build a line follower that traverses the circuit in the least possible time.
+		</description>
+
+		<rules>
+			<![CDATA[
+			<b>Event Summary: </b>
+			The objective of this contest is for a robot to follow a black line on a white background, without losing the line, and navigating several 90 degree turns. The robot to complete the course in the shortest period of time while accurately tracking the course line from start to finish wins.
+
+			<b>Arena: </b>
+			1) Maximum Arena Area would be 3.5mX3.5m.
+			2) Track Width would be 3 cm/1 inch.
+			3) Arena would be black line track on a white floor.
+			4) The track length will vary from round to round.
+			5) There would be enough sunlight equivalent to an average lighted room at the arena.
+			6) Switchbacks and hairpins are possible. The line course shall have 1 or more sharp right-angle, but no angle will be greater than 90?.
+			7) These dimensions are subject to very minor changes at the time of competition .
+
+			<b>Bot specification: </b>
+			1) Each team is allowed to have only 1 bot.
+			2) The bot must fit in a cube of dimension 200mm X 200mm X 200mm.
+			3) The bot must use only on-board power supply. No external off-board power supply is allowed.
+			4) The max voltage difference between any two points must not exceed 12V.
+			5) The bot must be fully autonomous with all powering and motoring mechanisms self contained without human intervention of any kind once race has started.
+			6) The bot cannot be constructed using readymade Lego kits or any readymade mechanism. But you can make use of readymade gear assemblies. Violating this clause will lead to the disqualification of the machine.
+
+			<b>GAMEPLAY RULES:</b>
+			1) Each team will be allowed a slot of 5 mins to calibrate their machines on a test track at the venue.
+			2) There would be minimum 2 and maximum 3 rounds depending upon the no. of participants.
+			3) Every round will be an elimination round.
+			4) In case of a tie in the last round there would be an additional tie breaker.
+			5) The selection criteria in each round would be the minimum time taken to traverse the whole track.
+			6) If the bot is not able to complete the track then they would be selected upon the number of check points cleared by the bot.
+			7) Time is measured from the time the robot crosses the starting line until the time it crosses the finish line. A robot is deemed to have crossed the line when the forward most wheel, track, or leg of the robot contacts or crosses over the line.
+			8) A maximum of 4 minutes is allowed for a robot to complete the course. A robot that cannot complete the course in the allotted time shall be disqualified.
+			9) Any robot that loses the line course and fails to reacquire it will be allowed a single reattempt. The robot must start the course again from the beginning, and if it loses the line course on its second attempt it will be disqualified.
+
+			<b>General Rules: </b>
+			Organizers will be not responsible for any minor scratches left by the previous machines on the arena.
+			1) Any team that is not ready at the time specified will be disqualified from the competition automatically.
+			2) The machines would be checked for their safety before the run and would be discarded if found unsafe for other participants and spectators.
+			3) Participants should not dismantle their robots before the completion of the whole competition as the machines might need to be verified by the judges at a later stage to ensure that the participants have not violated any of the rules.
+			4) The decisions of all officials regarding these rules and the conduct of the event shall be final.
+			5) The organizers reserve the right to change any or all of the above rules as they deem fit. Change in rules, if any, will be highlighted on the website and notified to the registered participants.
+
+			<b>Disqualifications and Penalties: </b>
+			1) Any bot not conforming to the specifications provided will be instantly dis-qualified.
+			2) Any bot which damages the arena will be disqualified.
+			3) Once a robot has crossed the starting line it must remain fully autonomous, or it will be disqualified.
+			4) Any robot that loses the line course must reacquire the line at the point where it was lost, or at any earlier (e.g. already traversed) point.
+
+			<b>Team Specification: </b>
+			1) A team may consist of a maximum of 3 members.
+			2) Students from different educational institutes can form a team.
+			3) Only Under-graduate and graduate students from different colleges of India are allowed to participate in the competition.
+			4) All the team members must be present there at the time of competition.
+			]]>
+		</rules>
+		<contact>
+
+		</contact>
+		</Roborace>
+
+		
+		<Technofault>
+		<uid>
+			17
+		</uid>
+
+		<name>
+			Technofault
+		</name>
+
+		<day>
+
+		</day>
+
+		<categ>
+			Technical
+		</categ>
+
+		<shortDescription>
+			Circuit Troubleshooting Challange
+		</shortDescription>
+
+		<description>
+			A circuit making  Troubleshooting competition which will adjudge your flair about electronic circuitry and put your skills to test.
+			The Dias it offers is unparalleled in the realm of electronics.The impeccable exposure of the FAULTS is on the cards and you being on Opportunistic team are overweeningly invited to the AURA of the unwitnessed event that IIITA is about to witness in this Effervescence MM11.
+			So, DO YOu hAVe tHe PerSONA of ELECTroManiac...?..A FReak.....?.A Lunatic.....?..A Fanatic....?...Then We desperately wait for your Participation.
+			Come to the Podium AND LET OTHERS DEEM WHO YOU ARE....?
+			AND TOmoRRow HAs never HAPPened BEfore.........
+		</description>
+
+		<rules>
+			<![CDATA[
+			<b>Participation: </b> Team of maximum two members
+			No Registration Fee
+
+			1) The candidates are supposed to reach the venue 30minutes before the scheduled time
+			2) Participants are required to have valid id-card of their institutions along with them.
+			3) The marking scheme will be promulgated at the time of competition only.
+			4) Any misbehavior or mishandling of the competition shall lead to the cancellation of the .
+			5) Any loss of data due to system failure or electricity failure will not be compensated. So participants are requested to save their work regularly.
+			6) The healthy spirit of participation is expected from every participant.
+			7) The verdict of the judges will be final and binding to all.
+			8) Once registered the partner cannot be changed.
+			9) No external help, either personal or use of device is allowed; any disobeyance of this rule shall come under the purview of cheating or illegal means of competion which is against the spirit of the competition and the teams are liable to be cancelled there only.
+			10) All required material will be provided us.
+
+			<b>Round 1:</b> PAICHAN KAUN?
+			1) List of 20 Multiple Choice Questions with 4 options.
+			2) Top 15 team will qualify for next round.
+			3) Only all correct entries will entertained first.
+			4) In case of same number of correct entries team with the least elimination time will qualify.
+			5) Time limit :- 15 minutes.
+
+			<b>Round 2: </b> TROUBLE_SHOOTING
+			1) Consist of 3 circuit questions (diagrammatic) and 2 theoretical questions (on the whole total 5 questions.).
+			2) At least 3 correct answers.
+			3) Only 5 groups will move to next round.
+			4) Time limit:- 30minutes
+
+			<b>Round 3: </b>Circuit Monitoring:
+			1) Team having all components will mount and implement the circuit on the bread-board.
+			2) Desired output is must.
+			3) The team with the earliest correct output will be declared winner.
+			4) Maximum time allowed: 30min.(time limit might be changed according to complexity)
+
+			<b>Important Note:-</b>
+			For latest updates about the event please check our website regularly and positively.
+			Wish u a best of luck for the special knack that u may have naturally or develop and let the subsequent success envelope.
+			
+			]]>
+		</rules>
+		<contact>
+
+		</contact>
+		</Technofault>
+	</Tech>
+	
+	<Online>
+		<Purplexus>
+			<uid>
+					21	
+			</uid>
+
+				<name>
+				
+					Purplexuz
+				
+					
+				</name>
+
+				<day>
+
+				</day>
+
+				<categ>
+					Online
+
+				</categ>
+
+				<shortDescription>
+
+					Online puzzle
+				</shortDescription>
+
+				<description>
+					The art of simplicity is the complexity of puzzles!!
+					Everyday a set of puzzles will be available online. Based upon the daily scores, a brain of the day will be awarded each day, and based upon the cumulative scores of the festival the top three participants shall be selected. 
+
+				</description>
+
+				<rules>
+				<![CDATA[
+					1) The event will start from and end on .
+					2) You will have to solve a riddle to find the word that will grant you the access to the next level. 
+					3) Every level contains useful hints (in the source code, in the picture, in the page itself etc.) to find the answer. You"ll have to search everywhere. 
+					4) You can also look at the forums for some extra hints. 
+					5) VERY IMPORTANT:- All answer should be written in capital letters without any space , otherwise answer will not match. 
+
+					For example ,if answer is "taj mahal" or "TAJ MAHAL" the you must give answer as "TAJMAHAL". 
+					6) Team size is one, i.e each participant takes part individually. 
+				]]>
+
+				</rules>
+
+				<contact>
+
+				</contact>
+			</Purplexus>
+
+
+			<Confondere>
+				<uid>
+					22
+				</uid>
+
+				<name>
+				 Confondere 
+				</name>
+
+				<day>
+
+				</day>
+
+				<categ>
+					Online
+				</categ>
+
+				<shortDescription>
+					Obfuscated coding event
+				</shortDescription>
+
+				<description>
+					Entrants to the competition aim to write "devious, inhuman, disgusting, amusing, amazing, bizarre and Obfuscated code", which is hard to understand and debug. They are advised to try and demonstrate a range of programming knowledge, whilst being humorous, surprising and deceitful. Obfuscated code is source code that is (intentionally) very hard to read and understand. There are many varieties of interesting obfuscations ranging from simple keyword substitutions, use/non-use of white space to create artistic effects, to clever self-generating or heavily compressed programs or making programming details unobvious by overshadowing them by fancy algorithm.
+					Come be a part of this Technically Jubilant Module of Effervescence MM11 and showcase your creativity by COMPLEXING your code. 
+
+				</description>
+
+				<rules>
+				<![CDATA[
+					1)Everyone is Invited to participate, For prizes only college students are eligible. 
+					2)The ranking is based on the total score accumulated for all problems based on the level of OBFUSCATION written in C/C++.
+					3)Ties in the total score are broken by the total time taken. Shorter times are better.
+					4)Your program must be complete, no type of error while compiling and running the program and should pass all the test cases. Then the level of obfuscation will be checked.
+					5)Team of atmost 2 people is allowed to participate in the event.
+					6)The size of your program source must be <= 4096 bytes in length.The number of characters excluding whitespace (tab, space,newline, formfeed, return), and excluding any ; { or } immediately followed by whitespace or end of file, must be <= 2048.
+
+					Sample Code:
+					obfuscated code for PRINTING "Hello,World!" 
+
+					#include <iostream>
+
+					int main()
+					{
+							long long int l1l[]={72,-11037827,917043223,-47519989,1450408591,-194718605,2037206149,-8912843,279667,-26713,-3617,1571,-79};
+							longlongintll1[]={1,9240,277200,13440,725760,290304,14515200,483840,193536,483840,14515200,15966720,31933440};
+							long double lll=1;
+							long long int l1='\0'+1, ll='\0'+1;
+							for (int i='\0'; i<'\r'; i=i+1)
+							{
+									for (int j='\r'-1; j>='\0'; j=j-1)
+									{
+											for (int k='\0'; k<j; k=k+1)
+											{
+													ll=l1=l1*(!!i);
+													for (int l='\0'; l<i-1; l=l+1)
+													{
+															l1=l1+ll;
+													}
+											}
+											lll+=(long double)l1/(*(ll1+j))*(*(l1l+j));
+											l1='\0'+1;
+									}
+									std::cout<<(char)(lll+0.5);
+									lll=!lll;
+							}
+							std::cout<<std::endl;
+							return 0;
+					} 
+					]]>
+				</rules>
+
+				<contact>
+
+				</contact>
+			</Confondere>
+
+			
+			<SegmentationFault>
+				<uid>
+					23
+				</uid>
+
+				<name>
+				 	Segmentation Fault 
+				</name>
+
+				<day>
+
+				</day>
+
+				<categ>
+					Online
+				</categ>
+
+				<shortDescription>
+
+					Debugging event
+				</shortDescription>
+
+				<description>
+					"To code is human ... To debug is divine" 
+					Trace down the bugs in the code, identify and debug them irrespective of their complexity and evasiveness. This prestigious event scrutinizes the coding potential of the participants, the sharpness of their minds, their ability to analyze intricate coding snippets and their programming cognizance as a whole.
+				</description>
+
+				<rules>
+				<![CDATA[
+					1) The Participants must get registered at Effervescence website to compete.
+					2) All the questions will be Objective type and single choice answer only.
+					3) All the questions will be in C/C++/Java/BASH.
+					4) Duration of event will be 90 minutes.
+					5) The contestants can submit a question only once and can come back to unanswered ones.
+					6) The contest consits of 2 rounds.
+					i. Screening round
+					a. Total questions - 40
+					b. Duration - 45 minutes
+					c. Marking - 40 x ( +3, -2 )
+					ii. Final Round
+					a. Total questions - 10
+					b. Duration - 30 minutes
+					c. Marking - 6 x ( +6, -3 ) and 4 x ( +10, -4 )
+					7) Top 40% participants will be selected for final round.
+					8) In case of tie between two participants, one with more no. of correct answers will be given preference.
+					9) In case of any other disputes, decision of the organisers will be final.
+					]]>
+				</rules>
+
+				<contact>
+
+				</contact>
+			</SegmentationFault>
+			
+			<Coldfire>
+				<uid>
+					24
+				</uid>
+
+				<name>
+					 Coldfire
+				</name>
+
+				<day>
+
+				</day>
+
+				<categ>
+					Online
+				</categ>
+
+				<shortDescription>
+					Hacking event
+				</shortDescription>
+
+				<description>
+					If your quest for creating a portal in the hacker"s world has remained elusive, then, here is an arena, Coldfire, which will dish before you a storming test of your hacking skills.The contest would trigger off such hacking questions to vouch for the youth"s knack, who will battle in the arena of simmered potential threats. So, if you dare to take the challenge, the arena is open for you. 
+
+					Prizes to first three will be given only.
+				</description>
+
+				<rules>
+				<![CDATA[
+					1) All participants need to register prior to the event beginning
+					2) Any user found indulging in foul play will be disqualified immediately.
+					3) To be eligible for winning prizes the user must be currently registered in a university. Non students are welcome to participate.
+					4) Organizers decision shall be treated as final.
+				]]>
+				</rules>
+
+				<contact>
+
+				</contact>
+			</Coldfire>
+
+			
+			<Konqueror>
+				<uid>
+					25
+				</uid>
+
+				<name>
+					 	Konqueror
+				</name>
+
+				<day>
+
+				</day>
+
+				<categ>
+					Online
+				</categ>
+
+				<shortDescription>
+					Treasure Hunt
+				</shortDescription>
+
+				<description>
+					We present before you a mind boggling game of Online Treasure Hunt.
+					Get aboard and join us in a thrilling and crazy trail through the interwoven world of internet to search for the hidden and yet-so-obvious clues across the world wide web that lead to the ultimate treasure..
+					So common all pirates, put on your thinking cap, get your brain in gear, and set your train of thought in motion down the tracks..!!
+				</description>
+
+				<rules>
+				<![CDATA[
+					1.This event is open for all.
+					2.This is an individual event.
+					3.Registration is compulsory. 
+					4.Every clue will hint to a website on the internet and also what to look for on that website(i.e. your answer).
+					5.If the correct answer is submitted,you will be taken to the next clue.
+					6.The questions will be of three level of difficulties.
+					Easy level : (>=60%)
+					Medium level : (>=20%)
+					Tough level : (<=20%)
+					7.Hints will be given from time to time on the questions if the needed, on the official forum.
+					8.No unfair means will be tolerated.
+					9.The final decision lies with the organisers.
+				]]>
+				</rules>
+
+				<contact>
+
+				</contact>
+			</Konqueror>
+			
+			<Electrofault>
+				<uid>
+					26
+				</uid>
+
+				<name>
+				 Electrofault 
+				</name>
+
+				<day>
+
+				</day>
+
+				<categ>
+					Online
+				</categ>
+
+				<shortDescription>
+					Electronics quiz
+				</shortDescription>
+
+				<description>
+					One of the most prestigious platforms for thinkers, innovators and learners alike, electrofault, the electronic quiz of IIITA, is back.
+					So, are you ready to challenge your grey cells and out-wit yourself?
+					Gear up for the online quiz of effervesence as we take you on a roller coaster ride through the enigmatic world of electronics.
+				</description>
+
+				<rules>
+				<![CDATA[
+					1) Electrofault is restricted to students currently pursuing their education in any recognized educational institute.
+					2) Only Individual participation is allowed.
+					3) The electronics components are assumed to be ideal unless otherwise stated.
+					4) Any participant indulging in forbidden network activities will be disqualified from the event.
+					5) Judges" and organizing committee decision shall be treated as final and binding on all.
+					6) Violation of any the above rules will lead to disqualification.
+					7) The organizers reserve the rights to change any of the above rules as they deem fit. 
+
+					<b>EVENT FORMAT</b>
+					1) The competition will be held in two stages.
+					2) The format of the questions will be multiple choice questions with a single correct answer.
+					3) For each correct answer +3 marks will be awarded and for each wrong -1 mark will be awarded
+					4) Level 1 "Screening round" will be of 45 minutes.
+					5) After Level 1 , there will be a break of 15 minutes during which the result of the level 1 will be disclosed. The top 30 contestants of Level 1 will qualify for Level 2.
+					6) Level 2 "Final round" will be of 30 minutes.
+					7) The top 2 qualified contestants will be declared as Winners.
+				]]>
+				</rules>
+
+				<contact>
+
+				</contact>
+			</Electrofault>
+
+				
+			<LimitDePlazo>	
+			
+				<uid>
+					27
+				</uid>
+
+				<name>
+					 	Limite de plazo
+				</name>
+
+				<day>
+
+				</day>
+
+				<categ>
+					Online
+				</categ>
+
+				<shortDescription>
+					Coding event
+				</shortDescription>
+
+				<description>
+					limite de plazo is an event where brilliant minds will make their
+					way while others find it difficult to solve simple problems made
+					typical by constraints of time and space. The problems don't require a very deep knowledge of
+					algorithms, but instead require efficient thinking and some effective
+					programming. The event is based on C/C++, and a good knowledge of these languages will
+					prove useful.
+
+				</description>
+
+				<rules>
+				<![CDATA[
+					1. Please do not discuss strategy, suggestions or tips in the comments during a live contest. If you are unsure, email us at limitdeplazo.iiita@gmail.com
+					2. Contest problems will become visible on (+5:30 GMT). The time limit for the contest is  hours. It will end at at .
+					3. You will receive one point for solving a problem (passing all test cases - no partial credit), regardless of the level of difficulty of that problem. The winning team will be decided by the team which submits all the solutions(or the most submissions) first.
+					4. You can submit solutions as many times as you'd like, there are no penalties for incorrect submissions.
+					5. The codechef handle registered on the the Limit De Plazo website should be the individual codechef ID of the participant.
+					6. All the participants have to be registered on the Limit De Plazo website to be eligible for the prizes.
+					7. The codes can be submitted in either of these languages: C, C99 strict, C++ 4.0.0-8 and C++ 4.3.2
+					8. 24 hours after the end of the contest, the test cases and the author's solution would be available on Limit De Plazo website.
+					9. Any sort of malicious activity will lead to immediate disqualification of the team in question.
+				]]>
+					</rules>
+
+				<contact>
+
+				</contact>
+			</LimitDePlazo>
+				
+			<ITGuru>
+				<uid>
+					28
+				</uid>
+
+				<name>
+					 IT Guru
+				</name>
+
+				<day>
+
+				</day>
+
+				<categ>
+					Online
+				</categ>
+
+				<shortDescription>
+					IT Quiz
+				</shortDescription>
+
+				<description>
+					IT Guru is the heptathlon for the geeks. Here you will face one of the finest problems in Information Technology, problems that will make you dive deep into the labyrinth of your brain to find a solution. If you have the calibre to think beyond the impossible, you are a perfect candidate to become an IT Guru.
+
+				</description>
+
+				<rules>
+				<![CDATA[
+					1) There will be 45( may vary ) questions to be answered in 30 minutes.
+					2) Each question has 4 choices and only 1 is correct.
+					3) There will be negative marking for wrong answer(s).
+					4) Top 10 participants will qualify for next round.
+					5) Participants will participate individually.
+					6) The second round will be on-campus.
+					]]>
+				</rules>
+
+				<contact>
+
+				</contact>
+			</ITGuru>
+			
+			<Gladiator>
+				<uid>
+					29
+				</uid>
+
+				<name>
+					 Gladiator 
+				</name>
+
+				<day>
+
+				</day>
+
+				<categ>
+					Online
+				</categ>
+
+				<shortDescription>
+					Robot Programming 
+				</shortDescription>
+
+				<description>
+					If you know how to blend coding and creativity , this is the event for you. Design the code for your virtual robot and get crowned as THE GLADIATOR.
+					Whole event is divided into a number of rounds consisting of several battles in which two tanks will be competing against each other.
+					Top three participants will be awarded with certificates and exciting prize.
+					The event consists of Robot tanks developed in ROBOCODE(http://robocode.sourceforge.net/) standard developement environment battling out each other in a virtual arena. 
+
+					Whole event is divided into a number of rounds consisting of several battles in which two tanks will be competing against each other. 
+
+					All the entries along with source code of their tanks have to be mailed on gladiator@iiita.ac.in 
+
+					All entries should be sent in the format given below: 
+					* Name of the participant
+					* Institute Name
+					* Contact Number
+					* Code file along with supporting documentation compressed in .Zip format 
+
+					All the submissions should be mailed between the aforesaid id. 
+
+					Results will be declared on  before  (IST).
+				</description>
+
+				<rules>
+				<![CDATA[
+					1. Individual participation should be there in the event (no teams). 
+
+					2. All submissions must arrive through mail. All supporting documentation must be included with the submission in a text file. 
+
+					3. Only 1 submission is allowed per person. This code will be used for all battles. 
+
+					4. The tank will only use the classes and methods available in the standard Robocode Development environment of at least Version 1.6.3. and the Java SE 6.0 API Specification. These are available for download from the Download(http://robocode.sourceforge.net/download) Page on robocode. 
+
+					5. The tank should be contained in one JAVA file. This Java file can contain multiple classes. Files will be compiled prior to entering a battle match. Robots that do not compile will be disqualified from that battle / match. External configuration text files will be permitted where this has been explicitly stated in the entry documentation. 
+
+					6. The structure for qualifying, the number of robots in each group and the match format will be decided once the total number of entries is known. 
+					]]>
+				</rules>
+
+				<contact>
+
+				</contact>
+			</Gladiator>
+				
+			<Platzen>
+				<uid>
+					210
+				</uid>
+
+				<name>
+					Platzen 
+				</name>
+
+				<day>
+
+				</day>
+
+				<categ>
+					Online
+				</categ>
+
+				<shortDescription>
+					Crytography event
+				</shortDescription>
+
+				<description>
+					This is an event of numbers and ciphers. You will be given an encrypted message and a key and a little bit of our support via hint of the problem. You have to figure out the original message.So get ready to enter into this cryptoworld soon.
+
+				</description>
+
+				<rules>
+				<![CDATA[
+					1) All participants need to register prior to the event beginning
+					2) Any user found indulging in foul play will be disqualified immediately.
+					3) To be eligible for winning prizes the user must be currently registered in a university. Non students are welcome to participate.
+					4) Organizers decision shall be treated as final.
+					]]>
+				</rules>
+
+				<contact>
+
+				</contact>
+			</Platzen>
+				
+			<Stegolica>	
+				<uid>
+					211
+				</uid>
+
+				<name>
+				 Stegolica 
+				</name>
+
+				<day>
+
+				</day>
+
+				<categ>
+					Online
+				</categ>
+
+				<shortDescription>
+					Steganography event
+				</shortDescription>
+
+				<description>
+					Steganography is the art and science of writing hidden messages in such a way that no-one, apart from the sender and intended recipient, suspects the existence of the message, a form of security through obscurity.
+					Its advantage over cryptography is that messages do not attract attention to themselves.In computer terms,steganography has evolved into the practice of hiding a message within a larger one in such a way that others cannot discern the presence or contents of the hidden message. It has evolved into a digital strategy of hiding a file in some form of multimedia, such as an image, an audio file or even a video. So enter this digital fortress and get ready to traverse the labyrinthine world of ciphers and codes.
+				</description>
+
+				<rules>
+				<![CDATA[
+					1) This is not a team event. Only individual participation is allowed. 
+					2) Even will be of 6 hours duration.
+					3) There will be total of around 10-15 questions.
+					4) In case of any dispute decision of the organizers will be binding.
+					<b>NOTE : Any rule can be added/changed/removed prior to information.</b>
+					]]>
+				</rules>
+
+				<contact>
+
+				</contact>
+			</Stegolica>
+			
+			<Stockhunt>
+				<uid>
+					212
+				</uid>
+
+				<name>
+				 Stockhunt 
+				</name>
+
+				<day>
+
+				</day>
+
+				<categ>
+					Online
+				</categ>
+
+				<shortDescription>
+					Stock market simulation
+				</shortDescription>
+
+				<description>
+					Stockhunt is the annual online, real-time simulation of the stock market, held as a part of Effervescence, annual festival of Indian Institute of Information Technology, Allahabad (IIIT A). This simulation of stock market lets you experience the bulls and bears of stock market virtually. Get virtual cash when u register and spend it in buying stocks, try to make a profit and stand a chance to win big!
+
+					The prize money for the contest this year is:
+					First Prize: Rs. 2500
+					Second Prize: Rs. 1000
+
+
+				</description>
+
+				<rules>
+				<![CDATA[
+					1) All participants need to register prior to the event beginning
+					2) Any user found indulging in foul play will be disqualified immediately.
+					3) To be eligible for winning prizes the user must be currently registered in a university. Non students are welcome to participate.
+					4) You must make your profile public to be eligible for the prize. Otherwise, you will be treated as defaulters.
+					4) Organizers decision shall be treated as final.
+					]]>
+				</rules>
+
+				<contact>
+
+				</contact>
+			</Stockhunt>
+
+			<Webkriti>
+				<uid>
+					213
+				</uid>
+
+				<name>
+					 	Webkriti
+				</name>
+
+				<day>
+
+				</day>
+
+				<categ>
+					Online
+				</categ>
+
+				<shortDescription>
+					Web-designing event
+				</shortDescription>
+
+				<description>
+					"Every great venture kicks off with an imagination: The imagination to create and accomplish things"
+					Webkriti is the WEB DESIGNING competition organized under effervescence, the annual festival of Indian Institute of Information Technology, Allahabad (IIIT A).
+					If you have the right mixture of imagination, creativity and the technical foundation to convert your awesome ideas into web pages, then this event is certainly for you. Websites are aplenty on the Internet but the perfect blend is difficult to come by. So all the artists out there with no brushes, just keyboard in one hand and mouse in other, gear up for this event.
+				</description>
+
+				<rules>
+				<![CDATA[
+					1. Group must consists of atmost 3 persons.
+					2. FLASH AND TEMPLATES ARE <b>NOT ALLOWED</b>.
+					3. Participants can start working on the problem as given in the Problem Statement.
+					4. Participants are required to submit their website along with their personal details.
+					5. Pesrsonal details must include name of the team members and the institute name.
+					6. Last date of online submission of website : 26/09/11 till midnight.
+					7. After the online submission,a list of selected teams will be called for oncampus event(phase-2).
+					8. Send the submission on webkritimm11@gmail.com
+					9. Decision of the Judges will be considered as final.
+
+					<b>Judging Criteria:</b>
+					Content Management
+					Layout
+					Dynamic Nature
+					Code Well Commented
+					Usage of AJAX will earn you bonous points.
+					Usage of Database will earn you bonus points.
+					Proper usage of all the images and videos on the given links in the problem statement will be given more points.
+
+					Problem Statement: You have to make one of the following websites for Webkriti 2012:
+
+					1. Design the " Indian Institute of Information ,Allahabad " home website.
+					For details about the college, please visit: http://iiita.ac.in/
+					2. Design the website for "Prayaas" ( an initiative taken to educate poor kids )
+					For more details about Prayaas, please visit: http://www.facebook.com/pages/Prayaas-Let-dreams-not-die/110222155662689
+				]]>
+				</rules>
+
+				<contact>
+
+				</contact>
+			</Webkriti>
+				
+			<AlKhwarizm>
+				<uid>
+					214
+				</uid>
+
+				<name>
+				 	Al Khwarizm</b>
+					]]>
+				</name>
+
+				<day>
+
+				</day>
+
+				<categ>
+					Online
+				</categ>
+
+				<shortDescription>
+					Coding event
+				</shortDescription>
+
+				<description>
+					Al Khwarizm is the annual Online Programming contest held as a part of Effervescence, annual festival of Indian Institute of Information Technology, Allahabad (IIIT A). It is an International level competition where coders race against each other to lay claim to the title of algorithm maestro, by solving tough problems.
+					The prize money in this year's contest is:
+					First Prize: Rs. 5000.
+					Second Prize: Rs. 3000.
+
+				</description>
+
+				<rules>
+				<![CDATA[
+					1. Please do not discuss strategy, suggestions or tips in the comments during a live contest. If you are unsure, email us at alkhwarizm.iiita@gmail.com
+					2. Contest problems will become visible on September 27th at 1930 hrs. (+5:30 GMT). The time limit for the contest is 4 and half hours. It will end on 28th September 2011 at 0000hrs(12 midnight).
+					3. You will receive one point for solving a problem (passing all test cases - no partial credit), regardless of the level of difficulty of that problem. The winning team will be decided by the team which submits all the solutions(or the most submissions) first.
+					4. You can submit solutions as many times as you'd like, there are no penalties for incorrect submissions.
+					5. The codechef handle registered on the the alkhwarizm website should be the individual codechef ID of ONE of the team members. Both the team members do not need to register. One id will be considered for the event. Visit the codechef page here
+					6. All the teams have to be registered on the Alkhwarizm website(http://effervescence.iiita.ac.in/web.alkhwarizm_index.html) to be eligible for the prizes.
+					7. The codes can be submitted in either of these languages: C, C99 strict, C++ 4.0.0-8 and C++ 4.3.2
+					8. 24 hours after the end of the contest, the test cases and the author's solution would be available on Alkhwarizm website.
+					9. Any sort of malicious activity will lead to immediate disqualification of the team in question.
+				]]>
+				</rules>
+
+				<contact>
+
+				</contact>
+			</AlKhwarizm>
+	</Online>
+	
+	<Cult>
+		<Innovation>
+		<uid>
+			31
+		</uid>
+
+		<name>
+			Innovation
+		</name>
+
+		<day>
+
+		</day>
+
+		<categ>
+			Cultural
+		</categ>
+
+		<shortDescription>
+			On-Stage Dramatics Event
+		</shortDescription>
+
+		<description>
+			It is the main dramatics event conducted during effervescence. Each team should have at least 6 participants and cannot exceed 20.Preliminary auditions may be conducted .The act cannot exceed more than 25 minutes .The winners of this event are awarded with cash prizes and certificates.
+		</description>
+
+		<rules>
+			<![CDATA[
+			<b>Rules-</b>
+
+			1. Each team should have a minimum of 6 members and cannot exceed 20.
+			2. The maximum performance time is 25 minutes 'curtain to curtain' and minimum of 12 minutes.
+			3. Team is free to choose the theme on its own.
+			4. The drama can be bilingual. Usage of both English and Hindi is allowed.
+			5. Negative marks will be awarded for both, exceeding time limit, and not completing the minimum time.
+			6. Teams can be subjected to negative marking on issues like use of abusive language, vulgarity etc. in the play.
+			7. Teams must bring all the costumes and props with them as the organizers will not provide anything. Only a few chairs and tables for stage setting may be provided.
+			8.The background music and lighting is allowed and a system for the same is provided by the organizers.
+			9. On the spot registrations (at least 4 hours prior to event ) are allowed but online registrations are advisable.
+			10. Any miscellaneous last minute demands to the organizers should be made 48 Hours prior to the performance, any demands after that will not be entertained.
+
+			<b>JUDGING CRITERIA</b>
+			1. Performance in acting(dialogue delivery, expressions, body movements)-50%
+			2. Presentation encompassing costumes, music, props, use of stage etc. - 20%
+			3. Successfully depicting the plot or theme - 20%
+			4. Marks for originality - 10%
+			]]>
+		</rules>
+
+		<contact>
+			Avi Munjal 
+			aviimunjal@gmail.com
+			+917275126036
+		</contact>
+		</Innovation>
+		
+		<Melodieux>
+		<uid>
+			32
+		</uid>
+
+		<name>
+			Melodieux
+		</name>
+
+		<day>
+
+		</day>
+
+		<categ>
+			Cultural
+		</categ>
+
+		<shortDescription>
+			On-Stage Vocals Event
+		</shortDescription>
+
+		<description>
+			"There"s music in the sighing of a reed;
+			There"s music in the gushing of a rill;
+			There"s music in all things, if men had ears:
+			Their earth is but an echo of the spheres. "
+
+			Music is love in search of a word .There is nothing in the world so much like prayer as music is. Its the only thing that can make snivel without vindication. Virtuosi presents the musical challenge Melodieux, the rhythmic war of excellence. We are here to unravel the likes of Latas, Sunidhis, Kks, Sonus, Atifs and Kishores. It expresses feelings and thought, without language, it was below and before speech, and it is above and beyond all words.Similar feelings spontaneously flows through populace in IIIT-A at the MELODIEUX. The singers storm troops the audience with their euphonious voice while the Duet asphyxiates the remaining . With a bountiful over enthusiastic participation of many highly proficient vocalists, the event easily becomes an inexplicable call
+
+		</description>
+
+		<rules>
+			<![CDATA[
+			<b>RULES AND REGULATIONS: </b>
+			1) Participants can register as a team consisting of a maximum of two members, one Singer and one co singer.
+			2) Solo or Duet performance only. 
+			3) The language should only be English or Hindi.
+			4) Music will be provided by the orchestra.
+			5) There will be two rounds-
+				  a) Prelims
+				  b) Final
+			<b>REGISTRATION: </b>
+			Contact the organisers for registration details.
+			]]>
+
+		</rules>
+
+		<contact>
+			Jayanto chowdhary
+			+918957841900
+			Rishabh
+			+918090835374
+			Siddharth Bhardwaj
+			+918853472524
+
+		</contact>
+		</Melodieux>
+		
+		
+		<Unplugged>
+		<uid>
+			33
+		</uid>
+
+		<name>
+			Unplugged
+		</name>
+
+		<day>
+
+		</day>
+
+		<categ>
+			Cultural
+		</categ>
+
+		<shortDescription>
+			Western Acoustic Music Event
+		</shortDescription>
+
+		<description>
+			Tone down the distortion, let the unadulterated melody of the strings take control in this Western Acoustic event. No technical snags, no loud sounds . Just pull the plug and find yourself in solace with the melody of the rhythm. We ensure that you will be unplugged from the rest of the world by the magic of sur, raaga and dhun.
+		</description>
+
+		<rules>
+			<![CDATA[
+			1) Event will be held in two rounds:
+					a) Prelims(Off-stage)
+					b) Final(On-stage)
+			2) Participants can register as a team consisting of a maximum of 5 members.
+			3) The instrumentalist can only use an acoustic instrument (a synthesizer can be used instead of a piano and soft percussion may be used).
+			4) Any kind of pre-recorded music will not be allowed.
+			5) The language should only be English or Hindi.
+			6) Time allotted to each group will be 15 minutes(max) including sound check.
+			
+			<b>REGISTRATION: </b>
+			Contact the organisers for registration details.
+			]]>
+
+		</rules>
+
+		<contact>
+			Jayanto chowdhary
+			+918957841900
+			Rishabh
+			+918090835374
+			Siddharth Bhardwaj
+			+918853472524
+
+		</contact>
+		</Unplugged>
+		
+		<Psychadelia>
+		<uid>
+			34
+		</uid>
+
+		<name>
+			Psychadelia
+		</name>
+
+		<day>
+
+		</day>
+
+		<categ>
+			Cultural
+		</categ>
+
+		<shortDescription>
+			Band Performance Event
+		</shortDescription>
+
+		<description>
+			Great music is that which penetrates the ear with ease and leaves the memory with difficulty. But magical music is one which never leaves the memory ,for it becomes a part of it. So all those whose think are whip lashed by some distant storm, finally get a chance to unlax them and enjoy the enthralling PSYCHEDELIA.
+			"When we hear music, we fear no danger, we are invulnerable. we see no foe and feel no pain. The beauty around becomes a part of us." All this feels true as the participants create an aura of mystic notes and octaves. Just as a painter paints an entire picture with a few colours , our singers create an entire melody out of just seven notes. They teach us that music is a moral law, which give soul to our universe, wings to the mind and life to Effervescence. It is an event where participants can perform freely as there is no pressure of judgement.
+
+		</description>
+
+		<rules>
+			<![CDATA[
+			1)	This is not a competitive event.
+			2)	 Only IIIT Allahabad students are allowed to participate.
+			3)	 Auditions will be taken by Virtuosi (Music Club).
+			<b>REGISTRATION: </b>
+			Contact the organisers for registration details.
+			]]>
+		</rules>
+
+		<contact>
+			Jayanto chowdhary
+			+918957841900
+			Rishabh
+			+918090835374
+			Siddharth Bhardwaj
+			+918853472524
+
+		</contact>
+		</Psychadelia>
+	
+		<DirectorsCut>
+		<uid>
+			35
+		</uid>
+
+		<name>
+			Director's Cut
+		</name>
+
+		<day>
+
+		</day>
+
+		<categ>
+			Informals
+		</categ>
+
+		<shortDescription>
+			Documentry Creating Event
+		</shortDescription>
+
+		<description>
+			
+			Ever dreamt of being part of movies like Three Idiots, Rang De Basanti , The Social Network, Inception etc ?
+			Ever dreamt of grabbing an Oscar by making documentary like "Smile Pinky" ????
+			Ever daydreamt of rocking the world with your style of direction?
+			No doubt, the answer is certainly yes. This time in Effervescence "Rangtarangini" The Dramatics club has brought a golden opportunity for you to make your dreams come true. Make a short movie or documentary of any kind viz. comedy, spoof, inspirational, journey, corporate (business) related etc . Bring up your creative skills and spellbind the viewers. 
+		</description>
+
+		<rules>
+			<![CDATA[
+			<b>Rules - </b>
+
+			The top 3 movies will win prizes and will be shown on the silver screen .We do not provide camera and any other technical resources.
+			There should not be any controversial issues involved in the script. The length of the movie should be at least 10-15 minutes
+
+			Movie will be judged on the basis of:
+			1. Title of the movie
+			2. Script
+			3. Acting
+			4. Direction
+			5. Editing
+			6. Technical effects
+
+			From all the entries we will receive , three best movies will be selected to show on silver screen and will be awarded by certificates and with exciting prizes .
+			One movie will be shown on main stage screen (subject to conditions).
+
+			1. Participants are requested to report at least half an hour before each event at the event Venue .
+			2. Recorded music files mp3 format required in some event should be submitted at least 1 Hour before the event starts in a format compatible with Windows Media Player, preferably mp3 format.
+			3. Any form of obscene, unacceptable behaviour or language, vulgarity, on or off stage will lead to immediate disqualification of the team.
+			4. Judges decision will be final and binding on all participants in all events. Any complaints regarding judges, decisions will not be entertain
+			ed. 5. Organizers reserve the right to admission, right to change the rules and to change or cancel any event without any prior notice.
+			6. All participants are required to carry their college identity cards or a bonafide certificate.
+			7. Teams are required to arrange their own props for all the events. Although the things of basic requirements such as electricity, tables and chairs can be arranged by institution.
+			]]>
+		</rules>
+
+		<contact>
+			Avi Munjal 
+			aviimunjal@gmail.com
+			+917275126036
+
+		</contact>
+		</DirectorsCut>
+
+	</Cult>
+	
+	<Management>
+	
+		<AdMania>
+		<uid>
+			41
+		</uid>
+
+		<name>
+			Ad Mania
+		</name>
+
+		<day>
+
+		</day>
+
+		<categ>
+			Management
+		</categ>
+
+		<shortDescription>
+			Advertizing Challange
+		</shortDescription>
+
+		<description>
+			Advertising is about striking a chord with people and creating magic.
+			 The flashy slogans, catchy tunes, funny themes or touching, heartwarming stories make these advertisements an inseparable part of the life of the common man. Housewives all over the country still swear by the "Dhoondte reh jaoge" claim of the soap brand Ariel, Idea Cellular's "What an Idea", Chlormint's "Dubara mat poochna" and Asian Paints "Wah! Naya ghar, nayi gaadi, badhiya hai" are some of the most unforgettable punchlines. Pepsi's snazzy "Yeh dil mange more" has been on everybody's lips ranging from a student receiving A's in his exams, or a couple craving to spend time together to an employee demanding a raise in salary or a fan watching Tendulkar hit sixes in the World Cup. Ad-mania provides you with an opportunity to showcase your innovative thinking, original ideas, perspectives and insights that make you stand apart from the crowd. It plans to test the participants in the various advertising skills ranging from print and electronic media. Use your imagination to come up with something simple and yet effective that connects with the masses instantly. So get ready to "Taste the thunder" as the management-gurus compete with each other to sweep away the heart of the consumers. 
+		</description>
+
+		<rules>
+			They will be provided to you on the spot. 
+		</rules>
+
+		<contact>
+
+		</contact>
+		</AdMania>
+
+		<Ranneeti>
+		<uid>
+			42
+		</uid>
+
+		<name>
+			Ranneeti
+		</name>
+
+		<day>
+
+		</day>
+
+		<categ>
+			Management
+		</categ>
+
+		<shortDescription>
+			Strategic Planning
+		</shortDescription>
+
+		<description>
+			This is a Strategy Making Game to judge the decision making capability and synergy of group. 
+		</description>
+
+		<rules>
+			<![CDATA[
+			1) Each team consist of 2 members and each member will act as member of board of director of a firm.
+			2) The board of director will consist of 5 teams.
+			3) Each team will have two voting rights.
+			4) The board of directors will be assigned a real strategic problem faced by any organization of recent period.
+			5) The number of board of director will depend upon the number of participations.
+			6) Each board of director will be given different strategic problem.
+			7) Each team within the board of director will propose a solution to the problem and final solution will be decided on the basis of voting done among the teams of board of director.
+			8) The judgment will be done by giving individual marks to each team for their solution and bonus point for selection of solution for board of director.
+			9) The final 5 teams will be selected in board of director by preliminary phase test.
+			]]>
+		</rules>
+
+		<contact>
+
+		</contact>
+		</Ranneeti>
+
+		<Plannum>
+		<uid>
+			43
+		</uid>
+
+		<name>
+			Plannum
+		</name>
+
+		<day>
+
+		</day>
+
+		<categ>
+			Management
+		</categ>
+
+		<shortDescription>
+			Bussiness Plan Contest
+		</shortDescription>
+
+		<description>
+			Wanna play GOD??? - then Plannum is the right bet for you Gen-X business tycoons. If you wanna be the next Ambani or Mittal, if you have that entreprenurial acumen that business foresight in you that bewilders and dazzles the world around then why wait??? Just showcase your innate abilities, let your creative juices flow because its Plannum - the business plan contest of IIIT-A. 
+		</description>
+
+		<rules>
+			To be available soon.
+		</rules>
+
+		<contact>
+
+		</contact>
+		</Plannum>
+
+	
+	</Management>
+	
+	<Informal>
+	
+		<BindassBol>
+		<uid>
+			51
+		</uid>
+
+		<name>
+			Bindass Bol
+		</name>
+
+		<day>
+
+		</day>
+
+		<categ>
+			Informals
+		</categ>
+
+		<shortDescription>
+			A street play with fultu nautanki 
+		</shortDescription>
+
+		<description>
+			A variation of Nukkad Natak(Street Play), Bindas Bol features outspoken acts. The participants are given complete freedom over the subject of their play in this informal event. The champions of Bindass Bol are awarded with lucrative gifts.
+		</description>
+
+		<rules>
+			<![CDATA[
+			<b>Rules - </b>
+
+			1. Each team should have a minimum of 6 members and cannot exceed 15.
+			2. The maximum performance time is 20 minute and minimum of 12 minutes
+			3. Team is free to choose the theme on its own.
+			4. Teams must bring all the costumes and props with them as the organizers will not provide anything. Only a few chairs and tables for stage setting may be provided.
+			5. Teams can be subjected to negative marking on issues like use of abusive language, vulgarity etc. in the play.
+			6. The drama can be bilingual. Usage of both English and Hindi is allowed.
+			7. On the spot registrations are allowed but online Registrations are advisable.
+
+			<b>JUDGING CRITERIA</b>
+			1. Performance in acting(dialogue delivery, expressions, body movements)-40%
+			2. Presentation encompassing costumes, music, props, use of stage etc. - 10%
+			3. Successfully depicting the plot or theme - 20%
+			4. Marks for audience response is 30%
+			]]>
+		</rules>
+
+		<contact>
+			Avi Munjal 
+			aviimunjal@gmail.com
+			+917275126036
+		</contact>
+		</BindassBol>
+		
+		<BlindDate>
+		<uid>
+		52
+		</uid>
+
+		<name>
+		Blind Date
+		</name>
+
+		<day>
+
+		</day>
+
+		<categ>
+		Informal Event
+		</categ>
+
+		<shortDescription>
+		Dare to Date
+		</shortDescription>
+
+		<description>
+		Ever dared of thinking that you can challenge the much cliched love story of romeo n juliet,adam n eve,Heer n Ranjha and get your name registered in the lineage like beep n beep(no offence it just shows you and your lady love). Bring out the cupid inside and unveil your lurking romance to your date on a date with "Blind Date".
+		</description>
+
+		<rules>
+		<![CDATA[
+		<b>Rules - </b>
+		1) There should not be any prior discussion between the participants before the event.
+		2) Answer prompting is not allowed.
+		3) Paring before the event will not be entertained.
+		]]>
+		</rules>
+
+		<contact>
+
+		</contact>
+		</BlindDate>
+		
+		<BollywoodTambola>
+		<uid>
+		53
+		</uid>
+
+		<name>
+		Bollywood Tambola
+		</name>
+
+		<day>
+
+		</day>
+
+		<categ>
+		Informal Event
+		</categ>
+
+		<shortDescription>
+		Bollywood Trivia
+		</shortDescription>
+
+		<description>
+		Adding flavour to one of the most popular party game is the masala and the grandeur of one of the biggest Indian industry - Bollyoood. This is Tambola revamped, replete with the music, masti and melodrama. High on the entertainment factor, the glitz and glamour of Bollywood is here to dazzle you. It's just a combination of luck and knowledge of movies and the 'stars' that will help you hit the jackpot here.
+		</description>
+
+		<rules>
+		<![CDATA[
+		<b>Rules - </b>
+		They will be provided to you on the spot.
+		]]>
+		</rules>
+
+		<contact>
+		</contact>
+		</BollywoodTambola>
+
+		<Collage>
+		<uid>
+			54
+		</uid>
+
+		<name>
+			Collage
+		</name>
+
+		<day>
+
+		</day>
+
+		<categ>
+			Informal Event
+		</categ>
+
+		<shortDescription>
+			Show your imagination
+		</shortDescription>
+		<description>
+			A collage is a work of formal art made from an assemblage of different forms, thus creating a new whole. It is just like putting together the pieces of the jigsaw puzzle to compose a whole new picture. Newspaper clippings, ribbons, bits of colored or hand-made papers or, photographs are glued together to design an incredible piece of art. Give wings to your imagination and let the diverse art-forms coalesce to give expression to the manifold thoughts whirring in your mind.
+		</description>
+		<rules>
+			<![CDATA[
+			<b>Rules - </b>
+			They will be provided to you on the spot.
+			]]>
+		</rules>
+
+		<contact>
+
+		</contact>
+		</Collage>
+
+	<GullyCricket>
+	<uid>
+		55
+	</uid>
+
+
+<name>
+Gully Cricket
+</name>
+
+<day>
+
+</day>
+
+<categ>
+Informal Event
+</categ>
+
+<shortDescription>
+Cricket..!!
+</shortDescription>
+<description>
+Street cricket or gully cricket is a stripped-down version of the international sport of cricket.
+</description>
+
+<rules>
+<![CDATA[
+<b>Rules - </b>
+1.Every team must have 6 members.
+2.There will be 5 over matches .
+3.3 consecutive beats will be considered as OUT.
+4.If the ball hits boundaries without taking a tip on the ground will be considered as OUT.
+5.NO BALLS and WIDE balls will be considered as Extras.
+6.There will be no run for byes.
+7.The height of the ball should be below chest.
+8.Postively four of your players should be bowling(atleast one over each). 
+9.Umpire?s decision will be considered as last decision.
+10.Rest other rules for scorings and run will be detailed at the venue.]]>
+</rules>
+
+<contact>
+
+</contact>
+</GullyCricket>
+
+	<HarryPotterTrivia>
+	<uid>
+56
+</uid>
+
+<name>
+Harry Potter Trivia
+</name>
+
+<day>
+
+</day>
+
+<categ>
+Informal Event
+</categ>
+
+<shortDescription>
+Feast for Harry Potter fans.
+</shortDescription>
+<description>
+Wizards and witches, get ready to enter the Hogwarts School of Witchcraft and Wizardry, and give your first OWLs.Harry Potter Trivia is all about Harry Potter"s Wizarding world and its adventures.So hold your wands and gets ready to rack yor brains to answer the questions based on all harry potter books and movies.</description>
+<rules>
+<![CDATA[
+<b>Rules - </b>
+1.The team can comprise of maximum three members.
+2.There"ll be four rounds, the first one being a written qualification round and the rest"ll be written and audio-visual rounds.
+3.Any attempt of cheating or use of mobiles or any other gadgets, will result to disqualification of the team.]]>
+</rules>
+
+<contact>
+
+</contact>
+</HarryPotterTrivia>
+
+<Roadies5.0>
+<uid>
+57
+</uid>
+
+<name>
+Roadies 5.0
+</name>
+
+<day>
+
+</day>
+
+<categ>
+Informal Event
+</categ>
+
+<shortDescription>
+Hell Down Under..!!
+</shortDescription>
+<description>
+A remake of the popular T.V. show, Roadies is not where you'll score brownie points if you just sing or dance. It is not some talent hunt contest where a shimmy-shake or a dance move or two will help you win. We are not looking for some gifted idols here. This is a battle that will test your brawn and wits until there are none left. This is where you have to leave your 'I'm so cool' attitude at home. The journey is full of arduous and earlier unimaginable tasks and if you've already accepted defeat and thinking of calling it quits, why don't you send your enemies instead? We'll get the dirty job done for you!!! So if you think you've got the guts to survive in this game of naked ambition that requires courage and a never-say-die spirit then what are you waiting for??? Come and be a part of IIIT-A Roadies and experience the 'real' thing!!!</description>
+<rules>
+<![CDATA[
+<b>Rules - </b>
+They will be provided to you on the spot. ]]>
+</rules>
+
+<contact>
+
+</contact>
+</Roadies5.0>
+
+<StreeSoccer>
+<uid>
+58
+</uid>
+
+<name>
+Street Soccer
+</name>
+
+<day>
+
+</day>
+
+<categ>
+Informal Event
+</categ>
+
+<shortDescription>
+Freestyle football
+</shortDescription>
+<description>
+Inspired by the unbelievable trickery of today's skillful footballers, this one of its kind event is being staged at IIIT-A for the first time ever.</description>
+<rules>
+<![CDATA[
+<b>Rules - </b>
+They will be provided to you on the spot. ]]>
+</rules>
+
+<contact>
+
+</contact>
+</StreeSoccer>
+
+<TattooPainting>
+<uid>
+59
+</uid>
+
+<name>
+Tattoo Painting
+</name>
+
+<day>
+
+</day>
+
+<categ>
+Informal Event
+</categ>
+
+<shortDescription>
+Tattoo Making
+</shortDescription>
+<description>
+Forget the paper and poster board - use your own body as the backdrop for colourful creations. You can make anything - be it a quaint flower or a butterfly on a shoulder or a venomous snake, a formidable dragon on a cheek, arm or leg. With the paint in the palette and your body as the canvas let the brush conjure up magnificent shapes and designs. Blend together various shades and tints to paint magic on yourself.</description>
+<rules>
+<![CDATA[
+<b>Rules - </b>
+They will be provided to you on the spot. ]]>
+</rules>
+
+<contact>
+
+</contact>
+</TattooPainting>
+
+		<TonguesOnFire>
+		<uid>
+			510
+		</uid>
+
+		<name>
+			Tongues On Fire
+		</name>
+
+		<day>
+
+		</day>
+
+		<categ>
+			Informals
+		</categ>
+
+		<shortDescription>
+			Feel the heat of hot arguments
+		</shortDescription>
+
+		<description>
+			Ever heard the term-'Let Loose' or ever enjoyed pulling anyone off his grip, then this event would feed you with plenty of solace along with the gifts as a byproduct. Burning hot arguments on the topics that have never been talked off before. In Tongues on fire leg pulling your friends can fetch you attractive prizes. 
+
+		</description>
+
+		<rules>
+			<![CDATA[
+			<b>Rules -</b>
+
+			1. Each team should have 3 members.
+			2. The time allotted will be 10 minutes
+			3. Teams competing will be given a topic.
+			4. Teams can be subjected to negative marking on issues like use of abusive language, vulgarity etc. in the argument.
+			5. Usage of both English and Hindi is allowed.
+			6. One on one chance will be provided to two teams to freely argue on the topic at a time.
+			7. On the spot registrations are allowed but online Registrations are advisable.
+
+			<b>Judging Criteria: </b>
+			Team performance and audience response will used to judge the teams.
+			]]>
+		</rules>
+
+		<contact>
+			Avi Munjal 
+			aviimunjal@gmail.com
+			+917275126036
+		</contact>
+		</TonguesOnFire>
+		
+		<TreasureHunt>
+		<uid>
+		511
+		</uid>
+
+		<name>
+		Treasure Hunt
+		</name>
+
+		<day>
+
+		</day>
+
+		<categ>
+		Informal Event
+		</categ>
+
+		<shortDescription>
+		Find the treasure and win the prize.
+		</shortDescription>
+		<description>
+		The joy of discovery is universal. The exhilaration felt when you reach the end, and go "Open Sesame!" is indescribable.
+		With a scrambled map, a few clues, a time limit barely enough to breathe in, will you be able to find the final hidden treasure?
+		Gear up guys to negotiate this labyrinth of IIITA, and win a grand prize at the end.
+		Come and explore the uncharted territories in this treasure hunt, and prove that you are no less than a treasure-hungry pirate! </description>
+		<rules>
+		<![CDATA[
+		<b>Rules - </b>
+		They will be provided to you on the spot.]]>
+		</rules>
+
+		<contact>
+
+		</contact>
+		</TreasureHunt>
+		
+		<TugOfWar>		
+		<uid>
+		512
+		</uid>
+
+		<name>
+		Tug-Of-War
+		</name>
+
+		<day>
+
+		</day>
+
+		<categ>
+		Informal Event
+		</categ>
+
+		<shortDescription>
+		Find the treasure and win the prize.
+		</shortDescription>
+		<description>
+		The age-old sport, a tussle for supremacy, is not only a test of sheer strength but also of your grit and determination. This team game involves coordination and requires resilience and perseverance to bring home the bacon. So get ready for a highly entertaining and a severe contest that has on display raw power, unflagging spirit and undefiable resolution.
+		</description>
+		<rules>
+		<![CDATA[
+		<b>Rules - </b>
+		They will be provided to you on the spot.]]>
+		</rules>
+
+		<contact>
+
+		</contact>
+		</TugOWar>		
+		
+		
+		<DoubleTrouble>
+		<uid>
+			513
+		</uid>
+
+		<name>
+			Double Trouble
+		</name>
+
+		<day>
+
+		</day>
+
+		<categ>
+			Informal
+		</categ>
+
+		<shortDescription>
+			The Talent Hunt
+		</shortDescription>
+
+		<description>
+			This is an event to discover the most talented duo in the fest. There will be couplet participation. The objective of this event is to find the imagination, creativity, and flexible ways of thinking among the participants. The reason of forming couplet at the time is to find their adaptability among them. The event consists of various rounds which include the activities like spoofing, dramatic activities, questionarre. By short listing, the couplet in different rounds will be selected. 
+
+		</description>
+
+		<rules>
+			<![CDATA[
+			<b>
+			Rules - </b>
+
+			1. Each team should have 2 members.
+			2. The team can be made between two boys,two girls or a boy and a girl. 
+			3. Usage of both English and Hindi is allowed.
+			4. On the spot registrations are allowed but online Registrations are advisable.
+
+			<b>JUDGING CRITERIA </b>
+			1. Performance will be judged on the basis of compatibilty and adaptibilty of the pair-40%
+			2. Presentation, Innovation during the rounds- 30%
+			3. Creativity, presence of mind and quick response  - 30%
+			]]>
+		</rules>
+
+		<contact>
+			Avi Munjal 
+			aviimunjal@gmail.com
+			+917275126036
+		</contact>
+		</DoubleTrouble>
+
+	</Informal>
+	
+	<Game>
+		<FIFA11>
+		<uid>
+			61
+		</uid>
+
+		<name>
+			FIFA 11
+		</name>
+
+		<day>
+
+		</day>
+
+		<categ>
+			Game
+		</categ>
+
+		<shortDescription>
+			 
+		</shortDescription>
+
+		<description>
+			Play EA Sports - FIFA 11 in an event to prove yourself the best in online football gaming.
+		</description>
+
+		<rules>
+			<![CDATA[
+			<b>
+			Rules - </b>
+
+			1) Choose three teams, one from any of the clubs ,one international team and the third according to your wish.
+			2) FIVE STAR teams are not allowed.
+			3) You will be given any one team from your given choices and you play with that same team throughout the tournament.
+			4) There will be league matches in the first few rounds followed by knockouts.
+			5) <b>Match durations :</b> 6 mins half in group stages and quarters. : 10 mins half for semi finals and finals.
+			6) <b>Difficulty :</b> Legendary.
+			7) <b>Game Speed :</b> Fast.
+			8) <b>Injuries :</b> OFF.
+			9) <b>Offsides :</b> ON.
+			10) <b>Bookings :</b> ON.
+			11) <b>Number of Subs :</b> 5
+			12) Controllers are allowed to be used.
+			]]>
+		</rules>
+
+		<contact>
+		
+		</contact>
+		</FIFA11>
+		
+		<CounterStrike>
+		<uid>
+			62
+		</uid>
+
+		<name>
+			Counter Strike
+		</name>
+
+		<day>
+
+		</day>
+
+		<categ>
+			Game
+		</categ>
+
+		<shortDescription>
+		</shortDescription>
+
+		<description>
+			The most popular first person shooting game of all times. This is contest of the pro's to prove that they are the best at using their armor's to ther limit.
+		</description>
+
+		<rules>
+			<![CDATA[
+			<b>
+			Rules - </b>
+
+			
+
+
+		-> <b>Competition Method :</b>5 vs. 5 (Team Play, 5 players per team)
+		-> <b>Victory Condition: </b>The first team to win 11 rounds is declared the winner.(16 rounds from Quater Finals onward )
+		-> <b>Official Maps:</b> De_Dust2, De_Inferno, De_Nuke, De_Train
+		->There will be a toss to decide which map to play.Winner eliminates 2 maps and the opponent eliminates 1, remainder shall be played.There will be a knife round to decide the side(CT\T).Map for knife round will be De_Dust2. 
+		-> The Server will record the process of the match.
+		-> We may install third party program and/or join as an observer for tournament operations purposes, such as verifying match results or gathering match data.
+
+		-><b> NO CFGs ARE ALLOWED TO BE EXECUTED.
+
+		General Game Setting:-
+		Rounds:</b> 30 Rounds (Max rounds format): Each Team plays 15 rounds as Terrorists and 15 rounds as Counter-Terrorists
+		<b>Round Time:</b> 1 minute 45 seconds.
+
+		Approved Grenade Amounts Per Round:
+		a) Flashbangs: 2
+		b) Grenades: 1
+		c) Smoke Grenades: 1
+
+		Approved Launch Option Commands:
+		a) noforcemparms
+		b) noforcemaccel
+		c) noforcemspd
+		d) freq ***
+
+
+		-> Default skins must be used.
+		-> Any other use of map or program bugs can result in a warning at the minimum or loss by default for the offending team after deliberation and decision by the board of referees at its sole discretion.
+
+		<b>Tournament Server Setting:-></b>
+
+		mp_autokick 0	mp_autocrosshair 0
+		mp_autoteambalance 0	mp_buytime 0.25
+		mp_consistency 1	mp_c4timer 37
+		mp_fadetoblack 1	mp_flashlight 1
+		mp_forcechasecam 2	mp_forcecamera 2
+		mp_footsteps 1	mp_freezetime 15
+		mp_friendlyfire 1	mp_hostagepenalty 0
+		mp_limitteams 10	 mp_logecho 1
+		mp_logdetail 3	 mp_logfile 1
+		mp_logmessages 1	mp_maxrounds 0
+		mp_playerid 1	mp_roundtime 1.75
+		mp_timelimit 0	mp_tkpunish 0
+		sv_aim 0	sv_airaccelerate 10
+		sv_airmove 1	sv_allowdownload 0
+		sv_allowupload 0	sv_alltalk 0
+		sv_cheats 0	sv_clienttrace 1
+		sv_clipmode 0	sv_friction 4
+		sv_gravity 800	sv_lan_rate 25000
+		sv_maxrate 5000	sv_maxspeed 320
+		sv_maxunlag 0.5	sv_maxupdaterate 101
+		sv_minupdaterate 101	sv_minrate 25000
+		sv_proxies 1	sv_send_logos 1
+		sv_send_resources 1	sv_stepsize 18
+		sv_stopspeed 75	sv_unlag 1
+		sv_voiceenable 1	sv_unlagsamples 1
+		sv_unlagpush 0	sys_ticrate 10000
+		allow_spectators 1	decalfrequency 60
+		edgefriction 2	host_framerate 0
+		log on	 pausable 0
+
+		<b>Allowed Setting Values for Client:-</b>
+
+		cl_updaterate 101	cl_cmdrate 101
+		rate 25000	m_filter 1/0
+		hud_fastswitch 1/0	zoom_sensitivity_ratio
+		fps_max 101	cl_dynamiccrosshair 1/0
+		gamma 1/3	brightness 1/3
+		cl_minmodels 1/0	cl_shadows 1/0
+
+
+
+
+
+
+
+		<b>Following Client Settings May Not Be Changed (Must use the default values)</b>
+
+		cl_weather
+		mp_corpse_stay
+		mp_decals
+		max_shells
+		max_smokepuffs
+		fastsprites
+		ex_interp 0.01
+
+		<b>Unfair Practices Subject to Penalty:-</b>
+		- A player can only be on one team, meaning that you cannot play for two different clans in the competition.
+		- Team members may communicate verbally if they are alive in the match or when all team members are dead.
+		- The player is deemed dead when the screen is completely faded to black. If a bug occurs and the screen doesn't fade to black, the player is deemed dead three seconds after he/she has fallen.
+		- Binding Duck to scroll wheel is offensive.
+		- C4 must be installed at a viewable location. Installing C4 at a location where a boost is required is allowed.
+		- Silent C4 installation is considered bug play.Such an offense may result in a warning or disqualification.
+		- Any use of the flash bang bug will result in a -3 round score for the offending team. If the use of the bug is decided as unintentional, the game continues as normal.
+		-Gay gun ( Krieg 550 commando and D3/AU-1 ) and Shield are not allowed.Use of these weapons results in -1 round score for the offending team. 
+		-Use of unfair but available scripts (e.g. silentrun, attack+use, centerview script, norecoil script, etc.) will have the offending team diqualified.
+		- HLTV Proxy will join the game servers for Tournament Broadcast
+		- To test for HLTV flash bugs, players must follow the directions of the server.
+
+		<b>If disconnection occurs during a match:-</b>
+
+		If all the players cannot play due to an unintended, unforeseen accident such as server stoppage,
+		- Before the 3rd round starts: restart the match
+		- After the 3rd round starts: Disconnected player must re-connect to the server. The round is continued unpausing, and if the disconnected player cannot connect to the server, all players must wait during the freeze time after the round until the disconnected player connects to the server. At this time, the match may continue by unpausing. (Not a restart)
+		- If up to 3 of all players are unintentionally disconnected: The score for that round is discarded. The game is paused after the round during the freeze time, and all players wait until the disconnected players are connected to the server. When all players are connected, the match may continue by unpausing the game.
+		- In the case of intentional disconnection, the server may decide to end the match with the offending team losing by forfeit. 
+
+		<b>General Information </b>
+
+		- Bring all the Gaming Accessories with you.
+			]]>
+		</rules>
+
+		<contact>
+		
+		</contact>
+		</CounterStrike>
+			
+		<AgeOfEmpires>
+		<uid>
+			63
+		</uid>
+
+		<name>
+			Age of Empires
+		</name>
+
+		<day>
+
+		</day>
+
+		<categ>
+			Game
+		</categ>
+
+		<shortDescription>
+		</shortDescription>
+
+		<description>
+			Build your empire. Conquer the world. If this is your vision, we bring the perfect treat for you.
+			Play AOE on LAN and expand your kingdom to win worthy prizes and be the king.
+		</description>
+
+		<rules>
+			<![CDATA[
+			<b>
+			Rules - </b>
+				<b>Home map list ::</b>
+				- Arabia 
+				- Nomad
+				- LN (_refix5b_)
+				- Scandinavia
+				- Continental 
+				- Baltic
+				- Islands 
+				- Team Islands
+				- Migration
+				- Mediterranean 
+				- Highland
+				- Oasis
+				- Rivers
+				- Gold Rush
+				- Mongolia
+				- UltraRandom_v4
+
+				<b>Official Rules:</b>
+				1) Players can only play in a single team . If a player is caught playing for 2 teams, then he will be disqualified and won't be allowed to play further.
+				2) All the games will be played using Patch 1)0e.
+				3) If LN or Nomad is chosen as the map to be played , NO fights are allowed until the 1st TC of both players is up. Walling is NOT allowed until the 1st TC of both fighters is up. In LN, Lumber camp MUST always be the first building of all players. Sheep killing or stealing is NOT allowed until 1st TC of both fighters is up. TC fighting is NOT allowed at all. If one of these conditions are broken, the game MUST be restarted. If such conditions are broken 2 times in a row by the same player, such player will get disqualified.
+				4) Teutons not allowed in LN or Nomad.
+				5) In all the LN or Nomad games, if the game starts with a stuck villager (can't be moved), the game MUST be restarted.
+				6) Cheating is NOT allowed at all in the event. Players doing ANY kind of cheating will be disqualified.
+				7) In case of disconnections, the game must be restored right after the drop. If restoring is not possible,then the decision of organizers will be final.
+				8) Sheep killing is not allowed(show some sportsmanship O:) )....though no such rules for stealing sheep or boar(its a skill ;) )
+				9) No restart if u loose boar food by killing it rather than hunting unless both teams mutually agree.
+				10) New rules can be added and current rules can be changed.
+
+
+				<b>FOR LEAGUE MATCHES ::</b>
+
+				All matches will be best of 3
+				First map => Arabia
+				Second map => Decided by the losing team in Arabia
+				Third map(if required) => Choice of winner of Arabia
+
+				No map shall be repeated !!!
+
+			]]>
+		</rules>
+
+		<contact>
+		
+		</contact>
+		</AgeOfEmpires>
+		
+		<NeedForSpeedMostWanted>
+		
+		<uid>
+			64
+		</uid>
+
+		<name>
+			Need for Speed : Most Wanted
+		</name>
+
+		<day>
+
+		</day>
+
+		<categ>
+			Game
+		</categ>
+
+		<shortDescription>
+		</shortDescription>
+
+		<description>
+			"Street. Steer. Speed." -- Make this your motto and break all the limits. Be the best street racer and experience the 'Tokyo Drift'. Take your beast to the finish line the fastest.
+		</description>
+
+		<rules>
+			<![CDATA[
+			<b>
+			Rules - </b>
+			Common Rules for Competitive rounds, Semi-finals and Finals:
+				1) Game Type: Circuit
+				2) No. of Laps: 2 for competitive , 3 for semi-final and final.
+				3) Courses: Courses will be given on the spot and will be selected from the list given below.
+				4) Participants are not allowed to use their own profiles, only the given profile can be used.
+				5) Players will be given 1 minute to setup the car and its performance before the game.
+				6) Use of Porsche Carrera GT and BMW M3 GTR is not allowed.
+				7) Use of Junkman upgrades is not allowed.
+				8) Organisers decision will be final.
+
+				* Race Mode Options :
+
+				1) Track Direction : Forward
+				2) LAPS : 2/3
+				3) N20 : On
+				4) Collision Detection : Off
+				5) Performance Matching : Off
+
+				* Disconnection :
+				If a disconnection is deemed to be unintentional by the referee, the match will be restarted. If any player does not agree to a match restart, that player will lose by default.
+
+				*Courses :
+				Heritage Heights, Diamond, Switchback, East Park, Omega, Dunwich Bay, Oil Refinery, Bay Bridge, Clubhouse.
+
+				* Competitive Rounds :
+				Competition : All qualifying participants will compete in a "Circuit" mode in groups of 4. The first 2 players to complete 2 laps of the circuit course and cross the finish line will advance to the next round.
+
+				* Semi-Finals :
+				Competition : All qualifying 8 participants will be divided in 2 groups of 4.They will compete in 3 races in "Circuit" mode.Top 2 participants from each group will advance to the finals.Qualifying : The time clocked by each participant in each of the 3 races will be added and the 2 participants from each group having the least cumulative time will advance to the finals.
+
+				* Finals :
+				Competition : All qualifying participants will compete in a group of 4 in 5 races in "Circuit" mode.
+
+				Winning a race : The winner of a race is the first player to complete 3 laps of the circuit course and cross the finish line. 
+
+				Winning the tournament : A player having the least cumulative time of all the 5 races will be the "winner" of the tournament. 
+			]]>
+		</rules>
+
+		<contact>
+		
+		</contact>
+		</NeedForSpeedMostWanted>
+		
+		
+		<OnlineChess>
+		<uid>
+			65
+		</uid>
+
+		<name>
+			Online Chess
+		</name>
+
+		<day>
+
+		</day>
+
+		<categ>
+			Game
+		</categ>
+
+		<shortDescription>
+		</shortDescription>
+
+		<description>
+			You are the next Vishwanathan Anand. Check mate all your competor's and wear the crown.
+		</description>
+
+		<rules>
+			<![CDATA[
+			<b>
+			Rules - </b>
+			Common Rules for Competitive rounds, Semi-finals and Finals:
+				1) It is not a team game. Only individual partition is allowed. 
+				2) The competition will consist of the following rounds: 
+						   Round                        Duration
+							1st                          15 minutes each player 
+							2nd                          20 minute each player
+							3rd                          30 minutes
+						    Quaterfinal                  40 minutes
+						    Semifinal                    no time limit
+							Final                        no time limit 
+				3) The player who uses hi
+				s allotted time first will instantaneously lose the game.
+				4) A toss will decide the player who will start the game.
+				5) Use of internet/ windows chess game is strictly prohibited. Player found doing so will be instantaneously disqualified.
+				6) In case of a draw, a rematch will be there. If there is a draw in the second game too then the player who used less time combined in both the matches will win the game. In case of semi-finals and final three rematch will be there.
+				7)All decisions of the organizers are final and participants are obliged to follow them. 
+			]]>
+		</rules>
+
+		<contact>
+		
+		</contact>
+		</OnlineChess>
+	</Game>
+	
+		<Lit>
+	
+		<Cognoscentia>
+		<uid>
+			71
+		</uid>
+
+		<name>
+			Cognoscentia
+		</name>
+
+		<day>
+
+		</day>
+
+		<categ>
+			Literary
+		</categ>
+
+		<shortDescription>
+			Quizzing
+		</shortDescription>
+
+		<description>
+			The flagship quiz of IIIT-A, Cognoscentia boasts of being the oldest and most prestigious event of Effervescence. With its ever-widening plethora of brain-wrecking questions that leave no genre untouched, and a maddening, almost ubiquitarian atmosphere where time runs short and questions loom large, Cognoscentia gives you a chance to be the cynosure and stun the world with your mettle. Welcome to the pinnacle of quizzing!!!
+
+		</description>
+
+		<rules>
+			<![CDATA[
+			<b>Rules and regulations </b>
+			1) Participation should be in teams of 3.
+			2) A written screening round will precede the finals for which 15 teams will qualify.
+			3) Use of unfair means is strictly prohibited.
+			4) The decision of the quizmaster shall be final in all regards.
+
+			<b>Registration </b>
+			Participation has to be in teams of 3. 
+			To register for the event mail the following details to <i>literaryclub.iiita@gmail.com </i>
+			1. Name of the event.
+			2. Name of your team and college.
+			3. Names of your team members (Along with contact numbers and email ids).
+			]]>
+		</rules>
+
+		<contact>
+			Anubhav Dutta
+			9889506761
+
+			Shivendra Soni
+			9935814841
+
+			Umang Agrawala
+			9044334847
+
+		</contact>
+		</Cognoscentia>
+		
+		<Feathers>
+		<uid>
+			72
+		</uid>
+
+		<name>
+			Feathers
+		</name>
+
+		<day>
+
+		</day>
+
+		<categ>
+			Literary
+		</categ>
+
+		<shortDescription>
+			Creative Writing Event
+		</shortDescription>
+
+		<description>
+			The world itself is the will to power - and nothing else! And you yourself are the will to power - and nothing else! Feathers is on-campus creative writing competitions. Here ink flow like the water of Rubicon and speech takes form of a swan’s flight.so, get your innovative thoughts brimming and carve out golden words with your pen to create history.
+		</description>
+
+		<rules>
+			<![CDATA[
+			<b>Rules and regulations</b>
+			1) Plagiarism is strictly prohibited.
+			2) The given word limit should not be exceeded.
+			3) Decision of the judges shall be final in all regards.
+
+			<b>Registration</b>
+			Participation has to be on an individual basis
+			To register for the event mail the following details to <i>literaryclub.iiita@gmail.com </i>
+			1. Name of the event.
+			2. Your name.
+			3. Name of your college.
+			4. Your contact number and email id.
+			]]>
+		</rules>
+
+		<contact>
+			Anubhav Dutta
+			9889506761
+
+			Shivendra Soni
+			9935814841
+		</contact>
+		</Feathers>
+		
+		<Crossfire>
+		<uid>
+			73
+		</uid>
+
+		<name>
+			Crossfire
+		</name>
+
+		<day>
+
+		</day>
+
+		<categ>
+			Literary
+		</categ>
+
+		<shortDescription>
+			Debate Competition
+		</shortDescription>
+
+		<description>
+			Crossfire, a thrilling national level debate competition, it is a war waged not by swords, but words. It witnesses participation of the best orators from round the country. Interactive and representational arguments, art of persuasion, logical consistency and factual accuracy are some of the important pre-requisites of this event. It is a stage that is set only for the warriors of words!!!
+		</description>
+
+		<rules>
+			<![CDATA[
+			<b>Rules and regulations:</b>
+			Download the PDF from here.
+
+			<b>Registration:</b>
+			Participation has to be in teams of 2+1 (Two Debaters and one adjudicator).
+			To register for the event mail the following details to <i>literaryclub.iiita@gmail.com</i> 
+			1. Name of the event.
+			2. Name of your team and college.
+			3. Names of your team members (Along with contact numbers and email ids).
+			]]>
+		</rules>
+
+		<contact>
+			Anubhav Dutta
+			9889506761
+
+			Umang Agrawala
+			9044334847
+
+		</contact>
+		</Crossfire>
+		
+		<DumbCharades>
+		<uid>
+			74
+		</uid>
+
+		<name>
+			DUMB CHARADES
+		</name>
+
+		<day>
+
+		</day>
+
+		<categ>
+			Literary
+		</categ>
+
+		<shortDescription>
+			The Art of Expression
+		</shortDescription>
+
+		<description>
+			Dumb Charades is the event where you have to be clever when you are dumb. Here forming instant team strategies and selecting impromptu non - verbal communication signals is what matters. The frustration of not being able to act out a word, the desperation as time runs out, the anguish when you fail to guess a sitter in spite of the passer's Oscar-worthy attempt, the elation at guessing right... DumbC is all about merriment!
+		</description>
+
+		<rules>
+			<![CDATA[
+			<b>Rules and Regulations: </b>
+			1)	Decision of Judges will be final in all respects.
+			2)	Vulgarity will not be accepted.
+
+			<b>Registration: </b>
+			Participation has to be in teams of 3.
+			To register for the event mail the following details to <i>literaryclub.iiita@gmail.com </i>
+			1. Name of the event.
+			2. Name of your team and college.
+			3. Names of your team members (Along with contact numbers and email ids).
+			]]>
+		</rules>
+
+		<contact>
+			Anubhav Dutta
+			9889506761
+
+			Rahul Gupta
+			7398843454
+
+		</contact>
+		</DumbCharades>
+		
+	</Lit>
+	
+</Events>

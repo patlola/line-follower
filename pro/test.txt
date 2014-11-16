@@ -1,0 +1,246 @@
+
+//0th part
+if( PINA.3 == 0){
+            z=0;               
+            if( PINA.0 == 1 && PINA.1 == 0 && PINA.2 == 1) {
+                PORTD.2 = 1;  PORTD.3 = 0;    PORTD.7 = 0;    PORTD.6 = 1;
+                delay_ms(1);
+                PORTD.2 = 0;  PORTD.3 = 0;    PORTD.7 = 0;    PORTD.6 = 0;
+                delay_ms(2);
+            }
+            if( PINA.0 == 1 && PINA.1 == 1 && PINA.2 == 1) {
+                  PORTD.2 = 0;
+                  PORTD.3 = 1;
+                  PORTD.7 = 1;
+                  PORTD.6 = 0;
+                  delay_ms(1);
+                  PORTD.2 = 0;
+                  PORTD.3 = 0;
+                  PORTD.7 = 0;
+                  PORTD.6 = 0;
+                  delay_ms(2);
+             }
+             if( PINA.0 == 0 && PINA.2 == 1) {
+                  PORTD.6 = 0;
+                  PORTD.7 = 0;
+                  PORTD.2 = 1;
+                  PORTD.3 = 0;
+                  delay_ms(2);
+                  PORTD.2 = 0;
+                  PORTD.3 = 0;
+                  delay_ms(1);
+              }
+             if( PINA.0 == 1 && PINA.2 == 0) {
+                  PORTD.6 = 0;
+                  PORTD.7 = 1;
+                  PORTD.2 = 0;
+                  PORTD.3 = 0;
+                  delay_ms(2);
+                  PORTD.6 = 0;
+                  PORTD.7 = 0;
+                  delay_ms(1);
+              }
+      } 
+
+
+ //1ST PART
+ else{   if( PINA.3 == 1 && x==0){
+          x++;
+          z++;                                       
+            if(x>0) PORTC.2 = 1;
+                        
+            if( PINA.0 == 1 && PINA.1 == 0 && PINA.2 == 1) {
+                PORTD.2 = 1;  PORTD.3 = 0;    PORTD.7 = 0;    PORTD.6 = 1;
+                delay_ms(1);
+                PORTD.2 = 0;  PORTD.3 = 0;    PORTD.7 = 0;    PORTD.6 = 0;
+                delay_ms(2);
+            }
+            if( PINA.0 == 1 && PINA.1 == 1 && PINA.2 == 1) {
+                  PORTD.2 = 0;
+                  PORTD.3 = 1;
+                  PORTD.7 = 1;
+                  PORTD.6 = 0;
+                  delay_ms(1);
+                  PORTD.2 = 0;
+                  PORTD.3 = 0;
+                  PORTD.7 = 0;
+                  PORTD.6 = 0;
+                  delay_ms(2);
+             }
+             if( PINA.0 == 0 && PINA.2 == 1) {
+                  PORTD.6 = 0;
+                  PORTD.7 = 0;
+                  PORTD.2 = 1;
+                  PORTD.3 = 0;
+                  delay_ms(5);
+                  PORTD.2 = 0;
+                  PORTD.3 = 0;
+                  delay_ms(3);
+              }
+             if( PINA.0 == 1 && PINA.2 == 0) {
+                  PORTD.6 = 0;
+                  PORTD.7 = 1;
+                  PORTD.2 = 0;
+                  PORTD.3 = 0;
+                  delay_ms(5);
+                  PORTD.6 = 0;
+                  PORTD.7 = 0;
+                  delay_ms(3);
+              }
+      }
+         
+      if( PINA.3 == 1 && x>0 && z>0){
+            if( PINA.0 == 1 && PINA.1 == 0 && PINA.2 == 1) {
+                PORTD.2 = 1;  PORTD.3 = 0;    PORTD.7 = 0;    PORTD.6 = 1;
+                delay_ms(1);
+                PORTD.2 = 0;  PORTD.3 = 0;    PORTD.7 = 0;    PORTD.6 = 0;
+                delay_ms(2);
+            }
+            if( PINA.0 == 1 && PINA.1 == 1 && PINA.2 == 1) {
+                  PORTD.2 = 0;
+                  PORTD.3 = 1;
+                  PORTD.7 = 1;
+                  PORTD.6 = 0;
+                  delay_ms(1);
+                  PORTD.2 = 0;
+                  PORTD.3 = 0;
+                  PORTD.7 = 0;
+                  PORTD.6 = 0;
+                  delay_ms(2);
+             }
+             if( PINA.0 == 0 && PINA.2 == 1) {
+                  PORTD.6 = 0;
+                  PORTD.7 = 0;
+                  PORTD.2 = 1;
+                  PORTD.3 = 0;
+                  delay_ms(5);
+                  PORTD.2 = 0;
+                  PORTD.3 = 0;
+                  delay_ms(3);
+              }
+             if( PINA.0 == 1 && PINA.2 == 0) {
+                  PORTD.6 = 0;
+                  PORTD.7 = 1;
+                  PORTD.2 = 0;
+                  PORTD.3 = 0;
+                  delay_ms(5);
+                  PORTD.6 = 0;
+                  PORTD.7 = 0;
+                  delay_ms(3);
+              }
+      }
+//2nd part
+  if( PINA.3 == 1 && x>0 && z==0 && y==0) {
+          z++;
+          y++;                                       
+            if(y>0) PORTC.1 = 1;
+                        
+            if( PINA.0 == 1 && PINA.1 == 0 && PINA.2 == 1) {
+                PORTD.2 = 1;  PORTD.3 = 0;    PORTD.7 = 0;    PORTD.6 = 1;
+                delay_ms(1);
+                PORTD.2 = 0;  PORTD.3 = 0;    PORTD.7 = 0;    PORTD.6 = 0;
+                delay_ms(2);
+            }
+            if( PINA.0 == 1 && PINA.1 == 1 && PINA.2 == 1) {
+                  PORTD.2 = 0;
+                  PORTD.3 = 1;
+                  PORTD.7 = 1;
+                  PORTD.6 = 0;
+                  delay_ms(1);
+                  PORTD.2 = 0;
+                  PORTD.3 = 0;
+                  PORTD.7 = 0;
+                  PORTD.6 = 0;
+                  delay_ms(2);
+             }
+             if( PINA.0 == 0 && PINA.2 == 1) {
+                  PORTD.6 = 0;
+                  PORTD.7 = 0;
+                  PORTD.2 = 1;
+                  PORTD.3 = 0;
+                  delay_ms(2);
+                  PORTD.2 = 0;
+                  PORTD.3 = 0;
+                  delay_ms(1);
+              }
+             if( PINA.0 == 1 && PINA.2 == 0) {
+                  PORTD.6 = 0;
+                  PORTD.7 = 1;
+                  PORTD.2 = 0;
+                  PORTD.3 = 0;
+                  delay_ms(2);
+                  PORTD.6 = 0;
+                  PORTD.7 = 0;
+                  delay_ms(1);
+              }
+      }      
+}//else ends here      
+      
+
+
+//3rd Part......wall
+if(PINA.0 == 1 && PINA.1 == 1 && PINA.2 == 1){  
+            if( PINA.3 == 1 && PINA.4 == 0 && PINA.5 == 0) {
+                  PORTD.2 = 1;
+                  PORTD.3 = 0;
+                  PORTD.7 = 0;
+                  PORTD.6 = 1;
+                  delay_ms(1);
+                  PORTD.2 = 0;
+                  PORTD.3 = 0;
+                  PORTD.7 = 0;
+                  PORTD.6 = 0;
+                  delay_ms(3);
+                  }
+                   
+                  if( PINA.3 == 0 && PINA.4 == 0 && PINA.5 == 0) {
+                  PORTD.2 = 1;
+                  PORTD.3 = 0;
+                  PORTD.7 = 0;
+                  PORTD.6 = 0;
+                  delay_ms(3);
+                  PORTD.2 = 0;
+                  PORTD.3 = 0;
+                  PORTD.7 = 0;
+                  PORTD.6 = 0;
+                  delay_ms(3);
+                  }
+                  
+                  if( PINA.3 == 0 && PINA.4 == 1 && PINA.5 == 1) {
+                  PORTD.2 = 0;
+                  PORTD.3 = 0;
+                  PORTD.7 = 0;
+                  PORTD.6 = 1;
+                  delay_ms(3);
+                  PORTD.2 = 0;
+                  PORTD.3 = 0;
+                  PORTD.7 = 0;
+                  PORTD.6 = 0;
+                  delay_ms(3);
+                  }
+                  if( PINA.3 == 0 && PINA.4 == 1 && PINA.5 == 0) {
+                  PORTD.2 = 0;
+                  PORTD.3 = 0;
+                  PORTD.7 = 0;
+                  PORTD.6 = 1;
+                  delay_ms(3);
+                  PORTD.2 = 0;
+                  PORTD.3 = 0;
+                  PORTD.7 = 0;
+                  PORTD.6 = 0;
+                  delay_ms(3);
+                  }
+                  if( PINA.3 == 1 && PINA.4 == 1 && PINA.5 == 0) {
+                  PORTD.2 = 0;
+                  PORTD.3 = 0;
+                  PORTD.7 = 0;
+                  PORTD.6 = 1;
+                  delay_ms(3);
+                  PORTD.2 = 0;
+                  PORTD.3 = 0;
+                  PORTD.7 = 0;
+                  PORTD.6 = 0;
+                  delay_ms(3);
+                  }
+                  
+}

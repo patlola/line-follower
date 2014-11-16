@@ -1,0 +1,40 @@
+body
+{
+background-color:black;
+}
+
+#header
+{
+position:fixed;
+width:100%;
+height:50px;
+background-color:black;
+margin:0px;
+padding:0px;
+top:0px;
+left:0px;
+z-index:2;
+}
+
+img
+{
+height:125%;
+width:100%;
+margin:0px;
+padding:0px;
+
+}
+.tab1
+{
+position:fixed;
+height:60px;
+width:100%;
+bottom:0%;
+background-color:black;
+color:white;
+text-align:center;
+zoom: 1;
+filter: alpha(opacity=75);
+opacity: 0.75;
+}
+

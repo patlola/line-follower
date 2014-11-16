@@ -1,0 +1,21 @@
+RAM Allocation [bytes]
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+
+EEPROM Allocation [bytes]
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                          Register  Size
+--------------------------------------------------------------------------------
+x                                                                 R4,R5        2
+y                                                                 R6,R7        2
+z                                                                 R8,R9        2
+w                                                                 R10,R11      2
+b                                                                 R12,R13      2
+
+FLASH Allocation [words]
+Function                                                          Address   Size
+--------------------------------------------------------------------------------
+main                                                              0x00157    203
